@@ -158,15 +158,56 @@ $(a_1 -1) + \cdots (a_k -1) = \sum_i a_i - \sum_{i=1}^{k} (-1) = 6 -
 the conjugacy classes of $A_6$. 
 
 However, we have a bit more counting to do. Recall that a conjugacy
-$[\sigma] \subseteq \S_n$ splits into two conjugacy classes in $A_n$
+$[\sigma] \subseteq S_n$ splits into two conjugacy classes in $A_n$
 exactly when the type of $\sigma$ consists of distinct odd numbers,
 and otherwise it splits into a single class in $A_n$. 
 In our case we have $[3,3]$ and $[5,1]$ split into two clases in
 $A_n$. Hence, overall we have $1 + 1 + 2 + 1 + 1 + 2 = 8$ conjugacy
 classes in $A_6$. 
 
-Now for each of these we will determine its size and what its elements
-are. 
+Next we determine the sizes of each conjugacy class in $A_6$. 
+Note that the classes not of type $[3,3]$ and $[5,1]$ have the same
+size as the corresponding classes in $S_n$. The classes of type
+$[3,3]$ and $[5,1]$ split into two classes of equal sizes in $A_6$. 
+Recall that the class type gives the sizes of the cycles in cycle
+decomposition of $\sigma \in [\sigma]$. And so, we can determine the
+size of each class by counting each distinct way of writing a
+permutation with the given types.
+For example, $[2,2,1,1]$ corresponds to $\sigma = (a_1,
+a_2)(b_1b_2)(c_1)(d_1)$ where $a_i, b_i, c_i, d_i \in [n]$.
+There are $6!$ ways to populate these numbers, but then we have
+equivalent permutations given by cycling the elements in $(a_1,a_2)$
+and $(b_1, b_2)$ and another equivalence given by interchanging the
+cycles, then a final equivalence given by interchanging the two
+trivial cycles. We do not need to consider any equivalence given by
+interchanging the positions of the $2$-cycles and the trivial cycles,
+since this was included in our enumeration of the partitions of $6$.
+And so the number of elements in the class of type
+$[2,2,1,1]$
+is given by $\frac{6! = 720}{2 \cdot 2 \cdot 2 \cdot 2} = \frac{720}{16}$. 
+
+A similar kind of counting gives us the following data. In the
+following $\abs{[t_i]}$ means the number of elements in the
+conjugacy class whose type is given by $[t_i]$.
+\begin{align*}
+	\abs{[1,1,1,1,1,1,1]} = 1 \qquad
+	\abs{[2,2,1,1]} &= \frac{720}{16} \qquad
+	\abs{[3,3]} = \frac{720}{3 \cdot 3 \cdot 2} \cdot \frac{1}{2} = \frac{720}{36} \qquad \\
+	\abs{[3,1,1,1]} = \frac{720}{3 \cdot 3!} = \frac{720}{18} \qquad
+	\abs{[4,2]} &= \frac{720}{4 \cdot 2} = \frac{720}{8} \qquad
+	\abs{[5,1]} = \frac{720}{5} \cdot \frac{1}{2} = \frac{720}{10}
+\end{align*}
+Here the classes with type $[3,3]$ and $[5,1]$ in $S_n$ split into two
+distinct equal sized classes in $A_6$ and so we have denoted the size
+of each split class in the data above. Then we can write the class
+formuala
+\[
+	1 + 45 + 2(20) + 40 + 90 + 2(72) = 360 = \abs{A_6}
+\]
+Showing that we have counted the size of our conjugacy classes
+correctly.
+
+Lastly, we write the elements of our classes.
 
 
 
