@@ -112,7 +112,8 @@
 
 %------------------------- Problem 2 -----------------------
 
-\begin{problem}[2]
+\begin{problem}
+	\includegraphics[scale=0.8]{2.png}
 	\hfill
 \end{problem}
 
@@ -123,17 +124,60 @@
 
 %------------------------- Problem 3 -----------------------
 
-\begin{problem}[3]
+\begin{problem}
+	\includegraphics[scale=0.8]{3.png}
 	\hfill
 \end{problem}
 \begin{solution}
+We search for the conjugacy classes of $S_n$ whose elements are even
+permutations. Note that this is a well-defined notion, since if
+$\sigma, \tau \in S_n$ are even permutations then $\sigma \tau
+\sigma\inv$ has a transposition decomposition whose length is a
+product of three even numbers, and is thus even.
+
+Recall that the conjugacy classes are exactly given by the type of a
+permutation and that the number of valid conjugacy classes
+correspond to the number of partitions of $n$. And so, we will
+enumerate the partitions of $6$ and then acquire the conjugacy classes
+of $A_6$ by choosing the classes which correspond to even partitions.
+The partitions of $6$ are:
+\begin{align*}
+	\mathbf{[1,1,1,1,1,1,1]} &\qquad [2,2,2] \qquad \mathbf{[2,2,1,1]} \qquad [2,1,1,1,1]
+	\qquad \mathbf{[3,3]} \qquad [3,2,1], \\ \qquad \mathbf{[3,1,1,1]}
+	&\qquad \mathbf{[4,2]} \qquad [4,1,1] \qquad \mathbf{[5,1]} \qquad [6]. 
+\end{align*}
+The bolded types are those which correspond to even partitions and so
+are the conjugacy classes of $A_6$. Recall that these are the types
+whose number of entries have the same parity as $6$ (i.e. these are
+the types with an even number of rows). Suppose $\sigma \in S_n$ has
+type $[a_1, \cdots, a_k]$ then the parity of $\sigma$ is 
+$(a_1 - 1) + \cdots (a_k -1)$, since each $a_i$ denotes the length of
+a cycle which composes $\sigma$. Now notice 
+$(a_1 -1) + \cdots (a_k -1) = \sum_i a_i - \sum_{i=1}^{k} (-1) = 6 -
+2\ell = 6 - 2\ell$ is even. And so indeed the chosen permutations give
+the conjugacy classes of $A_6$. 
+
+However, we have a bit more counting to do. Recall that a conjugacy
+$[\sigma] \subseteq \S_n$ splits into two conjugacy classes in $A_n$
+exactly when the type of $\sigma$ consists of distinct odd numbers,
+and otherwise it splits into a single class in $A_n$. 
+In our case we have $[3,3]$ and $[5,1]$ split into two clases in
+$A_n$. Hence, overall we have $1 + 1 + 2 + 1 + 1 + 2 = 8$ conjugacy
+classes in $A_6$. 
+
+Now for each of these we will determine its size and what its elements
+are. 
+
+
+
 \end{solution}
 
 \newpage
 
 %------------------------- Problem 4 -----------------------
 
-\begin{problem}[4]
+\begin{problem}
+	\includegraphics[scale=0.8]{4.png}
 	\hfill
 \end{problem}
 
@@ -145,7 +189,8 @@
 
 %------------------------- Problem 5 -----------------------
 
-\begin{problem}[1]
+\begin{problem}
+	\includegraphics[scale=0.8]{5.png}
 	\hfill
 \end{problem}
 
@@ -156,7 +201,8 @@
 
 %------------------------- Problem 6 -----------------------
 
-\begin{problem}[1]
+\begin{problem}
+	\includegraphics[scale=0.8]{6.png}
 	\hfill
 \end{problem}
 
@@ -167,7 +213,8 @@
 
 %------------------------- Problem 7 -----------------------
 
-\begin{problem}[1]
+\begin{problem}
+	\includegraphics[scale=0.8]{7.png}
 	\hfill
 \end{problem}
 
