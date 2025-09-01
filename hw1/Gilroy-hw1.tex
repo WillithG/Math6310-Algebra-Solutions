@@ -320,6 +320,47 @@ shown $g x g\inv \in N_1 \leq G_1$. Thus, $N_1$ is closed under
 conjugation and is normal in $G_1$. A very similar argument holds to
 show that $N_2 \normal G_2$. 
 
+\item Let $\overline H$ be the image of $H$ in $G_1/N_1 \times
+G_2/N_2$. We want to show that $(\overline x, \overline y) \in
+\overline H$ associates elements $\overline x \in G_1/N_1$ to
+$\overline y \in G_2 /N_2$, as a function, in a bijective manner, and
+as a group homomorphism.
+
+To be clear, $\overline H = \overline H_1 \times \overline H_2$ where
+$\overline H_i = \im (H \twoheadrightarrow^{p_i} G_i
+\twoheadrightarrow G_i / N_i)$. 
+First we show that $\overline H$ defines a function. That is, we need
+to show that there is at most one element of the form $(\overline x,
+-) \in \overline H$ for each $\overline x \in G_1/N_1$. 
+Notice that if $(x, y_1), (x, y_2) \in H$ then we have $y_1 - y_2 \in
+N_2$ and so $\overline y_1 = \overline y_2 \in G_2 / N_2$. That is,
+there is, any elements of $G_2$ which are associated with $x$ in $H$
+end up in the same class in $G_2 / N_2$. It then follows that there is
+at most one element of the form $(\overline x, -) \in \overline H$ for
+each $\overline x \in G_1 / N_1$. Moreover, $H
+\twoheadrightarrow G_1 \twoheadrightarrow G_1/N_1$ is surjective since
+it is the composition of surjective maps. It then follows that for all
+$\overline x \in G_1/N_1$ there is an element $(\overline x, -) \in
+\overline H$. Thus $\overline H$ defines a function $f : G_1/N_1 \to
+G_2/N_2$. 
+
+Next we show that $f$ is bijective. First notice that $H
+\twoheadrightarrow G_2 \twoheadrightarrow G_2/N_2$ again is
+surjective. Thus for each $\overline y \in G_2/N_2$ we have some $(-,
+\overline y) \in \overline H$. That is, $f$ is surjective.
+Now notice that if $(x_1, y), (x_2, y) \in H$ then we have $x_1 - x_2
+\in N_1$. Hence, again, all elements which are associated to $y$ in
+$H$ end up in the same class in $G_1 / N_1$. That is, there is at most
+one element of the form $(-, \overline y) \in \overline H$. That is,
+$f$ is injective.
+
+Lastly, $f$ is a group homomorphism because $\overline H$ is a
+subgroup of $G_1 / N_1 \times G_2 / N_2$; this follows since $H$ is a
+subgroup of $G_1 \times G_2$.
+\wg{There's some unpacking and deatil checking to do here, but I
+currently believe this follows from unpacking all the definitions of
+the objects. }
+
 \end{itemize}
 \end{solution}
 
