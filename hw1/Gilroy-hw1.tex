@@ -238,22 +238,21 @@ equal size classes in $A_6$.
 \end{problem}
 
 \begin{solution}
-Consider the action of conjugation on $H$ by some element $k \in G$.
-If $k \in H$ then $k H k \inv = H$ since $H$ is a subgroup and thus is
-closed under inversion and its group operation. And so, we
-take $k \not \in H$.
-Recall that $[H:G] = 2$ means that $G$ is partitioned into two cosets
-of $H$, call them $H$ and $\overline H$.
+Recall that a subgroup $H \leq G$ is normal if the set of
+its left cosets are equal to the set of its right cosets, by
+definition of normality. That is if
+$\{g H : g \in G\} = \{H g : g \in H\}$. 
 
-Since $H$ is a subgroup of $G$ we have $e_G
-\in H$ and so $k \in k H$. 
-But then $e_G \in (kH)k\inv$ which implies $(kH)k\inv = H$ since
-the cosets of $H$ partition $G$. This argument holds whether $kH = H$ or $kH =
-\overline H$.
-\wg{This seems, wrong, doesn't seem to depend on the fact that there's only two cosets}
+Recall that $[G: H] = 2$ means that $H$ has exactly two left/right
+cosets. Since $e \in G$, $e \cdot H = H$, and $H \cdot e = H$ it must be that $H$ is
+one of the left cosets of $H$ and one of the right cosets of $H$.
+Also recall that the left cosets of a subgroup partition $G$ as a set, and likewise
+for the right cosets of a subgroup. It follows then that the non-$H$
+left coset is $G \setminus H$, and the non-$H$ right coset is also $G
+\setminus H$.
 
-We have shown that $k H k\inv = H$ for all $k \in G$, that is, $H$ is
-normal in $G$.
+That is, the left cosets of $H$ are equal to the right cosets of $H$
+and so $H$ must be normal. 
 
 \wg{Lang proves this using a lot of machinary of the orbits of group
 actions and the kernel of group actions. That all seems more technical
