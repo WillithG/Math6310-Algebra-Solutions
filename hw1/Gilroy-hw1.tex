@@ -11,6 +11,7 @@
 \newcommand{\abs}[1]{\left|#1\right|}
 \newcommand{\im}{\text{im }}
 \newcommand{\inv}{^{-1}}
+\newcommand{\normal}{\unlhd} %% one can also use \trianglelelefteq
 \usepackage[shortlabels]{enumitem}
 
 % Numbering macros
@@ -238,19 +239,19 @@ equal size classes in $A_6$.
 
 \begin{solution}
 Consider the action of conjugation on $H$ by some element $k \in G$.
-If $k \in H$ then $k H k \inv = H$ since $H$ is a subgroup. And so, we
+If $k \in H$ then $k H k \inv = H$ since $H$ is a subgroup and thus is
+closed under inversion and its group operation. And so, we
 take $k \not \in H$.
+Recall that $[H:G] = 2$ means that $G$ is partitioned into two cosets
+of $H$, call them $H$ and $\overline H$.
 
-Recall that cosets partition $G$ and $[H:G] = 2$ means that there are
-two cosets of $H$ in $G$. Since $H$ is a subgroup of $G$ we have $e_G
-\in H$ and so $k \in k H$. \wg{is this redundent, we kinda took this
-to be by definition of $k$ also?}
-And so $k H = \overline H$, the non-$H$ coset. But then $\overline H
-k\inv$ contains $e_G$ since $k \in \overline H$. And since cosets
-partition $G$ we must have that $\overline H k\inv = H$. Overall, we
-have \[
-	k H k\inv = \overline H k \inv = H.
-\]
+Since $H$ is a subgroup of $G$ we have $e_G
+\in H$ and so $k \in k H$. 
+But then $e_G \in (kH)k\inv$ which implies $(kH)k\inv = H$ since
+the cosets of $H$ partition $G$. This argument holds whether $kH = H$ or $kH =
+\overline H$.
+\wg{This seems, wrong, doesn't seem to depend on the fact that there's only two cosets}
+
 We have shown that $k H k\inv = H$ for all $k \in G$, that is, $H$ is
 normal in $G$.
 
@@ -296,6 +297,30 @@ tru, or am I missing something?}
 \end{problem}
 
 \begin{solution}
+\begin{itemize}
+\item First, can view $N_i \leq G_i$ as say $p_1(N_1 = \ker p_2 =
+\{(x,e_{G_2}) \in H\}) \leq
+G_1$. This is indeed a subgroup of $G_1$ becuase if $x, y \in
+p_1(N_1)$ then this means $(x, e), (y, e) \in N_2$ and so $(x +_{G_1} y, e)
+\in N_2$ hence $x +_{G_1} y \in G_1$. And likewise for inverses and
+the identity. Put another way, $p_1(N_1) \leq G_1$ since $N_1 \leq H$. 
+Mutatis, mutandis for $N_2 \leq G_2$. 
+
+Now we show that $N_1 \unlhd G_1$.
+Let $x \in N_1 \leq G_1$ and let $g \in G_1$. Since $p_1: H \to G_1$
+is surjective there exists $(g, y) \in H$ and $(g, y)\inv = (g\inv, y\inv) \in H$
+since $H$ is a subgroup. Lastly $(x,e) \in H$ by definition of $\ker
+p_2$. 
+Now consider \[
+	(g, y) \cdot_{G_1 \times G_2} (x, e) \cdot_{G_1 \times G_2} (g\inv, y\inv) 
+	= (g x g\inv, e) \in H
+\]
+since $H$ is closed under $\cdot_{G_1 \times G_2}$. But then we have
+shown $g x g\inv \in N_1 \leq G_1$. Thus, $N_1$ is closed under
+conjugation and is normal in $G_1$. A very similar argument holds to
+show that $N_2 \normal G_2$. 
+
+\end{itemize}
 \end{solution}
 
 \newpage
