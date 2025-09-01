@@ -298,13 +298,16 @@ tru, or am I missing something?}
 
 \begin{solution}
 \begin{itemize}
-\item First, can view $N_i \leq G_i$ as say $p_1(N_1 = \ker p_2 =
+\item First, we can view $N_i \leq G_i$ as say $p_1(N_1 = \ker p_2 =
 \{(x,e_{G_2}) \in H\}) \leq
 G_1$. This is indeed a subgroup of $G_1$ becuase if $x, y \in
-p_1(N_1)$ then this means $(x, e), (y, e) \in N_2$ and so $(x +_{G_1} y, e)
-\in N_2$ hence $x +_{G_1} y \in G_1$. And likewise for inverses and
-the identity. Put another way, $p_1(N_1) \leq G_1$ since $N_1 \leq H$. 
-Mutatis, mutandis for $N_2 \leq G_2$. 
+p_1(N_1)$ then this means $(x, e), (y, e) \in N_2$ and so, since $H$
+is a subgroup, $(x +_{G_1} y, e)
+\in N_1$ hence $x +_{G_1} y \in p(N_1)$. And a similar argument holds for inverses and
+the identity. 
+\wg{If we get time, write out the arg to show that it contains identity and inverses.}
+Put another way, $p_1(N_1) \leq G_1$ since $N_1 \leq H$. 
+The same reasoning shows that we can view $N_2 \leq G_2$. 
 
 Now we show that $N_1 \unlhd G_1$.
 Let $x \in N_1 \leq G_1$ and let $g \in G_1$. Since $p_1: H \to G_1$
@@ -312,7 +315,7 @@ is surjective there exists $(g, y) \in H$ and $(g, y)\inv = (g\inv, y\inv) \in H
 since $H$ is a subgroup. Lastly $(x,e) \in H$ by definition of $\ker
 p_2$. 
 Now consider \[
-	(g, y) \cdot_{G_1 \times G_2} (x, e) \cdot_{G_1 \times G_2} (g\inv, y\inv) 
+	(g, y) \cdot_{(G_1 \times G_2)} (x, e) \cdot_{(G_1 \times G_2)} (g\inv, y\inv) 
 	= (g x g\inv, e) \in H
 \]
 since $H$ is closed under $\cdot_{G_1 \times G_2}$. But then we have
@@ -328,19 +331,21 @@ as a group homomorphism.
 
 To be clear, $\overline H = \overline H_1 \times \overline H_2$ where
 $\overline H_i = \im (H \twoheadrightarrow^{p_i} G_i
-\twoheadrightarrow G_i / N_i)$. 
+\twoheadrightarrow^{\pi_i} G_i / N_i)$. 
 First we show that $\overline H$ defines a function. That is, we need
-to show that there is at most one element of the form $(\overline x,
+to show that there is exactly one element of the form $(\overline x,
 -) \in \overline H$ for each $\overline x \in G_1/N_1$. 
 Notice that if $(x, y_1), (x, y_2) \in H$ then we have $y_1 - y_2 \in
 N_2$ and so $\overline y_1 = \overline y_2 \in G_2 / N_2$. That is,
-there is, any elements of $G_2$ which are associated with $x$ in $H$
-end up in the same class in $G_2 / N_2$. It then follows that there is
+any elements of $G_2$ which are associated with $x$ in $H$
+end up in the same class in $G_2 / N_2$.
+And likewise for any $x' \in G_1$ with $\overline{x'} = \overline x$.
+It then follows that there is
 at most one element of the form $(\overline x, -) \in \overline H$ for
 each $\overline x \in G_1 / N_1$. Moreover, $H
 \twoheadrightarrow G_1 \twoheadrightarrow G_1/N_1$ is surjective since
 it is the composition of surjective maps. It then follows that for all
-$\overline x \in G_1/N_1$ there is an element $(\overline x, -) \in
+$\overline x \in G_1/N_1$ there is some element $(\overline x, -) \in
 \overline H$. Thus $\overline H$ defines a function $f : G_1/N_1 \to
 G_2/N_2$. 
 
@@ -350,7 +355,10 @@ surjective. Thus for each $\overline y \in G_2/N_2$ we have some $(-,
 \overline y) \in \overline H$. That is, $f$ is surjective.
 Now notice that if $(x_1, y), (x_2, y) \in H$ then we have $x_1 - x_2
 \in N_1$. Hence, again, all elements which are associated to $y$ in
-$H$ end up in the same class in $G_1 / N_1$. That is, there is at most
+$H$ end up in the same class in $G_1 / N_1$. And likewise for $x' \in
+G_1$ which associate to some $y' \in G_2$ such that $\overline{y'} =
+\overline y$. 
+That is, there is at most
 one element of the form $(-, \overline y) \in \overline H$. That is,
 $f$ is injective.
 
