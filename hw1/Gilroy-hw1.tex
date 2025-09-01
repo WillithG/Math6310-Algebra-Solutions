@@ -237,6 +237,28 @@ equal size classes in $A_6$.
 \end{problem}
 
 \begin{solution}
+Consider the action of conjugation on $H$ by some element $k \in G$.
+If $k \in H$ then $k H k \inv = H$ since $H$ is a subgroup. And so, we
+take $k \not \in H$.
+
+Recall that cosets partition $G$ and $[H:G] = 2$ means that there are
+two cosets of $H$ in $G$. Since $H$ is a subgroup of $G$ we have $e_G
+\in H$ and so $k \in k H$. \wg{is this redundent, we kinda took this
+to be by definition of $k$ also?}
+And so $k H = \overline H$, the non-$H$ coset. But then $\overline H
+k\inv$ contains $e_G$ since $k \in \overline H$. And since cosets
+partition $G$ we must have that $\overline H k\inv = H$. Overall, we
+have \[
+	k H k\inv = \overline H k \inv = H.
+\]
+We have shown that $k H k\inv = H$ for all $k \in G$, that is, $H$ is
+normal in $G$.
+
+\wg{Lang proves this using a lot of machinary of the orbits of group
+actions and the kernel of group actions. That all seems more technical
+than what I've done here, but not necessarily anymore slick. Is that
+tru, or am I missing something?}
+
 \end{solution}
 
 \newpage
