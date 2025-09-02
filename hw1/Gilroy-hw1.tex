@@ -17,8 +17,8 @@
 % Numbering macros
 \pagestyle{fancy}
 \lhead{Will Gilroy}
-\chead{Algs Homework \#}
-\rhead{03 November 2021}
+\chead{Algebra Homework \#1}
+\rhead{01 September 2025}
 \lfoot{}
 \cfoot{}
 \rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
@@ -33,7 +33,7 @@
 
 \begin{document}
 
-\problemlist{Algorithms HW } 
+\problemlist{Math6310 Algebra Homework \#1 } 
 
 %------------------------- Problem 1 -----------------------
 
@@ -52,7 +52,7 @@
 	g\inv = (g \cdot k \cdot g\inv) \cdot (g \cdot \ell \cdot g\inv) =
 	\gamma_g(k) \cdot \gamma_g(\ell),
 	\]
-	since group products are associative and by definition of the
+	since group products are associative, and by definition of the
 	identity element. Hence $\gamma_g$ is a homomorphism for all $g
 	\in G$.
 
@@ -85,16 +85,16 @@
 	holds for all $k \in G$. That is, we have shown $f(g \cdot h) = f(g)
 	\circ f(h)$, where $\cdot$ denotes the product in $G$ and $\circ$
 	denotes function composition --- the group operation in $Aut(G)$.
-	Hence, $f$ is a homomorphism
+	Hence, $f$ is a homomorphism.
 
 	\item We show directly that $\im f$ is closed under conjugation by
 	homomorphism in $Aut(G)$. Let $h \in Aut(G)$ and $\gamma_g \in \im
 	f$. There then exists an
-	inverse homomorphism $h\inv$ and consider the action of \[
+	inverse homomorphism $h\inv$, consider the action of \[
 		h \circ \gamma_g \circ h\inv.
 	\]
 	This is an automorphism since the composition of group
-	homomorphisms is again a group homomorphism \wg{check this}.
+	homomorphisms is again a group homomorphism.
 
 	Let $k \in G$ and consider 
 	\begin{align*}
@@ -103,7 +103,7 @@
 	\end{align*}
 	Moreover, $h(g) = g' \in G$ since $h$ is an automorphism of $G$.
 	That is, we have shown $(h \circ \gamma_g \circ g\inv) = f(g') \in
-	\im f$. And so, $\im f$ is a normal sunbgroup of $Aut(G)$ by
+	\im f$. And so, $\im f$ is a normal subgroup of $Aut(G)$ by
 	definition.
 
 \end{enumerate}
@@ -119,6 +119,7 @@
 \end{problem}
 
 \begin{solution}
+\wg{Big Apologies}
 \end{solution}
 
 \newpage
@@ -147,8 +148,8 @@ The partitions of $6$ are:
 	\qquad \mathbf{[3,3]} \qquad [3,2,1], \\ \qquad \mathbf{[3,1,1,1]}
 	&\qquad \mathbf{[4,2]} \qquad [4,1,1] \qquad \mathbf{[5,1]} \qquad [6]. 
 \end{align*}
-The bolded types are those which correspond to even partitions and so
-are the conjugacy classes of $A_6$. Recall that these are the types
+The bolded types are those which correspond to even partitions, and so
+correspond to the conjugacy classes of $A_6$. Recall that these are the types
 whose number of entries have the same parity as $6$ (i.e. these are
 the types with an even number of rows). Suppose $\sigma \in S_n$ has
 type $[a_1, \cdots, a_k]$ then the parity of $\sigma$ is 
@@ -178,11 +179,12 @@ For example, $[2,2,1,1]$ corresponds to $\sigma = (a_1,
 a_2)(b_1b_2)(c_1)(d_1)$ where $a_i, b_i, c_i, d_i \in [n]$.
 There are $6!$ ways to populate these numbers, but then we have
 equivalent permutations given by cycling the elements in $(a_1,a_2)$
-and $(b_1, b_2)$ and another equivalence given by interchanging the
-cycles, then a final equivalence given by interchanging the two
+and $(b_1, b_2)$, another equivalence given by interchanging the
+cycles, and a final equivalence given by interchanging the two
 trivial cycles. We do not need to consider any equivalence given by
 interchanging the positions of the $2$-cycles and the trivial cycles,
-since this was included in our enumeration of the partitions of $6$.
+since this was included in our enumeration of the partitions of $6$,
+by definition.
 And so the number of elements in the class of type
 $[2,2,1,1]$
 is given by $\frac{6! = 720}{2 \cdot 2 \cdot 2 \cdot 2} = \frac{720}{16}$. 
@@ -222,9 +224,19 @@ $[1,1,1,1,1,1], [2,2,1,1], [3,1,1,1],$ or $[4,2]$.
 
 The classes in $S_6$ whose type is $[3,3]$ or $[5,1]$ split into two distinct
 equal size classes in $A_6$. 
-\wg{how do we figure out which elements belong to which class?}
+\wg{The two split classes must end up containing all the permutations 
+whose type is $[3,3]$ or $[5,1]$ in $S_6$. Those elements have a
+similar form to what's argued above.}
 
-
+\wg{
+However, for these split classes, there must be
+representatives in $S_6$ which are acquired under conjugation by an odd cycle,
+hence giving us two classes in $A_6$. For $[3,3]$ I could argue one
+class in $A_6$ contains $\sigma = (1,2,3)(4,5,6)$, and then the other class has
+a representative given by conjugating $\sigma$ with some odd
+permutation, and then all other representatives are given by
+conjugating those elements with even permutations. But this seems less
+concrete than I would like.}
 
 \end{solution}
 
@@ -260,9 +272,8 @@ and so $H$ must be normal.
 
 \wg{Lang proves this using a lot of machinary of the orbits of group
 actions and the kernel of group actions. That all seems more technical
-than what I've done here, but not necessarily anymore slick. Is that
-tru, or am I missing something?}
-
+than what I've done here. So I'm a bit worried that I've missed
+something.}
 \end{solution}
 
 \newpage
@@ -276,6 +287,49 @@ tru, or am I missing something?}
 \end{problem}
 
 \begin{solution}
+Note that the same exercise is given in Aluffi $IV.1.18$, I will be
+using the hint given in that version of this problem.
+The hint gives the following information: $(1)$ The action of $G$ on $X$ is
+isomorphic to $G$ acting on $G/H$ where $H = \text{Stab}(x)$ for some
+$x \in X$. Here, $G$ acts on $G/H$ by left multiplication. $(2)$ If $H
+\lneq G$ for finite $G$ then $G$ is not the union of conjugates of
+$H$. \wg{If time, come back
+and prove at least the second one.}
+
+First, we show that, since $G$ acts transitively on $X$,
+if $x \in X$ then $\text{Stab}(x)$ is conjugate to
+$\text{Stab}(y)$ for all $y \in X$. 
+Suppose $g$ stabilizes $x$, that is $gx = x$. Since $G$ acts
+transitively on $X$ we have $y = \overline g x$ for some $\overline g
+\in G$. Consider the following
+\begin{align*}
+	g x &= x \\
+	g(\overline g y) &= \overline g y \\
+	(\overline g\inv g \overline g) &= y.
+\end{align*}
+That is, a conjugate of $g$ stabilizes $y$ for each $g \in
+\text{Stab}(x)$. In other words, $g \cdot \text{Stab}(x) \cdot g\inv \subseteq
+\text{Stab}(y)$ for some $g \in G$. A similar calculation gives the
+reverse inclusion.
+
+Now suppose that, for contradiction, every $g \in G$ fixes some $x \in
+X$. Then $G \subseteq \bigcup_{x \in X} \text{Stab}(x)$, and so, 
+$G = \bigcup_{x \in X} \text{Stab}(x)$. Let $H = \text{Stab}(x')$ for
+some $x' \in X$. Notice that $H \lneq G$ because $\abs{X} \geq 2$ and
+because $G$ acts transitively on $X$.
+If $H$ were not proper then we would have $g x' = x'$ for all $g \in G$, however, we
+know there exists some $x'' \neq x' \in X$ and then no $g \in G$ 
+satisfies $g x' = x''$, a contradiction. 
+From the preceding paragraph, we can rewrite $\text{Stab}(x) = g_x H g_x\inv$ for some $g_x
+\in G$. Then we have \[
+G = \bigcup_{x \in X} \text{Stab}(x) = \bigcup_{x \in X} g_x H
+g_x\inv, 
+\]
+a contradiction of fact $(2)$ above. 
+
+
+
+
 \end{solution}
 
 \newpage
@@ -288,6 +342,7 @@ tru, or am I missing something?}
 \end{problem}
 
 \begin{solution}
+\wg{Big apologies}
 \end{solution}
 
 \newpage

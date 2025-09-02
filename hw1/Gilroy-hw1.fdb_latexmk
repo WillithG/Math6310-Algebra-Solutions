@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1756768854 "/home/willithg/2025Autumn/Math6310-Algebra-Solutions/hw1/Gilroy-hw1.tex" "Gilroy-hw1.pdf" "Gilroy-hw1" 1756768854 0
+["pdflatex"] 1756780802 "/home/willithg/2025Autumn/Math6310-Algebra-Solutions/hw1/Gilroy-hw1.tex" "Gilroy-hw1.pdf" "Gilroy-hw1" 1756780803 0
   "/etc/texmf/web2c/texmf.cnf" 1714944770 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/willithg/2025Autumn/Math6310-Algebra-Solutions/hw1/Gilroy-hw1.tex" 1756768853 14252 1180b737ad9e97951f5791ebc480911d ""
+  "/home/willithg/2025Autumn/Math6310-Algebra-Solutions/hw1/Gilroy-hw1.tex" 1756780801 16763 e56af0d4999ecfab5746250ec9548bfc ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm" 1136768653 2532 9ad73cf4dd2173a847f2a5f5608e0b9a ""
@@ -26,11 +26,13 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm" 1136768653 1828 bb8add3bd19426549f9267c88b0cb8bd ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm" 1136768653 1012 955c4ca523d7827d33db91a33412b048 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm" 1136768653 1316 b4037e9c09961a72f8476628774e1ec1 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1248133631 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb" 1136849748 9356 a3851bc942e9b6995883193472ba1847 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb" 1136849748 15213 d999bbe8bd9c8f231f3f66a737c76478 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb" 1136849748 52406 dad2f72863a03727d5f536c64a69c452 ""
@@ -172,8 +174,8 @@
   "5.png" 1756594886 21119 03226b96cc28f0b791b7ac67eaa2011f ""
   "6.png" 1756594899 12781 9656ca048a4c8577cb53bb7e3aaf2de7 ""
   "7.png" 1756594909 49991 c75c36e2933a7015777bf5d6818944a3 ""
-  "Gilroy-hw1.aux" 1756768854 117 21514ba20da47bbc1fe9b08cfae27ff7 "pdflatex"
-  "Gilroy-hw1.tex" 1756768853 14252 1180b737ad9e97951f5791ebc480911d ""
+  "Gilroy-hw1.aux" 1756780803 117 21514ba20da47bbc1fe9b08cfae27ff7 "pdflatex"
+  "Gilroy-hw1.tex" 1756780801 16763 e56af0d4999ecfab5746250ec9548bfc ""
   "hmcpset.cls" 1756594812 4085 98027ce36439082fce2e02ac517d4e29 ""
   (generated)
   "Gilroy-hw1.aux"
