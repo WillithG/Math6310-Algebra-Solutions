@@ -119,7 +119,66 @@
 \end{problem}
 
 \begin{solution}
-\wg{Big Apologies}
+Imagine that the cube is embedded in $\R^3$ so that the three
+coordinate axes intersect three faces of the cube. I then claim that
+the symmetries of the cube are given by $R_x, R_y, R_z$, rotations
+about the three coordinate axes by $90^\circ$, as well as $\ell_i$ reflections
+about planes whose normal vectors are also the three coorindate
+axes. We have a bunch of relations between these elements.
+As a presentation then, the symmetry group of the cube is
+\begin{align*}
+	\langle 
+		R_x, R_y, R_z, \ell_x, \ell_y, \ell_z &: \\
+		(R_i)^4 = e, \\
+		(ell_i)^2 = e \\
+		[R_x,R_y] = R_x\inv R_z\inv \\
+		[R_y, R_x] = R_y\inv R_z\\
+		[R_x, R_z] = R_yR_z \\
+		[R_z, R_x] = R_xR_z\inv \\
+		[R_y, R_z] = R_x\inv R_z \\
+		[R_z, R_y] = R_yR_z\inv \\
+		\ell_z\ell_x = R_y^{-2} \\
+		[\ell_z, \ell_x] = e, 
+		...   
+	\rangle
+\end{align*}
+From these, one could also certainly simplify the relations to find
+a more efficient presentation. These commutation relations were found
+by rotating a book irl, and staring at paper for the reflections.
+However I will justify a bit more. 
+
+I will spend some time justifying why I believe the three
+rotations and three reflections
+are necessary for the symmetries of the cube.
+First, I take ``symmetry'' to mean transformations of the cube, such
+that the vertices occupy the eight positions in $\R^3$ given by the
+coordinates $(\pm 1, \pm 1, \pm 1)$. 
+
+Notice that to specify a transformation of the cube it is sufficient
+to specify where some distinguished vertex goes, along with where two 
+of its three adjacent nodes go (the final adjacent vertex's position is
+determined by the position of the other two adjacent vertices). 
+They must remain adjacent after the transformation also. 
+This description then makes it clear that then the position of some
+distinguished vertex can be taken to any other position by some
+combination of the three rotations. However, we then also need the
+reflections to allow positions of the other adjacent vertices which
+could not be acquired through rotations alone.
+
+There are eight positions our distinguished vertex could occupy. For
+each of those positions, there are $3 \times 2$ configurations the
+other adjacent vertices could occupy. This means there are at most
+$48$ orientations the cube could occupy (and so in principle, our
+group above should have at most $48$ non-trivial elements). 
+
+\wg{Given how symmetric the cube is and how complicated my description
+above is. I'm sure there must be a simpler description of the
+symmetries of the cube. I would be interested in hearing if there's an
+easier description. I admit, my description above is highly informed
+by my time in physics and the way they treat the angular momentum
+operators, and so I'm sure there must be a more elegant description
+possible =D}
+
 \end{solution}
 
 \newpage
@@ -363,7 +422,6 @@ p_1(N_1)$ then this means $(x, e), (y, e) \in N_2$ and so, since $H$
 is a subgroup, $(x +_{G_1} y, e)
 \in N_1$ hence $x +_{G_1} y \in p(N_1)$. And a similar argument holds for inverses and
 the identity. 
-\wg{If we get time, write out the arg to show that it contains identity and inverses.}
 Put another way, $p_1(N_1) \leq G_1$ since $N_1 \leq H$. 
 The same reasoning shows that we can view $N_2 \leq G_2$. 
 

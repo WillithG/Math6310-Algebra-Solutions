@@ -1,0 +1,163 @@
+\documentclass[12pt,letterpaper,boxed]{hmcpset}
+\usepackage[margin=1in,headheight=14pt]{geometry}
+\usepackage{amsfonts, amsmath, amssymb, enumerate, fancyhdr, gensymb, lastpage, mathtools, parskip, graphicx}
+\usepackage{xcolor, tikz-cd}
+\newcommand{\wg}[1]{\textcolor{violet}{#1}}
+\newcommand{\OO}{\mathcal O}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathcal C}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\im}{\text{im }}
+\newcommand{\tih}{\tilde h}
+\newcommand{\inv}{^{-1}}
+\newcommand{\normal}{\unlhd} %% one can also use \trianglelelefteq
+\usepackage[shortlabels]{enumitem}
+
+% Numbering macros
+\pagestyle{fancy}
+\lhead{Will Gilroy}
+\chead{Algs Homework \#}
+\rhead{03 November 2021}
+\lfoot{}
+\cfoot{}
+\rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+
+\linespread{1.5}
+
+\newcommand\blankpage{
+    \thispagestyle{empty}
+    \addtocounter{page}{-1}
+    \newpage}
+\renewcommand\footrulewidth{0.4pt}
+
+\begin{document}
+
+\problemlist{Algorithms HW } 
+
+%------------------------- Problem 1 -----------------------
+
+\begin{problem}[1]
+	\hfill
+\end{problem}
+
+\begin{solution}
+\end{solution}
+
+\newpage
+
+%------------------------- Problem 2 -----------------------
+
+\begin{problem}[2]
+	\hfill
+\end{problem}
+
+\begin{solution}
+\end{solution}
+
+\newpage
+
+%------------------------- Problem 3 -----------------------
+
+\begin{problem}[3]
+	\hfill
+\end{problem}
+\begin{solution}
+\end{solution}
+
+\newpage
+
+%------------------------- Problem 4 -----------------------
+
+\begin{problem}
+	\includegraphics[scale=0.8]{4.png}
+	\hfill
+\end{problem}
+
+\begin{solution}
+Firstly, we will show that $\rho$ is a well defined map $H \to
+Out(N)$. Let $h \in H$ and $\tih_1, \tih_2 \in G$ such that $\pi(\tih_1)
+= \pi(\tih_2) = h$. We have 
+$\rho(\tih_1) = f := (n \mapsto \tih_1 n \tih_1\inv)$ and
+$\rho(\tih_2) = g := (n \mapsto \tih_2 n \tih_2\inv)$. 
+Note that these are indeed automorphisms of $N$, as in the previous
+homework we showed that conjugation by a fixed element is an
+automorphism.
+If we show that $\rho(\tih_1)$ and $\rho(\tih_2)$ lie in the same
+coset of $Inn(N)$ then $\rho$ is well-defined. (Note: I believe this
+map is not well defined as a map $H \to Aut(N)$). 
+
+Recall that two elements $g,h$ of a group lie in the same coset of a normal
+subgroup $N$ if $g\inv h \in N$. For our automorphisms $f,g$ we have
+$g\inv = (n \mapsto \tih_2\inv n \tih_2)$. And so we have 
+$(g\inv \circ f)(n) = \tih_2\inv \tih_1 n \tih_1\inv \tih_2$. Recall
+that $N \normal G$ and so is closed under conjugation by definition.
+In particular then $\tih_1 n \tih_1\inv \in N$ and $\tih_2\inv(\tih_1
+n \tih_1 \inv) \tih_2 \in N$ since $\tih_1, \tih_2 \in G$. 
+Thus $f,g$ have the same image in $Out(N)$ and so $\rho$ is well
+defined with respect to the choice of $\tih$. 
+
+Next we show that $\rho$ is a group homomorphism. Let $h_1, h_2 \in H$
+and $\tih_1, \tih_2 \in G$ such that $\pi(\tih_1) = h_1$ and
+$\pi(\tih_2) = h_2$. Moreover, since $\pi$ is a group homomorphism we
+have $\pi(\tih_1\tih_2) = \tih_1 \tih_2$. Following a similar,
+calculation to last week's homework, consider the following
+\begin{align*}
+	\rho(h_1h_2) &= \gamma_{\tih_1\tih_2}
+		&= (n \mapsto \tih_1\tih_2 n (\tih_1\tih_2)\inv) \\
+		&= (n \mapsto \tih_1 \tih_2 n \tih_2\inv \tih_1\inv) \\
+		&= \gamma_{\tih_1} \circ \gamma_{\tih_2} \\
+		&= \rho(h_1)\rho(h_2).
+\end{align*}
+Thus, the given $\rho$ is indeed a group homomorphism.
+
+\end{solution}
+
+\newpage
+%------------------------- Problem 4 -----------------------
+
+\begin{problem}[4]
+	\hfill
+\end{problem}
+
+\begin{solution}
+\end{solution}
+
+\newpage
+%------------------------- Problem 4 -----------------------
+
+\begin{problem}[4]
+	\hfill
+\end{problem}
+
+\begin{solution}
+\end{solution}
+
+\newpage
+
+%------------------------- Problem 4 -----------------------
+
+\begin{problem}[4]
+	\hfill
+\end{problem}
+
+\begin{solution}
+\end{solution}
+
+\newpage
+
+%------------------------- Problem 4 -----------------------
+
+\begin{problem}[4]
+	\hfill
+\end{problem}
+
+\begin{solution}
+\end{solution}
+
+\newpage
+
+
+
+\end{document}
