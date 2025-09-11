@@ -103,14 +103,51 @@ and $\tih_1, \tih_2 \in G$ such that $\pi(\tih_1) = h_1$ and
 $\pi(\tih_2) = h_2$. Moreover, since $\pi$ is a group homomorphism we
 have $\pi(\tih_1\tih_2) = \tih_1 \tih_2$. Following a similar,
 calculation to last week's homework, consider the following
+
 \begin{align*}
-	\rho(h_1h_2) &= \gamma_{\tih_1\tih_2}
+	\rho(h_1h_2) &= \gamma_{\tih_1\tih_2} \\
 		&= (n \mapsto \tih_1\tih_2 n (\tih_1\tih_2)\inv) \\
 		&= (n \mapsto \tih_1 \tih_2 n \tih_2\inv \tih_1\inv) \\
 		&= \gamma_{\tih_1} \circ \gamma_{\tih_2} \\
 		&= \rho(h_1)\rho(h_2).
 \end{align*}
 Thus, the given $\rho$ is indeed a group homomorphism.
+
+Now suppose $G = N \rtimes_\theta H$. We can state more precisely the
+outer automorphism given by $\rho$. Let $h \in H$ and then all lifts
+are of the form $\tih = (m, h)$ for some $m \in N$. Then, being
+explicit about the details of the semidirect product, our map
+$\rho(h) : \iota(N) \to \iota(N)$ acts as follows 
+\begin{align*}
+	\rho_h(n) &= (m, h) \cdot_\theta (n, e_H) \cdot_\theta (m, h)\inv \\
+		&= (m,h) (n, e_H) (\theta_{h\inv}(m\inv), h\inv) \\
+		&= (m \theta_h(n), h) (\theta_{h\inv}(m\inv), h\inv) \\
+		&= (m \theta_h(n) (\theta_h \circ \theta_{h\inv}(m\inv), h h\inv) \\
+		&= (m \theta_h(n) m\inv, e_H).
+\end{align*}
+Which induces the automorphism $f = (n \mapsto m\theta_h(n)m\inv) : N \to
+N$. Note that $(\theta_{h} \theta_{h\inv}) = id_H$ since $\theta$ is a
+group homomorphism $H \to Aut(N)$. 
+
+We show that this is the same as the composition $H \to Aut(N) \to
+Out(N)$. We have $h \mapsto \theta_h \mapsto \overline{\theta_h}$. 
+Notice now that $\theta_h$ and $f$ are lie in the same coset of
+$Inn(N)$. In particular \[
+	\overline{\theta_h} = \overline{\gamma_m \theta_h} = \overline{f}
+\]
+since $\gamma_m = (n \mapsto m n m\inv)$ is one of the inner
+automorphisms of $N$.
+Hence, in the case where $G = N \rtimes_\theta H$ we have $\rho$ and
+$H \to Aut(N) \to Out(N)$ give the same map.
+
+One interpretation of this is that, whilst $\rho$ is a well defined
+map $H \to Out(N)$, it is not a well defined map $H \to Aut(N)$.
+However, in the case where $G$ is a semidirect product of $N$ and $H$
+via $\theta$,
+we have a preferred lift $h \mapsto (e_N, h) \in G$, 
+and in fact there is a well defined map $H \to Aut(N)$, namely
+$\theta$, whose projection gives the same map as $\rho$. 
+
 
 \end{solution}
 
