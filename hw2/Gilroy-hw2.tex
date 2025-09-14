@@ -170,6 +170,9 @@ $g \in G$ with $\abs{g} = 7$, hence we have $\abs{\langle g \rangle}
 $7$ group. Consider, if $n_7$ is the number of Sylow $7$ groups in
 $G$ then Sylow III gives us that $n_7 \equiv 1 \mod 7$ and $n_7 \vert
 4$. The only integer solving both these conditions is $n_p = 1$. 
+Likewise if we write $\abs G = 28 = 2^2 \cdot 7$ and notice $2
+\not\vert 7$ then Sylow I gives us that there exists a subgroup of
+order $2^2 = 4$.
 
 Next we argue that $N$ is normal. If $g \in G$ then recall $\gamma_g =
 (\ell \mapsto g\ell g\inv) \in Aut(G)$. Therefore $\abs{\gamma_g(N)} =
@@ -178,8 +181,6 @@ so the image $\gamma_g(N) = N$ for all $g \in G$. That is, $N$ is
 closed under conjugation by elements in $G$ and so $N$ is normal by
 definition. We have shown that $G$ has a normal subgroup of order $7$
 and in fact we have found that $N \cong C_7$.
-
-\wg{I'm not super sure why there's a subgroup of order $4$.}
 
 
 \item Recall \wg{or perhaps I shall prove} that $Aut(N) = Aut(C_7)
@@ -210,9 +211,35 @@ And so, again, we have one trivial map $\theta_{\text{triv}}: C_2
 \times C_2 \to C_6$ and one non-trivial map $\tilde \theta: C_2 \times
 C_2 \to C_6$. The automorphisms $\tilde \theta((0,1)) =
 \tilde\theta(1,0)$ are both the same as the one described above ---
-$(n \mapsto 7 - n)$.
+$(n \mapsto 7 - n \equiv -n)$.
 
+\item Determining all the possible semi-direct products $C_7 \rtimes
+H$ with $H = C_4$ or $H = C_2 \times C_2$ will tell us the possible
+group laws on $G$. Notice that $N \cap H = \{e \}$ for $H = C_4$ or
+$C_2 \times C_2$, this follows since every element of $N \cong C_7$ is
+the identity or is order $7$, meanwhile there are no elements of order
+$7$ in either $C_4$ or $C_2 \times C_2$. 
+\wg{We also need to show that $NH = G$}. 
+Then it follows that $G \cong N \rtimes_\theta H$ for $H = C_4$ or $H
+= C_2 \times C_2$ and one of the $\theta$ described above.
 
+With all possible homomorphisms $H \to Aut(N)$ described above,
+we can determine all the semi-direct products $N \rtimes H$.
+First suppose $H = C_4$ and $\theta : C_4 \to C_6$ the trivial map.
+That is $\theta(h) = (n \mapsto n)$ for each $h \in H$. We have the
+following group product for $N \rtimes_\theta H$:
+\begin{align*}
+	(n_1, h_1) \cdot_\theta (n_2, h_2) 
+		&= (n_1 \theta_{h_1}(n_2), h_1 h_2) \\
+		&= (n_1 n_2, h_1 h_2).
+\end{align*}
+That is, then $N \rtimes_\theta H$ is isomorphic to $C_7 \times C_4
+\cong G$.
+The same calculation will give us that when $H = C_2 \times C_2$ and
+$\theta : C_2 \times C_2 \to Aut(N)$ is the trivial map, we also have
+$G \cong C_7 \times C_2 \times C_2$. 
+
+Now we determine the products given by the non-trivial $H \to Aut(N)$.
 
 
 \end{itemize}
