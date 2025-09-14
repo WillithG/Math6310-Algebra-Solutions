@@ -152,13 +152,33 @@ $\theta$, whose projection gives the same map as $\rho$.
 \end{solution}
 
 \newpage
-%------------------------- Problem 4 -----------------------
+%------------------------- Problem 5 -----------------------
 
-\begin{problem}[4]
+\begin{problem}
+    \includegraphics[scale=0.8]{5-1.png}
+	\includegraphics[scale=0.8]{5-2.png}
 	\hfill
 \end{problem}
 
 \begin{solution}
+\begin{itemize}
+\item Sylow's theorem I gives us that there exists a subgroup of order
+$7$ in $G$, since $\abs{H} = 7^1 \cdot 4$ and $7 \not \vert 4$. 
+Alternatively, Cauchy's theorem gives us that there exists an element
+$g \in G$ with $\abs{g} = 7$, hence we have $\abs{\langle g \rangle}
+\leq G$. Moreover, Sylow III gives us that there's only a single Sylow
+$7$ group. Consider, if $n_7$ is the number of Sylow $7$ groups in
+$G$ then Sylow III gives us that $n_7 \equiv 1 \mod 7$ and $n_7 \vert
+4$. The only integer solving both these conditions is $n_p = 1$. 
+Lastly, if we let $N$ denote the Sylow $7$ group then
+\wg{Normality is somehow acquired from Sylow II and the fact that $N$
+is the only subgroup of order $7$, but I don't quite understand how
+this works.}
+Sylow II gives us that that $N$ is acquired from $N$ by conjugation 
+
+\wg{I'm also not super sure why there's necessarily a subgroup of order $4$}
+
+\end{itemize}
 \end{solution}
 
 \newpage
