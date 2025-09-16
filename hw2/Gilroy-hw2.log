@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  15 SEP 2025 10:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  15 SEP 2025 21:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -572,6 +572,12 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
  <./1.png (PNG copy)>]
+<2.png, id=18, 480.29437pt x 39.89906pt>
+File: 2.png Graphic file (type png)
+<use 2.png>
+Package pdftex.def Info: 2.png  used on input line 90.
+(pdftex.def)             Requested size: 384.23601pt x 31.91927pt.
+
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -579,7 +585,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[2]
+[2 <./2.png (PNG copy)>]
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -588,10 +594,10 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [3]
-<4.png, id=25, 486.31688pt x 222.07968pt>
+<4.png, id=27, 486.31688pt x 222.07968pt>
 File: 4.png Graphic file (type png)
 <use 4.png>
-Package pdftex.def Info: 4.png  used on input line 110.
+Package pdftex.def Info: 4.png  used on input line 141.
 (pdftex.def)             Requested size: 389.05403pt x 177.66397pt.
 
 
@@ -618,18 +624,18 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [6]
-<5-1.png, id=36, 435.87843pt x 82.05656pt>
+<5-1.png, id=38, 435.87843pt x 82.05656pt>
 File: 5-1.png Graphic file (type png)
 <use 5-1.png>
-Package pdftex.def Info: 5-1.png  used on input line 194.
+Package pdftex.def Info: 5-1.png  used on input line 225.
 (pdftex.def)             Requested size: 348.70322pt x 65.64532pt.
-<5-2.png, id=37, 435.87843pt x 82.05656pt>
+<5-2.png, id=39, 435.87843pt x 82.05656pt>
 File: 5-2.png Graphic file (type png)
 <use 5-2.png>
-Package pdftex.def Info: 5-2.png  used on input line 195.
+Package pdftex.def Info: 5-2.png  used on input line 226.
 (pdftex.def)             Requested size: 348.70322pt x 65.64532pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--197
+Underfull \hbox (badness 10000) in paragraph at lines 225--228
 [][]
  []
 
@@ -676,18 +682,18 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 AED: lastpage setting LastPage
 (./Gilroy-hw2.aux) ) 
 Here is how much of TeX's memory you used:
- 16986 strings out of 476091
- 344495 string characters out of 5794081
+ 16993 strings out of 476091
+ 344561 string characters out of 5794081
  1862330 words of memory out of 5000000
- 37018 multiletter control sequences out of 15000+600000
+ 37024 multiletter control sequences out of 15000+600000
  529117 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,12n,94p,588b,408s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Gilroy-hw2.pdf (11 pages, 239975 bytes).
+Output written on Gilroy-hw2.pdf (11 pages, 257530 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 109 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
