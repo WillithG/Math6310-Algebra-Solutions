@@ -171,7 +171,27 @@ following similar calculations to above. That is $\Gamma^i G = \anglee
 property of the group $D_n$ for $n \geq 3$ odd.
 That is, we have shown $\Gamma^i G = \anglee r$ for $i \geq 2$. 
 
-Now we consider teh case when
+Now we consider the case when $n \geq 4$ is even. First notice that we
+can split this case into two further cases --- either $n = 2^k$ for
+some $k$ or $n = 2^km$ for some $k$ and some $m \geq 3$ odd. If $n$ is
+not a power of $2$ then its prime factor decomposition is $2^k m$
+where $m$ is the product of all of its odd prime factors.
+
+Now first consider the case where $n = 2^km$. Our above calculation
+shows that $\Gamma^{2}D_{2^km} = \anglee{r^2}$ but now $\anglee{r^2}
+\neq \anglee r$ since $r^2$ has even order. In particular
+$\anglee{r^2} = \{r^2, r^4, \cdots, r^{2\cdot(2^{k-1}m)} = e\}$. 
+Now we compute $\Gamma^3 G$ via direct computation of the generators
+$[g,h]$ where $g \in G$ and $h \in \Gamma^2G = \anglee{r^2}$.
+Following the now usual strategy, we have 
+\begin{align*}
+	[r^k, r^2] &= e \\
+	[s, r^2] &= sr^2 s r^{-2} = r^{-4} \\
+	[r^ks, r^2] &= r^{-4}.
+\end{align*}
+That is, $\Gamma^3 G = \anglee{r^4}$. Essentially the same calculation
+will give $\Gamma^i G = \anglee{r^{2^{(i-1)}}}$ for $2 \leq i$.
+
 \end{solution}
 
 \newpage
