@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  17 SEP 2025 15:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  17 SEP 2025 15:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -709,16 +709,8 @@ File: 8.png Graphic file (type png)
 Package pdftex.def Info: 8.png  used on input line 436.
 (pdftex.def)             Requested size: 395.07652pt x 366.77074pt.
 
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[13 <./8.png (PNG copy)>]
-Overfull \hbox (12.84793pt too wide) detected at line 471
-[]
+Overfull \hbox (24.11664pt too wide) in paragraph at lines 452--459
+\OT1/zplm/m/n/12 ((\OML/zplm/m/it/12 a[]\OT1/zplm/m/n/12 )[]\OT1/ppl/m/n/12 , \OT1/zplm/m/n/12 (\OML/zplm/m/it/12 a[]\OT1/zplm/m/n/12 )[]\OT1/ppl/m/n/12 , []  , \OT1/zplm/m/n/12 (\OML/zplm/m/it/12 a[]\OT1/zplm/m/n/12 )[]) [] ((\OML/zplm/m/it/12 a[]\OT1/zplm/m/n/12 )[]\OT1/ppl/m/n/12 , []  , \OT1/zplm/m/n/12 (\OML/zplm/m/it/12 a[]\OT1/zplm/m/n/12 )[])$ \OT1/ppl/m/n/12 (apolo-gies for this no-ta-tion). If $\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 a[]\OT1/ppl/m/n/12 , []  , \OML/zplm/m/it/12 a[]\OT1/zplm/m/n/12 )$
  []
 
 
@@ -728,8 +720,16 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
+[13 <./8.png (PNG copy)>]
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
 [14]
-Overfull \hbox (44.4028pt too wide) in paragraph at lines 532--546
+Overfull \hbox (44.4028pt too wide) in paragraph at lines 531--548
 []\OT1/ppl/m/n/12 The same logic above ap-plies to any word of the form[] $\OML/zplm/m/it/12 w \OT1/zplm/m/n/12 = [] \OML/zplm/m/it/12 w[] [] w[] [] w[] [] $
  []
 
@@ -754,13 +754,13 @@ AED: lastpage setting LastPage
 Here is how much of TeX's memory you used:
  17049 strings out of 476091
  345197 string characters out of 5794081
- 1868330 words of memory out of 5000000
+ 1867330 words of memory out of 5000000
  37062 multiletter control sequences out of 15000+600000
  545110 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,13n,94p,588b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Gilroy-hw2.pdf (16 pages, 383351 bytes).
+Output written on Gilroy-hw2.pdf (16 pages, 383437 bytes).
 PDF statistics:
  126 PDF objects out of 1000 (max. 8388607)
  77 compressed objects within 1 object stream
