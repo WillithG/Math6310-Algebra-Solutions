@@ -432,11 +432,59 @@ Now we determine the products given by the non-trivial $H \to Aut(N)$.
 
 %------------------------- Problem 4 -----------------------
 
-\begin{problem}[4]
+\begin{problem}
+	\includegraphics[scale=0.8]{8.png}
 	\hfill
 \end{problem}
 
 \begin{solution}
+\begin{enumerate}[(a)]
+\item Let $\phi$ denote the suggested map $\phi(a_i) = (i, i+1)$. We
+take the suggested map and extend it so that it's a homomorphism,
+i.e., $\phi(a_i \cdot a_j) = (j,j+1)(i,i+1)$ (note, here my elements
+of $S_n$ act on the right of permutations of $[n]$, I do this so that
+my notation for transposition decomposition is correct later). 
+Note that there are exactly $n-1$ transpositions of the form $(i,i+1)$
+in $S_n$, namely $(1,2), (2,3), \cdots, (n-1, n)$. It then follows
+that $\Sigma_n$ bijects onto the set of $(i,i+1)$ transpositions in
+$S_n$. 
+
+We argue that this
+homomorphism is indeed surjective.
+Next recall that any
+element $\sigma \in S_n$ has a disjoint cycle decomposition. That is we can
+always write $\sigma = ((a_1)_1, (a_1)_2, \cdots, (a_1)_(r_1)) \cdots ((a_k)_1,
+\cdots, (a_k)_(r_k))$ (apologies for this notation). Thus, we are done
+if we can show that every cycle is equal to some product of
+transpositions in $S_n$. If $(a_1, \cdots, a_k)$ is a cycle in $S_n$
+then we have \[
+	(a_1, \cdots, a_k) = (a_1, a_2)(a_1, a_3) \cdots (a_1, a_k)
+\]
+Now, notice that $(a_1, a_2)$ may not be of the form $(i, i+1)$, we
+could have, say, $(a_1, a_2) = (1, 4)$ if $n \geq 4$. However, we can
+decompose this further. Suppose $(a_1, a_2)$ is a transposition in
+$S_n$ with $a_1 < a_2$, then we have \[
+(a_1, a_2) = (a_1, a_1 + 1) (a_1+1, a_1 + 2), \cdots (a_2 -2, a_2 -1) (a_2 - 1, a_2) 
+	(a_2 - 2, a_2 -1) \cdots (a_1 + 1, a_1 + 2) (a_1, a_1+1),
+\]
+where, recall, our transpositions act on the right of a given
+permutation. Note that since each transposition is order two, this is
+really a conjugation of $(a_2 - 1, a_2)$ by the element $(a_1, a_1 +
+1) \cdots (a_2 - 2, a_2 - 1)$. This is probably easiest to see with an
+example. Suppose $n = 4$ and notice that indeed \[
+(1, 4) = (1,2) (2,3) (3,4) (2,3) (1,2) = ((1,2)(2,3))(3,4)((1,2)(2,3))\inv.
+\]
+
+In any case, we've reaclled that every element of $S_n$ has a disjoint
+cycle decomposition, every cycle has a transposition decomposition,
+and every transposition has a $(i,i+1)$ decomposition. It follows then
+that every element of $S_n$ has a $(i,i+1)$-transposition
+decomposition, and so $\phi$ is surjective since it surjects onto the
+set of $(i,i+1)$ transpositions in $S_n$.
+
+\item 
+
+\end{enumerate}
 \end{solution}
 
 \newpage

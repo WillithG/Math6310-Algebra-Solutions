@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  17 SEP 2025 11:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  17 SEP 2025 12:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -703,6 +703,12 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [12]
+<8.png, id=60, 493.845pt x 458.46281pt>
+File: 8.png Graphic file (type png)
+<use 8.png>
+Package pdftex.def Info: 8.png  used on input line 436.
+(pdftex.def)             Requested size: 395.07652pt x 366.77074pt.
+
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -710,22 +716,34 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[13] 
+[13 <./8.png (PNG copy)>]
+Overfull \hbox (129.0941pt too wide) detected at line 469
+\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 a[]\OT1/ppl/m/n/12 , \OML/zplm/m/it/12 a[]\OT1/zplm/m/n/12 ) = (\OML/zplm/m/it/12 a[]\OT1/ppl/m/n/12 , \OML/zplm/m/it/12 a[] \OT1/zplm/m/n/12 + \OT1/ppl/m/n/12 1\OT1/zplm/m/n/12 )(\OML/zplm/m/it/12 a[] \OT1/zplm/m/n/12 + \OT1/ppl/m/n/12 1, \OML/zplm/m/it/12 a[] \OT1/zplm/m/n/12 + \OT1/ppl/m/n/12 2\OT1/zplm/m/n/12 )\OT1/ppl/m/n/12 , [] \OT1/zplm/m/n/12 (\OML/zplm/m/it/12 a[] \OMS/zplm/m/n/12 ^^@ \OT1/ppl/m/n/12 2, \OML/zplm/m/it/12 a[] \OMS/zplm/m/n/12 ^^@ \OT1/ppl/m/n/12 1\OT1/zplm/m/n/12 )(\OML/zplm/m/it/12 a[] \OMS/zplm/m/n/12 ^^@ \OT1/ppl/m/n/12 1, \OML/zplm/m/it/12 a[]\OT1/zplm/m/n/12 )(\OML/zplm/m/it/12 a[] \OMS/zplm/m/n/12 ^^@ \OT1/ppl/m/n/12 2, \OML/zplm/m/it/12 a[] \OMS/zplm/m/n/12 ^^@ \OT1/ppl/m/n/12 1\OT1/zplm/m/n/12 ) [] (\OML/zplm/m/it/12 a[] \OT1/zplm/m/n/12 + \OT1/ppl/m/n/12 1, \OML/zplm/m/it/12 a[] \OT1/zplm/m/n/12 + \OT1/ppl/m/n/12 2\OT1/zplm/m/n/12 )(\OML/zplm/m/it/12 a[]\OT1/ppl/m/n/12 , \OML/zplm/m/it/12 a[] \OT1/zplm/m/n/12 + \OT1/ppl/m/n/12 1\OT1/zplm/m/n/12 )\OT1/ppl/m/n/12 ,
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[14] 
 AED: lastpage setting LastPage
 (./Gilroy-hw2.aux) ) 
 Here is how much of TeX's memory you used:
- 17029 strings out of 476091
- 344946 string characters out of 5794081
+ 17039 strings out of 476091
+ 345086 string characters out of 5794081
  1862330 words of memory out of 5000000
- 37046 multiletter control sequences out of 15000+600000
+ 37055 multiletter control sequences out of 15000+600000
  541527 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,12n,94p,588b,408s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,12n,94p,588b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Gilroy-hw2.pdf (13 pages, 266058 bytes).
+Output written on Gilroy-hw2.pdf (14 pages, 375276 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
+ 120 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
