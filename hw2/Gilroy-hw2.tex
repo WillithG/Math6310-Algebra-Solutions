@@ -463,16 +463,18 @@ then we have \[
 Now, notice that $(a_1, a_2)$ may not be of the form $(i, i+1)$, we
 could have, say, $(a_1, a_2) = (1, 4)$ if $n \geq 4$. However, we can
 decompose this further. Suppose $(a_1, a_2)$ is a transposition in
-$S_n$ with $a_1 < a_2$, then we have \[
-(a_1, a_2) = (a_1, a_1 + 1) (a_1+1, a_1 + 2), \cdots (a_2 -2, a_2 -1) (a_2 - 1, a_2) 
-	(a_2 - 2, a_2 -1) \cdots (a_1 + 1, a_1 + 2) (a_1, a_1+1),
-\]
+$S_n$ with $a_1 < a_2$, then we have 
+\begin{align*}
+(a_1, a_2) = &[(a_1, a_1 + 1) (a_1+1, a_1 + 2) \\
+			&\cdots (a_2 -2, a_2 -1)] (a_2 - 1, a_2) 
+	[(a_2 - 2, a_2 -1) \cdots (a_1 + 1, a_1 + 2) (a_1, a_1+1)], 
+\end{align*}
 where, recall, our transpositions act on the right of a given
 permutation. Note that since each transposition is order two, this is
 really a conjugation of $(a_2 - 1, a_2)$ by the element $(a_1, a_1 +
-1) \cdots (a_2 - 2, a_2 - 1)$. This is probably easiest to see with an
+1) \cdots (a_2 - 2, a_2 - 1)$. The equality above is probably easiest to see with an
 example. Suppose $n = 4$ and notice that indeed \[
-(1, 4) = (1,2) (2,3) (3,4) (2,3) (1,2) = ((1,2)(2,3))(3,4)((1,2)(2,3))\inv.
+(1, 4) = (1,2) (2,3) (3,4) (2,3) (1,2) = [(1,2)(2,3)](3,4)[(1,2)(2,3)]\inv.
 \]
 
 In any case, we've reaclled that every element of $S_n$ has a disjoint
@@ -483,6 +485,23 @@ decomposition, and so $\phi$ is surjective since it surjects onto the
 set of $(i,i+1)$ transpositions in $S_n$.
 
 \item 
+First suppose $\abs{i -j} \neq 1$ and without loss of generality
+suppose $0 \geq i+1 < j \leq n-1$. Then consider 
+\[
+	a_i a_j = a_i (a_ia_j)^2 a_j = (a_i)^2 a_j a_i (a_j)^2 = a_j a_i,
+\]
+using the given relations. In other words, each such $a_i, a_j$
+commute. Using a similar idea, consider 
+\begin{align*}
+	a_{i+1}a_i a_{i+1} 
+		&= a_{i+1} a_i (a_ia_{i+1})^3 a_{i+1} \\
+		&= a_{i+1} a_i (a_ia_{i+1}) (a_ia_{i+1})(a_ia_{i+1}) a_{i+1} \\
+		&= a_{i+1} (a_i)^2 a_{i+1} a_i a_{i+1} a_i (a_{i+1})^2  \\
+	 	&= (a_{i+1})^2 a_{i+1}a_i a_{i+1} \\
+	 	&= a_{i+1}a_i a_{i+1}
+\end{align*}
+holds for each $1 \leq i \leq n_2$. 
+
 
 \end{enumerate}
 \end{solution}

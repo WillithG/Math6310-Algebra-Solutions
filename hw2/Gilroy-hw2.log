@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  17 SEP 2025 12:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  17 SEP 2025 13:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -717,8 +717,8 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [13 <./8.png (PNG copy)>]
-Overfull \hbox (129.0941pt too wide) detected at line 469
-\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 a[]\OT1/ppl/m/n/12 , \OML/zplm/m/it/12 a[]\OT1/zplm/m/n/12 ) = (\OML/zplm/m/it/12 a[]\OT1/ppl/m/n/12 , \OML/zplm/m/it/12 a[] \OT1/zplm/m/n/12 + \OT1/ppl/m/n/12 1\OT1/zplm/m/n/12 )(\OML/zplm/m/it/12 a[] \OT1/zplm/m/n/12 + \OT1/ppl/m/n/12 1, \OML/zplm/m/it/12 a[] \OT1/zplm/m/n/12 + \OT1/ppl/m/n/12 2\OT1/zplm/m/n/12 )\OT1/ppl/m/n/12 , [] \OT1/zplm/m/n/12 (\OML/zplm/m/it/12 a[] \OMS/zplm/m/n/12 ^^@ \OT1/ppl/m/n/12 2, \OML/zplm/m/it/12 a[] \OMS/zplm/m/n/12 ^^@ \OT1/ppl/m/n/12 1\OT1/zplm/m/n/12 )(\OML/zplm/m/it/12 a[] \OMS/zplm/m/n/12 ^^@ \OT1/ppl/m/n/12 1, \OML/zplm/m/it/12 a[]\OT1/zplm/m/n/12 )(\OML/zplm/m/it/12 a[] \OMS/zplm/m/n/12 ^^@ \OT1/ppl/m/n/12 2, \OML/zplm/m/it/12 a[] \OMS/zplm/m/n/12 ^^@ \OT1/ppl/m/n/12 1\OT1/zplm/m/n/12 ) [] (\OML/zplm/m/it/12 a[] \OT1/zplm/m/n/12 + \OT1/ppl/m/n/12 1, \OML/zplm/m/it/12 a[] \OT1/zplm/m/n/12 + \OT1/ppl/m/n/12 2\OT1/zplm/m/n/12 )(\OML/zplm/m/it/12 a[]\OT1/ppl/m/n/12 , \OML/zplm/m/it/12 a[] \OT1/zplm/m/n/12 + \OT1/ppl/m/n/12 1\OT1/zplm/m/n/12 )\OT1/ppl/m/n/12 ,
+Overfull \hbox (12.84793pt too wide) detected at line 471
+[]
  []
 
 
@@ -728,7 +728,15 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[14] 
+[14]
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[15] 
 AED: lastpage setting LastPage
 (./Gilroy-hw2.aux) ) 
 Here is how much of TeX's memory you used:
@@ -738,12 +746,12 @@ Here is how much of TeX's memory you used:
  37055 multiletter control sequences out of 15000+600000
  541527 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,12n,94p,588b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,12n,94p,588b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Gilroy-hw2.pdf (14 pages, 375276 bytes).
+Output written on Gilroy-hw2.pdf (15 pages, 376569 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
+ 123 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
