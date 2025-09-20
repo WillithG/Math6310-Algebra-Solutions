@@ -341,19 +341,20 @@ $\theta$, whose projection gives the same map as $\rho$.
 \begin{solution}
 \begin{itemize}
 \item Sylow's theorem I gives us that there exists a subgroup of order
-$7$ in $G$, since $\abs{H} = 7^1 \cdot 4$ and $7 \not \vert 4$. 
+$7$ in $G$, since $\abs{H} = 7^1 \cdot 4$ and $7$ does not divide $4$. 
 Alternatively, Cauchy's theorem gives us that there exists an element
-$g \in G$ with $\abs{g} = 7$, hence we have $\abs{\langle g \rangle}
+$g \in G$ with $\abs{g} = 7$, hence we have $\langle g \rangle
 \leq G$. Moreover, Sylow III gives us that there's only a single Sylow
-$7$ group. Consider, if $n_7$ is the number of Sylow $7$ groups in
+$7$ group. Indeed, if $n_7$ is the number of Sylow $7$ groups in
 $G$ then Sylow III gives us that $n_7 \equiv 1 \mod 7$ and $n_7 \vert
 4$. The only integer solving both these conditions is $n_p = 1$. 
-Likewise if we write $\abs G = 28 = 2^2 \cdot 7$ and notice $2
-\not\vert 7$ then Sylow I gives us that there exists a subgroup of
+Similarly, if we write $\abs G = 28 = 2^2 \cdot 7$ and notice that $2$
+does not divide $7$, then Sylow I gives us that there exists a subgroup of
 order $2^2 = 4$.
 
-Next we argue that $N$ is normal. If $g \in G$ then recall $\gamma_g =
-(\ell \mapsto g\ell g\inv) \in Aut(G)$. Therefore $\abs{\gamma_g(N)} =
+Let $N$ denote the $7$-subgroup of $G$, we argue that $N$ is normal. 
+If $g \in G$ then recall $\gamma_g =
+(\ell \mapsto g\ell g\inv)$ is an automorphism of G. Therefore $\abs{\gamma_g(N)} =
 \abs{N}$. However, there's a unique subgroup of order $7$ in $G$ and
 so the image $\gamma_g(N) = N$ for all $g \in G$. That is, $N$ is
 closed under conjugation by elements in $G$ and so $N$ is normal by
@@ -362,15 +363,18 @@ and in fact we have found that $N \cong C_7$.
 
 
 \item Recall \wg{or perhaps I shall prove} that $Aut(N) = Aut(C_7)
-\cong C_6$. Consider $C_4$, once we have specified where a generator
+\cong C_6$. We determine the homomorphisms $C_4 \to Aut(C_7) \cong
+C_6$. 
+Consider $C_4$, once we have specified where a generator
 $\sigma \in C_4$ is mapped to in $C_6$ then we have determined the
 homomorphism $C_4 \to C_6$.
 Since $\abs \sigma = 4$ we must have $\abs{\theta(\sigma)} = 4$ or
 $\abs{\theta(\sigma)} = 2$, for $\theta$ non-trivial,
- since a homomorphism must map an element
-to an element whose order divides the original order.
-Notice that there's only a single element of order $2$ in $C_6$. And
-so there's one trivial map and one non-trivial map $\overline \theta: C_4
+since the image of an element under a homomorphism must have order
+which divides the original element's order.
+Notice that there's only a single element of order $2$ in $C_6$, and
+no elements of order $4$. And
+so there's one trivial homomorphism $C_4 \to C_6$ and one non-trivial map $\overline \theta: C_4
 \to N$.
 Since $\overline\theta(\sigma)$ has order two we can deduce that it is the
 automorphism which sends each element of $C_7$ to its inverse. That is 
@@ -394,8 +398,8 @@ $(n \mapsto 7 - n \equiv -n)$.
 \item Determining all the possible semi-direct products $C_7 \rtimes
 H$ with $H = C_4$ or $H = C_2 \times C_2$ will tell us the possible
 group laws on $G$. Notice that $N \cap H = \{e \}$ for $H = C_4$ or
-$C_2 \times C_2$, this follows since every element of $N \cong C_7$ is
-the identity or is order $7$, meanwhile there are no elements of order
+$C_2 \times C_2$. This follows since every non-identity element of $N \cong C_7$ is
+order $7$, meanwhile there are no elements of order
 $7$ in either $C_4$ or $C_2 \times C_2$. 
 \wg{We also need to show that $NH = G$}. 
 Then it follows that $G \cong N \rtimes_\theta H$ for $H = C_4$ or $H
@@ -418,8 +422,23 @@ $\theta : C_2 \times C_2 \to Aut(N)$ is the trivial map, we also have
 $G \cong C_7 \times C_2 \times C_2$. 
 
 Now we determine the products given by the non-trivial $H \to Aut(N)$.
-\wg{todo}
+Note that when $H = C_4$ and $\theta(h) = (n \mapsto -n)$ we have a
+non-commutative group structure on $C_7 \rtimes_\theta C_4$. Consider
+\begin{align*}
+	(n_1, h_1) \cdot_\theta (n_2, h_2) &= (n_1-n_2, h_1 h_2)
+	\intertext{Meanwhile,}
+	(n_2, h_2) \cdot_\theta (n_1, h_1) &= (n_2-n_1, h_1 h_2) \neq (n_1-n_2, h_1h_2),
+\end{align*}
+where we take $C_7$ as a group under addition and $C_4$ as a group
+whose product is written as ``multiplication''. Similar reasoning I
+think shows us that when $H = C_2 \times C_2$ and $\theta(h) = (n
+\mapsto -n)$ we also have $C_7 \rtimes_\theta C-2 \times C_2$ as
+non-abelian. These groups may be isomorphic to something nice, I'm not
+sure, I'd have to stare at them a bit longer.
 
+In any case, we have found every possible group structure on $G$, a
+group of order $28$. There are two abelian group structures, and two
+non-abelian group structures.
 
 \end{itemize}
 \end{solution}
@@ -436,7 +455,8 @@ Now we determine the products given by the non-trivial $H \to Aut(N)$.
 Aluffi points us to an example in the text, and so I will reprove that
 example. We prove that if $\abs{G} = mp$ for some prime $p$ and some
 $m < p$ then $G$ is not simple. \wg{Quick question: The text seems to require $m > 1$,
-however, I cannot see where that condition is needed in the proof.}
+however, I cannot see where that condition is needed in the proof.
+(Maybe in the hypothesis for the Sylow Theorems?)}
 Recall Sylow III gives us that there are $1\mod p$ subgroups of order
 $p$ in $G$. We show that there is in fact only a single $p$-subgroup
 in $G$.
