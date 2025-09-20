@@ -874,9 +874,11 @@ INPUT ./6.png
 INPUT 6.png
 INPUT ./6.png
 INPUT ./6.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplb7t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
+INPUT ./7.png
+INPUT ./7.png
+INPUT 7.png
+INPUT ./7.png
+INPUT ./7.png
 INPUT ./8.png
 INPUT ./8.png
 INPUT 8.png
@@ -904,6 +906,5 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb

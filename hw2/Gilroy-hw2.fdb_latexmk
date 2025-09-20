@@ -1,11 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1758384410 "/home/willithg/2025Autumn/Math6310-Algebra-Solutions/hw2/Gilroy-hw2.tex" "Gilroy-hw2.pdf" "Gilroy-hw2" 1758384411 0
+["pdflatex"] 1758392695 "/home/willithg/2025Autumn/Math6310-Algebra-Solutions/hw2/Gilroy-hw2.tex" "Gilroy-hw2.pdf" "Gilroy-hw2" 1758392696 0
   "/etc/texmf/web2c/texmf.cnf" 1714944770 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/willithg/2025Autumn/Math6310-Algebra-Solutions/hw2/Gilroy-hw2.tex" 1758384410 28363 48e682c002d2dc3569594e1ad82100fa ""
+  "/home/willithg/2025Autumn/Math6310-Algebra-Solutions/hw2/Gilroy-hw2.tex" 1758392695 31457 0c5879715372d462d5e1cead7a42b6d2 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
-  "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136768653 1616 371d1ee60c04b008c8fd760060cd34f1 ""
-  "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm" 1136768653 2532 9ad73cf4dd2173a847f2a5f5608e0b9a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm" 1136768653 1804 7b5f73028f6509167f47ace9d69509ed ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8c.tfm" 1136768653 1348 0e8eb69b4437626c0f6c9bed4a4e373c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm" 1136768653 2796 d37c29814a6717720ee1a7c9a0b2c3b8 ""
@@ -33,10 +31,8 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb" 1136849748 9356 a3851bc942e9b6995883193472ba1847 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb" 1136849748 15213 d999bbe8bd9c8f231f3f66a737c76478 ""
-  "/usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb" 1136849748 52406 dad2f72863a03727d5f536c64a69c452 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb" 1136849748 52665 661b1e6b26edb5f50dd491f8a701cb57 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb" 1136849748 50022 90249cba7e3e4e9845f80328d6f9bd13 ""
-  "/usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplb7t.vf" 1136768653 1380 798ef26de8f0a21f37c9b1147f4fe5d8 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplr7t.vf" 1136768653 1380 037725697594405988999f61172f52de ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplr8c.vf" 1136768653 3504 f65f653e1ad318a9d01b4af15300683a ""
   "/usr/share/texlive/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf" 1136768653 1812 de7624743c8bafe2ce204bec2f72ce7e ""
@@ -172,9 +168,10 @@
   "5-1.png" 1757858782 22511 4cd90cb86681e110d9c23eea0ad954ae ""
   "5-2.png" 1757858794 24491 59c100ebd0f4d6dda251c9eb725e5cca ""
   "6.png" 1758383188 15323 837f4625598b98299f285fc7c3129ea8 ""
+  "7.png" 1758390510 20603 770d73d114ee249ba2cca42aabce924e ""
   "8.png" 1758127004 104192 a051139028c1023627c66279d2d36194 ""
-  "Gilroy-hw2.aux" 1758384411 117 8068f0246460e57ad59bd7201b72e55d "pdflatex"
-  "Gilroy-hw2.tex" 1758384410 28363 48e682c002d2dc3569594e1ad82100fa ""
+  "Gilroy-hw2.aux" 1758392696 117 1c183751e53b17f861481fb5f44b01e8 "pdflatex"
+  "Gilroy-hw2.tex" 1758392695 31457 0c5879715372d462d5e1cead7a42b6d2 ""
   "hmcpset.cls" 1757522168 4085 98027ce36439082fce2e02ac517d4e29 ""
   (generated)
   "Gilroy-hw2.aux"

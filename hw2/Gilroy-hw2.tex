@@ -480,11 +480,73 @@ gives that any group of order $57$ cannot be simple.
 
 %------------------------- Problem 4 -----------------------
 
-\begin{problem}[4]
+\begin{problem}
+	\includegraphics[scale=0.8]{7.png}
 	\hfill
 \end{problem}
 
 \begin{solution}
+Suppose $G$ is simple, and let $p$ be a prime which divides $\abs G$. 
+Notice that we have $\abs G = p^k \left( \Pi_i p_i^{\alpha_i}
+\right)$, by definition of $\abs G$'s prime factorization. In
+particular $p$ does not divide $m := \Pi_i p_i^{\alpha_i}$.
+And so, we are free to apply the Sylow theorems in the following
+manner.
+
+Recall Sylow I and Sylow III gives us that $0 < n_p \equiv 1\mod p$
+and $n_p \vert m$. In particular, if $n_p = 1$ then the unique
+$p$-Sylow subgroup would be normal (see arguments in question $6$, for
+example), however $G$ is simple and so we must have $n_p > 1$. 
+
+Now, let $N_p$ be a set containing each of the $p$-Sylow subgroups,
+that is \newline $N_p := \left\{ H \leq G : \abs{H} = p^k \right\}$. Allow $G$
+to act on $N_p$ by conjugation $g \circlearrowright H = g H g\inv$. 
+Recall that $G$ acting on itself by conjugation is an automorphism,
+and so in particular $\abs{g H g\inv} = \abs{H}$. In other words the
+conjugation of a $p$-Sylow subgroup is again a $p$-Sylow subgroup and
+so our proposed action is well-defined.
+
+This action induces a homomorphism to the symmetric group on $n_p$
+elements $\phi: G \to S_{n_p}$ defined as follows.
+If we label the elements in $N_p$ by
+integers in $[n_p]$, denote the integer associated with $H \in N_p$
+with $ind(H)$, and denote the $p$-Sylow subgroup associated with the
+integer $i$ as $H(i)$,
+then $\phi(g)$ is the permutation where $i \mapsto ind(g H(i) g\inv)$.
+Recall that $G$ acting on itself is an automorphism, and in particular
+our action on $N_p$ is a bijection, hence $\phi(g)$ with this
+definition is a well-defined permutation of $[n_p]$. \wg{The logic of
+this last sentence is a bit iffy in my brain, does this sound correct?}
+
+By the first isomorphism theorem we have $\im(\phi) \leq S_{n_p}$ and
+in particular, by Lagrange's theorem, $\abs{\im(\phi)}$ divides
+$\abs{S_{n_p}} = n_p!$. Moreover, $\im \phi \cong G / \ker \phi$, and
+so another application of Lagrange's theorem gives \[
+	\frac{\abs G}{\abs{\ker \phi}} \big\vert \abs{S_{n_p}} = n_p!
+\]
+Next, we show that $\ker \phi$ is trivial. Notice that $\ker \phi$ is
+a normal subgroup of $G$. Let $h \in \ker \phi$ meaning $h H h\inv =
+H$ for each $p$-Sylow subgroup in $N_p$. Now let $g \in G$, we have \[
+	(g h g\inv) H (g\inv h\inv g) = g (h H' h\inv) g\inv
+		= g H' g \inv = g (g\inv H g ) g\inv = H,
+\]
+Where $H' \in N_p$. 
+That is $g h g\inv \in \ker \phi$ and so $\ker \phi \normal G$ by
+definition. Recall that $G$ is simple, and so $\ker \phi$
+must either be trivial or all of $G$. However, recall that Sylow II
+gives that if $H, H' \in N_p$ then $H,H'$ are conjugates of each
+other: $H = g H' g\inv$ for some $g \in G$. Moreover, earlier we
+showed that $\abs{N_p} = n_p > 1$. That is, there must be some
+non-trivial element of $g$ which does not fix all of $N_p$. In other
+words, $\ker \phi$ is a proper subgroup of $G$. It follows then that
+$\ker \phi$ is trivial and $\abs{\ker \phi} = 1$. And so, we have \[
+\abs{G} = \frac{\abs G}{\abs{\ker \phi}} \big\vert \abs{S_{n_p}} =
+n_p!,
+\]
+as desired.
+
+
+
 \end{solution}
 
 \newpage
