@@ -273,11 +273,67 @@ this.}.
 
 %------------------------- Problem 7 -----------------------
 
-\begin{problem}[4]
+\begin{problem}
+	\includegraphics[scale=0.8]{7.png}
 	\hfill
 \end{problem}
 
 \begin{solution}
+\begin{itemize}
+\item 
+\item
+\item Let $h(x) = x^4 + 4$ and consider the $2$-adic Newton Polytope
+of $f$. 
+\wg{Insert Newton polytope figure}
+Representing the slope-length data in the format $(\text{Slope},
+\text{Length})$ we have the following slope-length data $(-1, 1),
+(0,3)$. 
+
+Now suppose we can write $h(x) = f(x)g(x)$ for polynomials $f,g \in
+\Z[x]$. If $f,g$ are non-constant polynomials then we have two cases
+to consider $deg(f) = 1, deg(g) = 3$ or $deg(f) = 2, deg(g) = 2$,
+since $h$ is a degree $4$ polynomial. In either case notice that we
+must have the following constant terms $a_0(f) = a_0(g) = \pm 2$,
+since $a_0(h) = 4$. Likewise we must have leading terms $a_n(f) =
+a_n(g) = 1$. It follows that in either case we must have $\nu_2(a_0(f)) =
+\nu_2(a_0(g)) = 0$. 
+
+Now consider the case where $deg(f) = 1, deg(g) = 3$.
+We claim that there are only two possible $2$-adic newton polytopes
+for $f$. Since the total length data for $h$ only contains slopes
+$-1,0$ it must be that $\nu_2(a_1(f))$ is either $0$ or $1$, otherwise
+we would have slope data for $f$ which is incompatible with the slope
+data for $h$.
+Thus, in one case we have slope data $(0,1)$ or $(-1,1)$ for $f$. 
+\wg{insert NP figure}
+
+Suppose that we have slope data $(-1,1)$ for $f$. 
+By the main theorem of Newton Polytopes, we must then have slope
+data $(0,3)$ for $g$. However, since $\nu_2(a_0(g)) = 1$ we must then
+have $\nu_2(a_i(g)) = 1$ for each $i=0,1,2,3$. However, this
+contradicts the fact that $\nu_2(a_n(g)) = 0$ which we determined
+earlier. And so $f$ cannot have slope data $(-1,1)$.
+
+Suppose instead that $f$ has slope data $(0,1)$. Since $\nu_2(a_0(f))
+= 1$ we must then have $\nu_2(a_1(f)) = 1$ also. However, this again
+contradicts the fact that $a_n(f) = 1$ from earlier.
+
+Thus there is no case where $deg(f) = 1, deg(g) = 3$. Suppose instead
+then that $deg(f) = deg(g) = 2$. Since we have $\nu_2(a_0(f)) =
+\nu_2(a_0(g)) = 1$ and $\nu_2(a_2(f)) = \nu_2(a_2(g)) = 0$ there are
+only two possible $2$-adic newton polytopes for $f,g$.
+\wg{Insert said newton polytopes below}
+Both newton polytopes have slope data $(-1,1),(0,1)$. By the main
+theorem of newton polytopes, the slope data for $f\cdot g$ is then 
+$(-1, 2), (0,2)$ but this contradicts the slope data for $h$, $(-1,1),
+(0,3)$.
+
+Both possible cases for $f,g$ lead us to contradiction. And so it must
+then be that $h$ is irreducible in $\Z[x]$. 
+
+
+
+\end{itemize}
 \end{solution}
 
 \newpage

@@ -1,12 +1,13 @@
 # Fdb version 4
-["pdflatex"] 1759023090 "/home/willithg/2025Autumn/Math6310-Algebra-Solutions/hw3/Gilroy-Algebra-hw3.tex" "Gilroy-Algebra-hw3.pdf" "Gilroy-Algebra-hw3" 1759023091 0
+["pdflatex"] 1759094011 "/home/willithg/2025Autumn/Math6310-Algebra-Solutions/hw3/Gilroy-Algebra-hw3.tex" "Gilroy-Algebra-hw3.pdf" "Gilroy-Algebra-hw3" 1759094012 0
   "/etc/texmf/web2c/texmf.cnf" 1714944770 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/willithg/2025Autumn/Math6310-Algebra-Solutions/hw3/Gilroy-Algebra-hw3.tex" 1759023090 10209 bf99eae86c0dc3b4770da25a8127e34b ""
+  "/home/willithg/2025Autumn/Math6310-Algebra-Solutions/hw3/Gilroy-Algebra-hw3.tex" 1759094010 12662 9750463c015eef5d1ca63d0f69dc809c ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136768653 1616 371d1ee60c04b008c8fd760060cd34f1 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm" 1136768653 2532 9ad73cf4dd2173a847f2a5f5608e0b9a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm" 1136768653 1804 7b5f73028f6509167f47ace9d69509ed ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8c.tfm" 1136768653 1348 0e8eb69b4437626c0f6c9bed4a4e373c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm" 1136768653 2796 d37c29814a6717720ee1a7c9a0b2c3b8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplri7t.tfm" 1136768653 1732 3671a0e54806deb8b706eb5e53aba0a5 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm" 1136768653 2720 70000d5e623e601132eab3cded5b819b ""
@@ -39,6 +40,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb" 1136849748 50022 90249cba7e3e4e9845f80328d6f9bd13 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplb7t.vf" 1136768653 1380 798ef26de8f0a21f37c9b1147f4fe5d8 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplr7t.vf" 1136768653 1380 037725697594405988999f61172f52de ""
+  "/usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplr8c.vf" 1136768653 3504 f65f653e1ad318a9d01b4af15300683a ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplri7t.vf" 1136768653 1376 a5f9301e24d8e27c2286a3b415778d2d ""
   "/usr/share/texlive/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf" 1136768653 1812 de7624743c8bafe2ce204bec2f72ce7e ""
   "/usr/share/texlive/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf" 1136768653 1532 73e2c76c81e4f977ab65540630baf4f0 ""
@@ -157,6 +159,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd" 1137110629 322 fb88cb3e5f25cf1596ba8826c4210e0e ""
   "/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd" 1137110629 961 06b773644d960aac68add40fcb596208 ""
   "/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd" 1137110629 436 5e7baa1a259bab50a2bdffad6426f38c ""
+  "/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd" 1137110629 619 35f1cf70bf09b6e2d22ee0902cfb1a8b ""
   "/usr/share/texlive/texmf-dist/tex/latex/psnfss/ufplmbb.fd" 1137110629 321 077609d8fc08b1f1181795378b603500 ""
   "/usr/share/texlive/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty" 1620507957 823 2375f30bf77af9357d3b4834b054bf52 ""
   "/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty" 1654720880 10214 de3e21cfc0eccc98ca7f8dac0ef263d2 ""
@@ -170,8 +173,9 @@
   "4.png" 1758743440 54780 a38a0d5c7ba1d59e272d70d5e01b98ab ""
   "5.png" 1758989617 14320 a034aa9c666a66c1973d146ab8d7489f ""
   "6.png" 1759022641 21231 501be2375dbcfaa775cadeaf8e5c7af1 ""
-  "Gilroy-Algebra-hw3.aux" 1759023091 117 708ef8b7d95308fb6e6349a55fbdda27 "pdflatex"
-  "Gilroy-Algebra-hw3.tex" 1759023090 10209 bf99eae86c0dc3b4770da25a8127e34b ""
+  "7.png" 1759092668 191191 3933cdb8f46f6ad492db64c998a057bc ""
+  "Gilroy-Algebra-hw3.aux" 1759094012 117 9dba78466d31564a061c2129e005225c "pdflatex"
+  "Gilroy-Algebra-hw3.tex" 1759094010 12662 9750463c015eef5d1ca63d0f69dc809c ""
   "hmcpset.cls" 1758732869 4085 98027ce36439082fce2e02ac517d4e29 ""
   (generated)
   "Gilroy-Algebra-hw3.aux"
