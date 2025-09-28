@@ -233,11 +233,40 @@ $R[x]/(1-fx)$, and so these rings are isomorphic.
 \newpage
 %------------------------- Problem 6 -----------------------
 
-\begin{problem}[4]
+\begin{problem}
+	\includegraphics[scale=0.8]{6.png}
 	\hfill
 \end{problem}
 
 \begin{solution}
+Recall Eisenstein's Criterion \wg{maybe cite it here}
+
+First we consider $\Phi(x)$ as a polynomial in $\Z[x]$
+\wg{and after that, why is it also irreducible in $\Q[x]$?}
+
+Next, notice that $\Phi(x) = \frac{x^p-1}{x-1}$ \wg{i wonder how
+we show this? i vaugely recall that it is a combinatorial fact.
+perhaps we just multiply both sides by $x-1$}
+
+It then follows that $\Phi(x+1) = \frac{(x+1)^p - 1}{x}$. Now, using
+the binomial theorem, we have \[
+(x+1)^p = x^p + \binom{p}{p-1}x^{p-1} + \cdots + \binom{p}{3}x^3 +
+\binom{p}{2}x^2 + \binom{p}{1} x + 1.
+\]
+And so \[
+	\frac{(x+1)^p - 1}{x}
+	= x^{p-1} + \binom{p}{p-1} x^{p-2} + \cdots + \binom{p}{1}.
+\]
+
+We claim that this form allows us to deduce that the Eisenstein
+criterion is fulfilled.
+First, we have $a_n = 1$ and so $a_n$ is not in any prime ideal.
+Moreover, we have that $\binom{p}{1} = p \not\in (p)^2 = (p^2)$ in
+$\Z[x]$. \wg{is this last sentence true?}
+
+Then lastly, we need to show that $\binom{p}{k} \in (p)$ for each $1 <
+k < p$. \wg{i'm not entirely sure how the proof in the book works for
+this.}. 
 \end{solution}
 
 \newpage
