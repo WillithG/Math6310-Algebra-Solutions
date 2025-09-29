@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  28 SEP 2025 17:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  29 SEP 2025 12:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -521,35 +521,43 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 43.
+<1.png, id=4, 491.58656pt x 66.2475pt>
+File: 1.png Graphic file (type png)
+<use 1.png>
+Package pdftex.def Info: 1.png  used on input line 42.
+(pdftex.def)             Requested size: 393.26978pt x 52.99806pt.
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 44.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 43.
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 44.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 43.
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 44.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 43.
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 44.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 43.
+(Font)              scaled to size 12.50409pt on input line 44.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 43.
+(Font)              scaled to size 9.37807pt on input line 44.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 43.
+(Font)              scaled to size 7.29405pt on input line 44.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 43.
+(Font)              scaled to size 12.50409pt on input line 44.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 43.
+(Font)              scaled to size 9.37807pt on input line 44.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 43.
-
+(Font)              scaled to size 7.29405pt on input line 44.
+LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 54.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ufplmbb.fd
+File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
+)
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -559,7 +567,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-]
+ <./1.png (PNG copy)>]
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -568,10 +576,10 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [2]
-<3.png, id=16, 479.54156pt x 39.14626pt>
+<3.png, id=22, 479.54156pt x 39.14626pt>
 File: 3.png Graphic file (type png)
 <use 3.png>
-Package pdftex.def Info: 3.png  used on input line 64.
+Package pdftex.def Info: 3.png  used on input line 75.
 (pdftex.def)             Requested size: 383.63377pt x 31.31703pt.
 
 
@@ -582,15 +590,12 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [3 <./3.png (PNG copy)>]
-<4.png, id=24, 560.8453pt x 178.41656pt>
+<4.png, id=27, 560.8453pt x 178.41656pt>
 File: 4.png Graphic file (type png)
 <use 4.png>
-Package pdftex.def Info: 4.png  used on input line 111.
+Package pdftex.def Info: 4.png  used on input line 122.
 (pdftex.def)             Requested size: 448.67685pt x 142.73343pt.
-LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 118.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ufplmbb.fd
-File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-)
+
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -607,10 +612,10 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [5]
-<5.png, id=33, 493.0922pt x 51.19125pt>
+<5.png, id=35, 493.0922pt x 51.19125pt>
 File: 5.png Graphic file (type png)
 <use 5.png>
-Package pdftex.def Info: 5.png  used on input line 172.
+Package pdftex.def Info: 5.png  used on input line 183.
 (pdftex.def)             Requested size: 394.47429pt x 40.95305pt.
 
 
@@ -629,10 +634,10 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [7]
-<6.png, id=41, 493.0922pt x 105.39375pt>
+<6.png, id=43, 493.0922pt x 105.39375pt>
 File: 6.png Graphic file (type png)
 <use 6.png>
-Package pdftex.def Info: 6.png  used on input line 237.
+Package pdftex.def Info: 6.png  used on input line 248.
 (pdftex.def)             Requested size: 394.47429pt x 84.3151pt.
 
 
@@ -643,12 +648,12 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [8 <./6.png (PNG copy)>]
-<7.png, id=47, 507.39563pt x 694.09312pt>
+<7.png, id=48, 507.39563pt x 694.09312pt>
 File: 7.png Graphic file (type png)
 <use 7.png>
-Package pdftex.def Info: 7.png  used on input line 277.
+Package pdftex.def Info: 7.png  used on input line 288.
 (pdftex.def)             Requested size: 405.91705pt x 555.27525pt.
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 284.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 295.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
@@ -660,7 +665,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [9 <./7.png (PNG copy)>]
-Overfull \hbox (5.20894pt too wide) in paragraph at lines 321--330
+Overfull \hbox (5.20894pt too wide) in paragraph at lines 332--341
 \OT1/ppl/m/n/12 By the main the-o-rem of new-ton poly-topes, the slope data for $\OML/zplm/m/it/12 f \OMS/zplm/m/n/12 ^^A \OML/zplm/m/it/12 g$ \OT1/ppl/m/n/12 is then $\OT1/zplm/m/n/12 (\OMS/zplm/m/n/12 ^^@\OT1/ppl/m/n/12 1, 2\OT1/zplm/m/n/12 )\OT1/ppl/m/n/12 , \OT1/zplm/m/n/12 (\OT1/ppl/m/n/12 0, 2\OT1/zplm/m/n/12 )$
  []
 
@@ -691,18 +696,18 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 AED: lastpage setting LastPage
 (./Gilroy-Algebra-hw3.aux) ) 
 Here is how much of TeX's memory you used:
- 17011 strings out of 476091
- 344961 string characters out of 5794081
+ 17018 strings out of 476091
+ 345027 string characters out of 5794081
  1860330 words of memory out of 5000000
- 37036 multiletter control sequences out of 15000+600000
+ 37042 multiletter control sequences out of 15000+600000
  530664 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,12n,94p,596b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Gilroy-Algebra-hw3.pdf (12 pages, 422285 bytes).
+Output written on Gilroy-Algebra-hw3.pdf (12 pages, 442111 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
+ 113 PDF objects out of 1000 (max. 8388607)
  68 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
