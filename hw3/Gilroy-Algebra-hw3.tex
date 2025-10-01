@@ -453,16 +453,64 @@ $f,g$ is a unit, and so $h$ is irreducible.
 
 
 \item Let $h(x) = x^4 + 4$ and consider the $2$-adic Newton Polytope
+of $h$.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{newt_d.png}	
+	\caption{Yet another $2$-adic newton polytope.
+	NOTE: the slope, length data is incorrect in the image, we
+	actually have $(-1/2, 4)$.
+	}
+\end{figure}
+We claim that $h$ is reducible over $\Z[x]$. 
+I already did all the work reasoning about the newton polytope data of
+the factors, and so I will reproduce that here.
+Write $h = fg$ where $f,g
+\in Z[x]$. Notice that $h$ is primitive (since it is monic), so we can consider $f,g$
+non-constant. We have two cases: either $deg(f) = 1, deg(g) = 3$ or
+$deg(f) = deg(g) = 2$. In either case we must have the leading terms
+for $f,g$ are $1$ and so $\nu_2(a_n) = 0$ for both $f,g$. 
+Moreover, the constant terms for $f,g$ are either $\pm 1,
+\pm 4$ or $\pm 2, \pm 2$.
+
+Suppose first that $deg(f) = 1, deg(g) = 3$. 
+Since $\nu_2(a_n(f)) = 0$, there is no possible
+valuation $\nu_2(a_0(f))$ which will give us a slope of $-1/2$ for the
+$2$-adic newton polytope of $f$. And so, by the main theorem of newton
+polytopes, this case is not possible.
+
+Suppose instead then that we have $\deg(f) = deg(g) = 2$. We have
+$\nu_2(a_n(f)) = \nu_2(a_n(g)) = 2$ and so, to have $2$-adic newton
+polytopes for $f,g$ which are consistent with $h$, we must have
+$\nu_2(a_0(f)) = \nu_2(a_0(g)) = 2$. That is we have $a_0(f) = a_0(g)
+= \pm 2$. And we must also have the degree $1$ terms for $f,g$ are
+even, more precisely, $\nu_2(a_1(f)), \nu_2(a_1(g)) \geq 1$. 
+Let us write $f(x) = 2 + ax + x^2$ and $g(x) = 2 + bx + x^2$.
+Considering the coefficients of $f\cdot g$ gives us the following
+system of equations 
+\begin{align*}
+	a &= -b \\
+	b^2 = 4.
+\end{align*}
+which has solutions in $\Z$: $a = 2$ and $b = -2$. Then, indeed \[
+	(2 + 2x + x^2)(2 - x + x^2) = 4 + x^4.
+\]
+	Notice that these polynomials are primitive, and so are
+	irreducible over $\Z[x]$.
+
+Note to self: 
+This question was a saga for me, and despite the embaressedment of getting the newton
+polytope wrong initially, and spending so long on this question
+I feel like I learned so much and have truly
+ascended. What a delightful experience.
+
+
+\item Let $h(x) = x^4 + 4$ and consider the $2$-adic Newton Polytope
 of $f$. 
 \wg{Please ignore the rest of this solution, I wrote the entire thing
 misunderstanding what the $2$-adic newton polytope for $x^4 + 4$ was.
 The good news is that the actual slope data is better than what I
 initially thought it was, so the solution should be easier.}
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.5]{newt_d.png}	
-	\caption{Yet another $2$-adic newton polytope.}
-\end{figure}
 
 
 Representing the slope-length data in the format $(\text{Slope},
