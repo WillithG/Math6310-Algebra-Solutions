@@ -350,6 +350,39 @@ this.}.
 \begin{itemize}
 \item 
 \item
+\item We show that $h(x) = x^5 + 15x^3 + 50x^2 + 100$ is irreducible
+over $\Z[x]$. Consider the slope data for the $5$-adic newton polytope
+for $h$, we have $(-1/2, 5)$
+\wg{insert newton polytope figure}
+Now suppose $h = fg$ for non-constant $f,g \in \Z[x]$.
+Without loss of generality, we have two cases: either $def(f) = 1$ and $deg(g) = 4$ or $deg(f) =
+2$ and $deg(g) = 3$.
+
+First consider $deg(f) = 1$ and $deg(g) = 4$. Consider the $5$-adic
+newton polytope for $f$. Since $f$ is degree $1$ we can only have
+integer slopes in the $p$-adic newton polytope for $f$, for any $p$. 
+And so, by the main theorem for $p$-adic newton polytopes, it's
+impossible to choose coefficients for $f$ which is consistent with the
+slope data for $h$.
+
+Likewise, if we instead have $deg(f) = 2, deg(g) = 3$ then we have a
+similar parity issue for the slopes of the $5$-adic newton polytope
+for $g$. We know that $a_n(f) = a_n(g) = 1$ and so in particular
+$\nu_5(a_n(g)) = 0$. Hence to have a slope of $-1/2$ we must have
+$\nu_5(a_1(g)) = 1$ and $\nu_5(a_1(g)) \geq 1$. However, from here it
+is impossible to choose coefficients for $a_0$ which gives us another
+slope of length $-1/2$. Intuitively, there is ``not enough room''
+for all the slopes to be $-1/2$ in the $5$-adic newton polytope for
+$g$.
+
+Lastly, since $h$ is monic there is no constant term which divides all
+the coefficients of $h,f,g$. And so we cannot decompose $h$ into a
+product of a non-unit constant and a degree $5$ polynomial.
+
+All cases lead us to contradiction, and so it must be that one of
+$f,g$ is a unit, and so $h$ is irreducible. 
+
+
 \item Let $h(x) = x^4 + 4$ and consider the $2$-adic Newton Polytope
 of $f$. 
 \wg{Insert Newton polytope figure}
