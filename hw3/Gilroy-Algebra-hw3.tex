@@ -121,6 +121,8 @@ That is we have found $ra = Kab$ for some $K \in R$ and so $ra \in
 (ab)$. Hence we have $(a) \cap (b) \subseteq (ab)$ and moreso $(a)
 \cap (b) = (ab)$.
 
+\item \wg{Note to self: finish this part one day.}
+
 \end{itemize}
 \end{solution}
 
@@ -189,6 +191,7 @@ Recall that $\mathbb F[x]$ is a unique factorization domain
 $n$ roots in $\mathbb F$. That is, there are at most $n$ elements in
 $\mathbb F$ such that $a^n = 1$. And, in particular, the zero element
 in the ring $\mathbb F$ does not satisfy the above equation. And so,
+by the pigeonhole principle, 
 all roots of $f$ must in fact lie in $\mathbb F^\times$. 
 Then, recalling that an element in a group $g \in G$ is a $d$-torsion
 element of $G$ if $\abs g \,\vert \, d$, the above shows that $\mathbb
@@ -242,7 +245,7 @@ group.
 \end{problem}
 
 \begin{solution}
-Let us first define a map into $R[x]$: $\phi: S\inv R \to R[x]$ by 
+Let us first define a map into $R[x]$: $\phi: S\inv R \to R[x]/(1-fx)$ by 
 $\varphi(1/f) = x$ and $\phi(a/1) = a$, and then we extend this
 definition so that the map distributes over products and addition in
 $S\inv R$. That is $\phi(a/f^k) = ax^k$ and $\phi(a/f^k + b/f^\ell) =
@@ -259,11 +262,12 @@ Now, the condition $a/f^k \equiv b/f^\ell$ means that there exists
 some $c \in S$ such that $c(af^\ell - bf^k) = 0$, in particular $c =
 f^m$ for some integer $m \geq 0$. That is, we have $f^m(af^\ell -
 bf^k) = 0$. Applying $\phi$ to both sides of this expression gives
-$x^m(af^\ell - bf^k) = 0$ in $R[x]$. \wg{If we somehow knew that $\ell
+$x^m(af^\ell - bf^k) = 0$ in $R[x]/(1-fx)$. \wg{If we somehow knew that $\ell
 + k \geq m$ we'd be done, but it's not super clear to me how we can
-finish this reasoning. This might also perhaps be the wrong approach}
+finish this reasoning. This might also perhaps be the wrong approach.
+NOTE: Chase suggested using a universal property instead}
 
-\wg{Actually note that $\phi: S\inv R \to R[x]$ is not a well-defined
+\wg{Also, note that $\phi: S\inv R \to R[x]$ is not a well-defined
 map, consider the image of $(af^2)/f^3$}
 
 Next we check that $\phi$ is in fact a well-defined map into the
@@ -273,8 +277,6 @@ quotient $R[x]/(1-fx)$. Namely, we will check that $\phi\inv((1-fx)) =
 \]
 And so, $\phi$ is a well-defined map into the quotient $R[x]/(1-fx)$.
 From now, we will treat $\phi$ as a map $\phi: S\inv \to R[x]/(1-fx)$.
-\wg{Something about this paragraph feels a bit fishy to me, do we
-think that I checked everythign that I needed to check?}
 
 Nex we will show that $\phi$ is a bijection. First we check
 injectivity. Notice that every element of $S\inv R$ can be reduced to
