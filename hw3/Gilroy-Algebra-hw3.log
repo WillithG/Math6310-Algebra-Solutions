@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  30 SEP 2025 22:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  30 SEP 2025 23:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -665,11 +665,32 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [9 <./6.png (PNG copy)>]
-<7.png, id=51, 507.39563pt x 694.09312pt>
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[10]
+<7.png, id=54, 507.39563pt x 694.09312pt>
 File: 7.png Graphic file (type png)
 <use 7.png>
-Package pdftex.def Info: 7.png  used on input line 345.
+Package pdftex.def Info: 7.png  used on input line 366.
 (pdftex.def)             Requested size: 405.91705pt x 555.27525pt.
+<newt_a.png, id=55, 493.845pt x 543.53062pt>
+File: newt_a.png Graphic file (type png)
+<use newt_a.png>
+Package pdftex.def Info: newt_a.png  used on input line 375.
+(pdftex.def)             Requested size: 246.92189pt x 271.76463pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (16.86148pt too wide) in paragraph at lines 381--387
+[]\OT1/ppl/m/n/12 Recall the state-ment for Eisen-stein's ir-re-ducibil-ity cri-te-rion: sup-pose $\OML/zplm/m/it/12 f\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 x\OT1/zplm/m/n/12 ) = [][] \OML/zplm/m/it/12 a[]x[] \OMS/zplm/m/n/12 2
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -678,7 +699,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[10 <./7.png (PNG copy)>]
+[11 <./7.png (PNG copy)>]
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -686,8 +707,41 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[11]
-Overfull \hbox (5.20894pt too wide) in paragraph at lines 422--431
+[12 <./newt_a.png (PNG copy)>]
+<newt_eisen.png, id=62, 365.86688pt x 236.38312pt>
+File: newt_eisen.png Graphic file (type png)
+<use newt_eisen.png>
+Package pdftex.def Info: newt_eisen.png  used on input line 411.
+(pdftex.def)             Requested size: 182.93298pt x 118.19127pt.
+<newt_c.png, id=63, 424.58624pt x 279.29344pt>
+File: newt_c.png Graphic file (type png)
+<use newt_c.png>
+Package pdftex.def Info: newt_c.png  used on input line 422.
+(pdftex.def)             Requested size: 212.2926pt x 139.64638pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[13 <./newt_eisen.png (PNG copy)> <./newt_c.png (PNG copy)>]
+<newt_d.png, id=68, 502.12593pt x 356.0803pt>
+File: newt_d.png Graphic file (type png)
+<use newt_d.png>
+Package pdftex.def Info: newt_d.png  used on input line 463.
+(pdftex.def)             Requested size: 251.06235pt x 178.03972pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[14 <./newt_d.png (PNG copy)>]
+Overfull \hbox (5.20894pt too wide) in paragraph at lines 501--510
 \OT1/ppl/m/n/12 By the main the-o-rem of new-ton poly-topes, the slope data for $\OML/zplm/m/it/12 f \OMS/zplm/m/n/12 ^^A \OML/zplm/m/it/12 g$ \OT1/ppl/m/n/12 is then $\OT1/zplm/m/n/12 (\OMS/zplm/m/n/12 ^^@\OT1/ppl/m/n/12 1, 2\OT1/zplm/m/n/12 )\OT1/ppl/m/n/12 , \OT1/zplm/m/n/12 (\OT1/ppl/m/n/12 0, 2\OT1/zplm/m/n/12 )$
  []
 
@@ -698,7 +752,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[12]
+[15]
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -706,7 +760,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[13]
+[16]
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -714,30 +768,22 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[14]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[15] 
+[17] 
 AED: lastpage setting LastPage
 (./Gilroy-Algebra-hw3.aux) ) 
 Here is how much of TeX's memory you used:
- 17025 strings out of 476091
- 345093 string characters out of 5794081
- 1860330 words of memory out of 5000000
- 37048 multiletter control sequences out of 15000+600000
- 530664 words of font info for 85 fonts, out of 8000000 for 9000
+ 17052 strings out of 476091
+ 345519 string characters out of 5794081
+ 1861330 words of memory out of 5000000
+ 37073 multiletter control sequences out of 15000+600000
+ 529675 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,12n,94p,596b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Gilroy-Algebra-hw3.pdf (15 pages, 496580 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on Gilroy-Algebra-hw3.pdf (17 pages, 753360 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
+ 129 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 68 words of extra memory for PDF output out of 10000 (max. 10000000)
 

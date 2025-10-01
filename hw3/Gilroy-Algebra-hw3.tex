@@ -18,8 +18,8 @@
 % Numbering macros
 \pagestyle{fancy}
 \lhead{Will Gilroy}
-\chead{Algs Homework \#}
-\rhead{03 November 2021}
+\chead{Algebra Homework \#3}
+\rhead{30 Sept 2025}
 \lfoot{}
 \cfoot{}
 \rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
@@ -34,7 +34,7 @@
 
 \begin{document}
 
-\problemlist{Algorithms HW } 
+\problemlist{Algebra Homework \#3} 
 
 %------------------------- Problem 1 -----------------------
 
@@ -307,14 +307,23 @@ $R[x]/(1-fx)$, and so these rings are isomorphic.
 \end{problem}
 
 \begin{solution}
-Recall Eisenstein's Criterion \wg{maybe cite it here}
+We show that $\Phi(x)$ is irreducible using Eisenstein's criterion.
 
-First we consider $\Phi(x)$ as a polynomial in $\Z[x]$
-\wg{and after that, why is it also irreducible in $\Q[x]$?}
+First we note that $\Phi(x+1)$ is irreducible over $\Q[x]$ if and only
+if $\Phi(x)$ is irreducible over $\Q[x]$.
+Suppose $\Phi(x+1)$ were reducible then write $\Phi(x+1) = f(x)g(x)$
+for non-constant $f,g \in \Q[x]$. Now notice $\Phi(x) = f(x-1)g(x-1)$.
+The substitution $x \mapsto x-1$ cannot make either $f,g$ constant
+polynomials. And so we have have found a reduction of $\Phi(x)$. That
+is, $\Phi(x+1)$ reducible implies $\Phi(x)$ is reducible. A similar
+argument will give that $\Phi(x)$ reducible implies that $\Phi(x+1)$
+is reducible. And so $\Phi(x)$ is reducible if and only if $\Phi(x+1)$
+is reducible, all over $\Q[x]$. And so, we proceed by showing that
+$\Phi(x+1)$ is irreducible over $\Q[x]$.
 
-Next, notice that $\Phi(x) = \frac{x^p-1}{x-1}$ \wg{i wonder how
-we show this? i vaugely recall that it is a combinatorial fact.
-perhaps we just multiply both sides by $x-1$}
+Next, notice that $\Phi(x) = \frac{x^p-1}{x-1}$. This can be shown by
+multiplying out $\Phi(x)(x-1)$, we end up with telescoping terms and
+the result is $x^p - 1$. 
 
 It then follows that $\Phi(x+1) = \frac{(x+1)^p - 1}{x}$. Now, using
 the binomial theorem, we have \[
@@ -330,11 +339,23 @@ We claim that this form allows us to deduce that the Eisenstein
 criterion is fulfilled.
 First, we have $a_n = 1$ and so $a_n$ is not in any prime ideal.
 Moreover, we have that $\binom{p}{1} = p \not\in (p)^2 = (p^2)$ in
-$\Z[x]$. \wg{is this last sentence true?}
+$\Z[x]$, but $p \in (p)$. 
 
 Then lastly, we need to show that $\binom{p}{k} \in (p)$ for each $1 <
-k < p$. \wg{i'm not entirely sure how the proof in the book works for
-this.}. 
+k < p$. Considering the algebraic formulation of the binomial
+coefficient, we have, for each $k < n$ \[
+	\binom{p}{k} = \frac{p!}{k!(p-k)!}.
+\]
+Notice that $p$ divides the numerator, but not the denominator.
+Indeed, $k < n$ implies each factor of $k!$ is less than $p$, and so
+$p$ does not divide $k!$. Similar reasoning gives that $p$ does not
+divide $(p - k)!$. Moreover, the right hand side of the above equation
+is an integer. There is no common factors of $p$ between the numerator
+and denominator, and $p$ is prime, so by considering the prime
+factorization of the right hand side, we have that $p$ divides $\binom{p}{k}$.
+Eisenstein's irreducibility criterion is fulfilled and so $\Phi(x)$ is
+irreducible over $\Q[x]$. 
+
 \end{solution}
 
 \newpage
@@ -348,12 +369,60 @@ this.}.
 
 \begin{solution}
 \begin{itemize}
-\item 
-\item
+\item See Figure $(\ref{newt_a})$.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{newt_a.png}	
+	\caption{$3$-adic newton polytopes for $f,g$ with slope data.
+	The points are labelled with their $3$-adic valuation.}
+	\label{newt_a}
+\end{figure}
+
+\item Recall the statement for Eisenstein's irreducibility criterion:
+suppose $f(x) = \sum_{i=0}^{n} a_i x^i \in \Z[x]$ with, for some prime
+$p$, $a_i \in (p)$ for $0 \geq i < n$, $a_0 \not\in (p^2)$, and $a_n
+\not \in (p)$, then we have that $f$ is irreducible over $\mathbb Q
+[x]$. If we additionally suppose that $f$ is primitive, then in fact
+$f$ is irreducible over $\Z[x]$.
+
+We use the main theorem of $p$-adic newton polygons to prove this
+statment. Considering the $p$-adic newton polygon of the above
+conditions gives us that $\nu_p(a_0) = 1$, $\nu_p(a_i) \geq 1$ for
+each $i < n$, and $\nu_p(a_n) = 0$. This means we have slope data
+$(-1/n, n)$ for $f$. Suppose, for contradiction, that $f$ is primitive and reducible. That
+is we have some non-constant $g,h \in \Z[x]$ such that $h = fg$. 
+
+Note that since $\nu_p(a_0(f)) = 1$ we must have that either $h$ or
+$g$ has exactly one factor of $p$ in its constant term. Suppose,
+without loss of generality, that $\nu_p(a_0(h)) = 1$. Then the only
+way for the $p$-adic newton polytope of $f$ to have a slope of $-1/n$
+is for $deg(f) = n$ and for $\nu_p(a_i(h)) \geq 1$ for each $i < n$
+and for $\nu_p(a_n(h)) = 0$. Then, by the main theorem of newton
+polytopes, we must have $deg(g) = 0$, a contradiction.
+
+We also cannot have the case where $g$ is a constant, since we assumed
+$f$ is primitive. It follows then that $f$ is irreducible over
+$\Z[x]$. If $f$ were not primitive, we could divide its coefficients
+by their greatest common divisor, and then the same argument would
+give that $f$ is irreducible over $\Q[x]$. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{newt_eisen.png}	
+	\caption{The $p$-adic newton polytope given by the condition of
+	Eisenstein's criterion.}
+	\label{newt_eisen}
+\end{figure}
+
 \item We show that $h(x) = x^5 + 15x^3 + 50x^2 + 100$ is irreducible
 over $\Z[x]$. Consider the slope data for the $5$-adic newton polytope
 for $h$, we have $(-1/2, 5)$
-\wg{insert newton polytope figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{newt_c.png}	
+	\caption{The $5$-adic newton polytope with valuations of $h(x) = x^5 + 15x^3 + 50x^2 + 100$}
+\end{figure}
+
 Now suppose $h = fg$ for non-constant $f,g \in \Z[x]$.
 Without loss of generality, we have two cases: either $def(f) = 1$ and $deg(g) = 4$ or $deg(f) =
 2$ and $deg(g) = 3$.
@@ -385,7 +454,17 @@ $f,g$ is a unit, and so $h$ is irreducible.
 
 \item Let $h(x) = x^4 + 4$ and consider the $2$-adic Newton Polytope
 of $f$. 
-\wg{Insert Newton polytope figure}
+\wg{Please ignore the rest of this solution, I wrote the entire thing
+misunderstanding what the $2$-adic newton polytope for $x^4 + 4$ was.
+The good news is that the actual slope data is better than what I
+initially thought it was, so the solution should be easier.}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{newt_d.png}	
+	\caption{Yet another $2$-adic newton polytope.}
+\end{figure}
+
+
 Representing the slope-length data in the format $(\text{Slope},
 \text{Length})$ we have the following slope-length data $(-1, 1),
 (0,3)$. 
@@ -507,17 +586,6 @@ then be that $h$ is irreducible in $\Z[x]$.
 
 
 \end{itemize}
-\end{solution}
-
-\newpage
-
-%------------------------- Problem 8 -----------------------
-
-\begin{problem}[4]
-	\hfill
-\end{problem}
-
-\begin{solution}
 \end{solution}
 
 \newpage
