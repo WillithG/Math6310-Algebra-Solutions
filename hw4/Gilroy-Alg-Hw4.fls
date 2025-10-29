@@ -763,6 +763,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplb7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
+INPUT ./4.png
+INPUT ./4.png
+INPUT 4.png
+INPUT ./4.png
+INPUT ./4.png
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd

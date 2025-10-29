@@ -71,6 +71,7 @@
 %------------------------- Problem 4 -----------------------
 
 \begin{problem}
+	\includegraphics[scale=0.8]{4.png}
 	\hfill
 \end{problem}
 
@@ -99,7 +100,36 @@ That is, we have found a bijective $R$-linear map $M \otimes_R N \to N
 \otimes_R M$ and so in fact $M \otimes_R N$ is isomorphic to $N
 \otimes_R M$.
 
-\item
+
+\item Consider the following map $M \times N \to M$ via $(r,m) \mapsto
+rm$ given by the module structure on $M$. Notice that this map is
+bilinear \wg{come back and write the computation out}
+And so by the universal property of tensor products we have a unique
+$R$-linear map $f: R \otimes_R M \to M$ such that $r \otimes n
+\mapsto rm$. 
+
+I claim that this map is bijective and so is an isomorphism of
+$R$-modules. First notice that $f$ is surjective. Indeed, if $m \in M$
+then $f(1 \otimes m) = 1\cdot m = m$, so long as $R$ is not the zero
+ring. If $R$ is the zero ring, then $M$ must be the zero module, and
+then our desired isomorphism trivially holds. 
+
+Next we show that $f$ is injective. 
+Suppose we have $r \cdot m' = m$ for some $m,m' \in M$ and
+$r \in R$. Then notice 
+\[
+	r \otimes m' = 1 \cdot r \otimes m' = r
+		\otimes r \cdot m' = 1 \otimes m,
+\]
+And so $rm' = m$ implies $r \otimes m' = 1 \otimes m$. This suffices
+to show that $f$ is injective because if generally we have $r_1 m_1 =
+r_2 m_2$ then by definition $r_1 m_1 = m'$ for some $m' \in M$ and
+then we have $m' = r_2 m_2$. 
+
+Overall we have a bijective $R$-linear map $R \otimes_R M \to M$, and
+so $R \otimes_R M \cong M$.
+
+
 \end{itemize}
 \end{solution}
 
