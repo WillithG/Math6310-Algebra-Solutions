@@ -249,19 +249,51 @@ $R$-modules. That is, we've shown $h$ is $R$-linear in the second
 argument also. And so $h$ is an $R$-bilinear map.
 
 We are now free to use the universal property of tensor products to
-acquire a new $R$-linear map $f: M \otimes_R (N \oplus L) \to (M
-\otimes_R N) \oplus (M \otimes_R L)$. where $f(m \otimes (n,l)) = (m \otimes
-n, m \otimes l)$. If we can verify that this map is bijective then we
-are done. 
+acquire a new $R$-linear map $\phi: M \otimes_R (N \oplus L) \to (M
+\otimes_R N) \oplus (M \otimes_R L)$. where $\phi(m \otimes (n,l)) = (m \otimes
+n, m \otimes l)$.
 
-First we show $f$ is surjective. Let $(m \otimes n, m \otimes l) \in
-(M \otimes_R N) \oplus (M \otimes_R L)$ then we have $m \otimes (n,l)
-\in M \otimes_R (N \oplus L)$ maps to the desired element.
+Next, we will construct an $R$-linear map $\psi: (M \otimes_R N)
+\oplus (M \otimes_R L) \to M \otimes_R (N \otimes L)$ using the
+universal property of coproducts. We have a commutative diagram
+\[
+\begin{tikzcd}
+M \times N \arrow[d, "\otimes"'] \arrow[r, "f_1"]          & M \otimes_R (N \oplus L)                                         & M \times L \arrow[d, "\otimes"] \arrow[l, "f_2"']           \\
+M \otimes_R N \arrow[r, hook] \arrow[ru, "\psi_1", dashed] & (M \otimes_R N) \oplus (M \otimes_R L) \arrow[u, "\psi", dashed] & M \otimes_R L \arrow[l, hook] \arrow[lu, "\psi_2"', dashed]
+\end{tikzcd}
+\]
+where the maps $\psi_1, \psi_2$ will be built out of the universal
+property of tensor products, and the desired map $\psi$ will
+consequently be determined by the universal property of corpoduct in
+$R$-mod. First, we must specify bilinear maps $f_1: M\times N \to
+M\otimes_R (N \oplus L)$ and $f_2: M \times L \to M \otimes_R (N
+\oplus L)$. 
 
-Now suppose $f(m \otimes (n,l)) = 0$ that is $m \otimes n = 0$ and $m
-\otimes l = 0$. We want to show that $m \otimes (n,l) = 0$.
-\wg{come back to this. There might be another way to do this using the
-universal property of tensor products}
+I claim that the map $f_1(m, n) = m \otimes (n, 0)$ is bilinear.
+If $n$ is fixed then for each $r_1, r_2 \in R$ and $m_1, m_2 \in M$ we
+have 
+$f_1(r_1m_1 + r_2m_2, n) = (r_1 m_2 + r_2 m_2)
+\otimes (n, 0) = r_1(m_1 \otimes (n,0)) + r_2 (m_2 \otimes (n,0)) =
+r_1f_1(m_1, n) + r_2f_2(m_2, n)$,
+by the bilinearity of tensor product. I.e. $f_1$ is $R$-linear in its
+first argument.
+Moreover, if we fix $m \in M$ we have 
+\begin{align*}
+f_1(m, r_1 n_1 + r_2 n_2) &= m \otimes (r_1n_1 + r_2 n_2, 0) \\
+	&= m \otimes [r_1(n_1, 0) + r_2(n_2, 0)] \\
+	&= r_1(m \otimes (n_1, 0)) + r_2(m \otimes (n_2, 0)) 
+	&= r_1f_1(m, n_1) + r_2f_1(m, n_2).
+\end{align*}
+And so, $f_1$ is $R$-linear in its second argument.
+Hence, $f_1: M \times N \to M \otimes_R (N \oplus L)$ is $R$-bilinear.
+A very similar calculation will show that $f_2: M \times L \to M
+\otimes_R (N \oplus L)$ is also $R$-bilinear.
+
+Thus, by the universal property of tensor products, we have $R$-linear
+maps 
+
+
+
 
 
 
@@ -331,6 +363,7 @@ $R$-linear map $\psi: M \otimes_R N \to M' \otimes_R N$ given by $m
 \end{problem}
 
 \begin{solution}
+\begin{itemize}
 \item I claim that $1 \otimes e_1, 1 \otimes, e_2, \cdots, 1 \otimes
 e_n \in \C \otimes_\R V$ is a basis. First we show that these tensors
 span $\C \otimes_\R V$. First let $\alpha \otimes v \in \C \otimes_\R
@@ -370,6 +403,12 @@ are unable to ``bring the coefficients into the second `coordinate'
 of the pure tensors.'' That is, we do not have a $\C$-vector space
 structure on $V$ exactly.
 
+However, recalling generally that $M \otimes_\R N$ is an $\R$-vector
+space for any $\R$-vector spaces $M,N$, we expect to be able to find
+some basis for $\C \otimes_\R V$.
+The argument above gives that the $\R$-vector space $\C
+\otimes_\R V$ has a basis $1 \otimes e_1$. 
+
 \item We want to study the $\C$-linear maps 
 $\C \otimes_\R V \to \C = \C \otimes_\R \R$. We first consider maps
 which descend from bilinear maps $C \times V \to  \C \otimes_\R \R$
@@ -403,8 +442,22 @@ could be the maps $1 \otimes \delta_i \in Hom_\C(\C \otimes_\R, \C).$
 
 \wg{is there more that we can show?}
 
+\item See the previous parts to see some partial arguments that the
+elements given are bases for their corresponding spaces.
+I will, however, show that $\{1 \otimes e_i \} \subseteq \C \otimes_\R
+V$ and $\{1 \otimes
+\delta_i \} \subseteq Hom_\C(\C \otimes_\R V, \C)$ are dual to each other. Consider \[
+(1 \otimes \delta_i)(1 \otimes e_i) = 1 \otimes \delta_i(e_i) = 1
+\otimes 1 = 1 \in \C.
+\]
+Whereas, for $i \neq j$  \[
+(1 \otimes \delta_i)(1 \otimes e_j) = 1 \otimes \delta_i(e_j) = 1
+\otimes 0 = 0 \in \C. 
+\]
+This shows that $\{1 \otimes \delta_i\}$ and $\{1 \otimes e_i \}$ are
+dual and in fact orthonormal.
 
-
+\end{itemize}
 
 \end{solution}
 
