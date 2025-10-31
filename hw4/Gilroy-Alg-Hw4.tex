@@ -370,11 +370,39 @@ are unable to ``bring the coefficients into the second `coordinate'
 of the pure tensors.'' That is, we do not have a $\C$-vector space
 structure on $V$ exactly.
 
+\item We want to study the $\C$-linear maps 
+$\C \otimes_\R V \to \C = \C \otimes_\R \R$. We first consider maps
+which descend from bilinear maps $C \times V \to  \C \otimes_\R \R$
+induced by $f \in V^*$.
+First, fix a map $f \in
+V^\star$. And then we define a map $\phi_f: \C \times V \to  \C
+\otimes_\R \R$ via $\phi_f(\alpha, v) = \alpha \otimes f(v)$.
+First notice that this map is $\R$-linear in the second coordinate: if
+we fix $\alpha \in \C$ and let $a_1, a_2 \in \R$ indeed, we have \[
+\phi_f(\alpha, a_1v_1 + a_2 v_2) = \alpha \otimes f(a_1 v_1 + a_2 v_2)
+	= \alpha \otimes (a_1 f(v_1) + a_2 f(v_2)) 
+	= a_1(\alpha \otimes f(v_1)) + a_2(\alpha \otimes f(v_2)), 
+\]
+Since $f$ is an $\R$-linear map and by the bilinearity of the tensor
+product.
+A similar calculation shows that $\phi_f$ is $\C$-linear in the first
+coordiante.
 
+Now, since $\delta_1, \cdots, \delta_n$ is a basis for $V^*$ then we
+can represent $f(v) = a_1 \delta_1(v) + a_2 \delta_2(v) + \cdots a_n
+\delta_n(v)$ for $a_i \in \R$. Then we can represent
+\[
+\phi_f(\alpha, v) = \alpha \otimes (a_1\delta_1(v) + \cdots + a_n \delta_n(v))
+	= \alpha a_1 (1 \otimes \delta_1(v)) + \alpha a_2 (1 \otimes \delta_2(v)) +
+		\cdots + \alpha a_n (1 \otimes \delta_n(v)),
+\]
+Note that the $a_i$ in the computation above depends only on the map
+$f \in V^*$. 
+This suggests that a plausible basis for $Hom_\C(\C \otimes_\R V, \C)$
+could be the maps $1 \otimes \delta_i \in Hom_\C(\C \otimes_\R, \C).$
 
-\wg{Showing $\C$ linear independence is not so clear to me, but the
-question is only to write a plausible basis? I guess we do not know
-what it means to give $V$ a $\mathbb C$ structure}
+\wg{is there more that we can show?}
+
 
 
 

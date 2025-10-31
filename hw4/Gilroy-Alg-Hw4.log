@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  31 OCT 2025 17:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  31 OCT 2025 17:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -690,6 +690,23 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [11 <./7.png (PNG copy)>]
+Overfull \hbox (44.59708pt too wide) detected at line 385
+\OML/zplm/m/it/12 ^^^[]\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 \OT1/ppl/m/n/12 , \OML/zplm/m/it/12 a[]v[] \OT1/zplm/m/n/12 + \OML/zplm/m/it/12 a[]v[]\OT1/zplm/m/n/12 ) = \OML/zplm/m/it/12  \OMS/zplm/m/n/12 
+ \OML/zplm/m/it/12 f\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 a[]v[] \OT1/zplm/m/n/12 + \OML/zplm/m/it/12 a[]v[]\OT1/zplm/m/n/12 ) = \OML/zplm/m/it/12  \OMS/zplm/m/n/12 
+ \OT1/zplm/m/n/12 (\OML/zplm/m/it/12 a[]f\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 v[]\OT1/zplm/m/n/12 ) + \OML/zplm/m/it/12 a[]f\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 v[]\OT1/zplm/m/n/12 )) = \OML/zplm/m/it/12 a[]\OT1/zplm/m/n/12 (\OML/zplm/m/it/12  \OMS/zplm/m/n/12 
+ \OML/zplm/m/it/12 f\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 v[]\OT1/zplm/m/n/12 )) + \OML/zplm/m/it/12 a[]\OT1/zplm/m/n/12 (\OML/zplm/m/it/12  \OMS/zplm/m/n/12 
+ \OML/zplm/m/it/12 f\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 v[]\OT1/zplm/m/n/12 ))\OT1/ppl/m/n/12 ,
+ []
+
+
+Overfull \hbox (35.85957pt too wide) detected at line 398
+\OML/zplm/m/it/12 ^^^[]\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 \OT1/ppl/m/n/12 , \OML/zplm/m/it/12 v\OT1/zplm/m/n/12 ) = \OML/zplm/m/it/12  \OMS/zplm/m/n/12 
+ \OT1/zplm/m/n/12 (\OML/zplm/m/it/12 a[]^^N[]\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 v\OT1/zplm/m/n/12 ) + [] + \OML/zplm/m/it/12 a[]^^N[]\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 v\OT1/zplm/m/n/12 )) = \OML/zplm/m/it/12 a[]\OT1/zplm/m/n/12 (\OT1/ppl/m/n/12 1 \OMS/zplm/m/n/12 
+ \OML/zplm/m/it/12 ^^N[]\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 v\OT1/zplm/m/n/12 )) + \OML/zplm/m/it/12 a[]\OT1/zplm/m/n/12 (\OT1/ppl/m/n/12 1 \OMS/zplm/m/n/12 
+ \OML/zplm/m/it/12 ^^N[]\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 v\OT1/zplm/m/n/12 )) + [] + \OML/zplm/m/it/12 a[]\OT1/zplm/m/n/12 (\OT1/ppl/m/n/12 1 \OMS/zplm/m/n/12 
+ \OML/zplm/m/it/12 ^^N[]\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 v\OT1/zplm/m/n/12 ))\OT1/ppl/m/n/12 ,
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -716,11 +733,11 @@ Here is how much of TeX's memory you used:
  543069 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,13n,94p,592b,419s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Gilroy-Alg-Hw4.pdf (13 pages, 363117 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on Gilroy-Alg-Hw4.pdf (13 pages, 373914 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 105 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
