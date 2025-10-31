@@ -60,10 +60,95 @@
 
 %------------------------- Problem 3 -----------------------
 
-\begin{problem}[3]
+\begin{problem}
+	\includegraphics[scale=0.7]{3.png}
 	\hfill
 \end{problem}
 \begin{solution}
+\begin{itemize}
+\item To show that $M/IM$ has the structure of an $R/I$-module, we
+must show that $M/IM$ has an underlying abelian group structure with
+respect to addition, and that there is a well-defined $R/I$ scaler
+multiplication on $M/IM$.
+
+First, we show that $M/IM$ has a well-defined abelian group structure
+with respect to addition. By definition $M$ has an abelian group
+structure, and so $IM$ is a normal subgroup of $M$. It follows that
+the quotient group $M/IM$ is well-defined and moreover is also
+abelian. One way to see that the quotient group is abelian is to
+recall that the quotient map $\pi: M \to M/IM$ is a group homomorphism
+and so \[
+\pi(x) + \pi(y) = \pi(x + y) = \pi(y + x) = \pi(y) + \pi(x),
+\]
+for all $x,y \in M$. 
+
+Next, we propose an $R/I$ scaler multiplication on $M/IM$. If $r + I
+\in R/I$ and $m + IM \in M/IM$. Then I claim that scaler multiplication given
+by $(r+I) \cdot (m + IM) := rm + IM$ is well defined.
+Let $r + I = r' + I$ be equivalent elements of $R/I$. Then we have
+that there's some $a \in I$ such that $r = r' + a$. Now let $m + IM
+\in M/IM$ and consider \[
+rm + IM = (r' + a)m + IM = r'm + IM + am + IM = r'm + IM + 0 + IM =
+r'm + IM,
+\]
+since $am \in IM$ by definition. That is, our proposed scaler
+multiplication maps $m \in M$ to the same class mod $IM$, regardless
+of choice of representative of $r + IM$. Hence our multiplication is
+well defined and we have found an $R/I$-module structure on $M/IM$.
+
+\item 
+Suppose $\phi: R^n \to R^m$ is an $R$-linear isomorphism. Since $R^n$
+is a free $R$-module, it follows that $phi$ is defined exactly by its
+action on the basis $\{e_i\}$ where $e_i = (0, \cdots, 1, \cdots 0)$
+with the $1$ in the $i$th position.
+
+Now notice that $\bar e_i := \pi(e_i)$ is an $R/I$-basis for
+$(R/I)^n$. And so maps out of $(R/I)^n$ can be defined by their action
+on $\bar e_i$. We define a map $\bar \phi: (R/I)^n \to (R/I)^m$ by
+$\bar \phi(\bar e_i) = (\pi \circ \phi)(e_i)$. This maps is $R/I$
+linear by construction, we claim that it is also a bijection.
+
+Suppose $(\bar b_1, \bar b_2, \cdots, \bar b_m) \in (R/I)^m$. Since
+$\pi: R \to R/I$ is a surjection, there is an element $(b_1, b_2,
+\cdots, b_m) \in R^m$ such that $\pi(b_1, b_2, \cdots, b_m) = (\bar
+b_1, \bar b_2, \cdots, \bar b_m)$. Moreover, $\phi$ is an isomorphism
+and so there also exists an element $(a_1, a_2, \cdots, a_n) \in R^n$
+such that $\phi(a_1, \cdots, a_n) = (b_1, \cdots, b_m)$. It then
+follows that $\bar\phi(\bar a_1, \bar a_2, \cdots, \bar a_n) = (\bar
+b_1, \bar b_2, \cdots, \bar b_m)$. Thus, $\bar \phi$ is surjective.
+
+Now consider $0 \in (R/I)^m$. Tuples of the form $(b_1, \cdots, b_m)
+\in R^m$ with $b_i \in I$ map to $0$ under $\pi$. Since $\phi$ is an
+isomorphism from $R$ to $R$, only elements $(a_1, \cdots, a_n) \in
+R^n$ with $a_i \in I$ satisfy $\phi(a_1, \cdots, a_n) = (b_1, \cdots,
+b_m)$ with $b_i \in I$. Then, only elements of the form
+$(\bar a_1, \bar a_2, \cdots, \bar a_n) \in (R/I)^n$ map to $0 \in
+(R/I)^m$ under $\bar \phi$. However, since $a_i \in I$ we have 
+$(\bar a_1, \cdots, \bar a_n) = 0 \in (R/I)^n$. And so $\bar \phi$ is
+injective.
+
+We have found a bijective $R/I$-linear map $\bar\phi: (R/I)^n \to
+(R/I)^m$ and so we have found an induced $R/I$-linear isomorphism
+$(R/I)^n \to (R/I)^m$. 
+
+\item 
+Suppose $n = m$, then $R^n = R^m$ and so $R^n \cong R^m$ as
+$R$-modules.
+
+Now suppose that $R^n \cong R^m$. Since $R$ is a non-zero commutative
+ring we have (the axiom of choice (or perhaps Zorn's lemma)) gives
+that there exists a maximal ideal $I \normal R$. 
+Now by part $(b)$ we have an induced isomorphism on the $R/I$ modules
+$(R/I)^n \cong (R/I)^m$. However, since $I$ is maximal, it follows
+that $R/I$ is a field and so $(R/I)^n$ and $(R/I)^m$ are in fact
+$R/I$-vector spaces. Vector spaces are characterized by their
+dimension and so it follows that $(R/I)^n \cong (R/I)^m$ as $R/I$
+vector spaces implies $n = m$. 
+
+Hence the rank of a free module over a non-zero commutative ring is a
+well defined notion. 
+
+\end{itemize}
 \end{solution}
 
 \newpage
@@ -129,6 +214,57 @@ then we have $m' = r_2 m_2$.
 Overall we have a bijective $R$-linear map $R \otimes_R M \to M$, and
 so $R \otimes_R M \cong M$.
 
+\item 
+First we acquire an $R$-linear map $M \otimes_R (N \oplus L) \to (M
+\otimes_R N) \oplus (M \otimes_R L)$ by leveraging the universal
+property of tensor products. And then we show that this map is in fact
+an isomorphism.
+
+First define a map $h: M \times (N \oplus L) \to (M \otimes_R N)
+\oplus (M \otimes_R L)$ by $h(m, (n,l)) = (m \otimes n, m \otimes l)$. 
+Note that in $R$-Mod finite coproducts are also products, and so the
+domain of the function $h$ is the $R$-module $M \oplus N \oplus L$.
+We claim that this map is $R$-bilinear. 
+Consider
+\begin{align*}
+	h(r_1 m_1 + r_2 m_2, (n,l)) 
+		&= ((r_1m_1 + r_2m_2) \otimes n , (r_1m_1 + r_2 m_2) \otimes l) \\
+		&= (r_1(m_1 \otimes n) + r_2 (m_1 \otimes n), r_1(m \otimes l) + r_2(m_2 \otimes n)) \\
+		&= r_1(m_1 \otimes n, m_1 \otimes l_1) + r_2(m_2 \otimes n, m_2 \otimes l).
+\end{align*}
+By the definition of the tensor product relations, and of the
+$R$-module structure on the direct sum of two $R$-modules. In other
+words, we have shown that $h$ is $R$-linear in the first argument. Now
+consider the second argument
+\begin{align*}
+	h(m, r_1(n_1, l_1) + r_2(n_2, l_2)) 
+		&= (m \otimes r_1 n_1 + r_2 n_2, m \otimes r_1 l_1 + r_2 l_2) \\ 
+		&= (r_1 (m\otimes n_1) + r_2 (m \otimes n_2), r_1(m \otimes l_1) + r_2(m \otimes l_2)) \\
+		&= r_1(m \otimes n_1, m \otimes l_1) + r_2(m \otimes n_2, m \otimes l_2), 
+\end{align*}
+using the bilineararity of the tensor product, and by using the
+definition of the $R$-module structure on the direct sum of
+$R$-modules. That is, we've shown $h$ is $R$-linear in the second
+argument also. And so $h$ is an $R$-bilinear map.
+
+We are now free to use the universal property of tensor products to
+acquire a new $R$-linear map $f: M \otimes_R (N \oplus L) \to (M
+\otimes_R N) \oplus (M \otimes_R L)$. where $f(m \otimes (n,l)) = (m \otimes
+n, m \otimes l)$. If we can verify that this map is bijective then we
+are done. 
+
+First we show $f$ is surjective. Let $(m \otimes n, m \otimes l) \in
+(M \otimes_R N) \oplus (M \otimes_R L)$ then we have $m \otimes (n,l)
+\in M \otimes_R (N \oplus L)$ maps to the desired element.
+
+Now suppose $f(m \otimes (n,l)) = 0$ that is $m \otimes n = 0$ and $m
+\otimes l = 0$. We want to show that $m \otimes (n,l) = 0$.
+\wg{come back to this. There might be another way to do this using the
+universal property of tensor products}
+
+
+
+
 
 \end{itemize}
 \end{solution}
@@ -148,33 +284,40 @@ so $R \otimes_R M \cong M$.
 
 %------------------------- Problem 6 -----------------------
 
-\begin{problem}[4]
+\begin{problem}
+	\includegraphics[scale=0.7]{6.png}
 	\hfill
 \end{problem}
 
 \begin{solution}
-\end{solution}
+We define the desired map by using the universal property of tensor
+products.
+Consider the following composition
+\[
+	M \oplus N \xrightarrow{(f,g)} M' \oplus N'  \xrightarrow{\otimes} M' \otimes_R N',
+\]
+via 
+\[
+	(m,n) \mapsto (f(m), g(n)) \mapsto f(m) \otimes g(n).
+\]
+We claim that this composition $\phi: M \oplus N \to M \otimes_R N$ is
+$R$-bilinear. Indeed, first let $n \in N$ be fixed and then consider
+\begin{align*}
+	\phi(r_1 m_1 + r_2 m_2, n)  
+		&= (r_1 f(m_1) + r_2 f(m_2)) \otimes g(n) \\
+		&= (r_1 f(m_1)) \otimes g(n) + (r_2 f(m_2)) \otimes g(n) \\
+		&= r_1(f(m_1) \otimes g(n)) + r_2 (f(m_2) \otimes g(n)) \\
+		&= r_1 \phi(m_1, n) + r_2 \phi(m_2, n), 
+\end{align*}
+by the relations on the elements of the tensor product. In other
+words, we have shown that $\phi(-, n)$ is $R$-linear for each $n \in N$. A very similar
+calculation will show that $\phi(m, -)$ is $R$-linear for each $m \in
+M$. That is, $\phi$ is $R$-bilinear.
 
-\newpage
+By the universal property of the tensor product we then have an
+$R$-linear map $\psi: M \otimes_R N \to M' \otimes_R N$ given by $m
+\otimes n \mapsto f(m) \otimes g(n)$, as desired. 
 
-%------------------------- Problem 7 -----------------------
-
-\begin{problem}[4]
-	\hfill
-\end{problem}
-
-\begin{solution}
-\end{solution}
-
-\newpage
-
-%------------------------- Problem 8 -----------------------
-
-\begin{problem}[4]
-	\hfill
-\end{problem}
-
-\begin{solution}
 \end{solution}
 
 \newpage
