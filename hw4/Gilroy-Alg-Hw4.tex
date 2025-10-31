@@ -6,7 +6,7 @@
 \newcommand{\OO}{\mathcal O}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
-\newcommand{\C}{\mathcal C}
+\newcommand{\C}{\mathbb C}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\abs}[1]{\left|#1\right|}
 \newcommand{\im}{\text{im }}
@@ -98,16 +98,17 @@ well defined and we have found an $R/I$-module structure on $M/IM$.
 
 \item 
 Suppose $\phi: R^n \to R^m$ is an $R$-linear isomorphism. Since $R^n$
-is a free $R$-module, it follows that $phi$ is defined exactly by its
+is a free $R$-module, it follows that $\phi$ is defined exactly by its
 action on the basis $\{e_i\}$ where $e_i = (0, \cdots, 1, \cdots 0)$
 with the $1$ in the $i$th position.
 
 Now notice that $\bar e_i := \pi(e_i)$ is an $R/I$-basis for
 $(R/I)^n$. And so maps out of $(R/I)^n$ can be defined by their action
 on $\bar e_i$. We define a map $\bar \phi: (R/I)^n \to (R/I)^m$ by
-$\bar \phi(\bar e_i) = (\pi \circ \phi)(e_i)$. This maps is $R/I$
+$\bar \phi(\bar e_i) = (\pi \circ \phi)(e_i)$. This map is $R/I$
 linear by construction, we claim that it is also a bijection.
 
+First we show surjectivity. 
 Suppose $(\bar b_1, \bar b_2, \cdots, \bar b_m) \in (R/I)^m$. Since
 $\pi: R \to R/I$ is a surjection, there is an element $(b_1, b_2,
 \cdots, b_m) \in R^m$ such that $\pi(b_1, b_2, \cdots, b_m) = (\bar
@@ -136,7 +137,7 @@ Suppose $n = m$, then $R^n = R^m$ and so $R^n \cong R^m$ as
 $R$-modules.
 
 Now suppose that $R^n \cong R^m$. Since $R$ is a non-zero commutative
-ring we have (the axiom of choice (or perhaps Zorn's lemma)) gives
+ring we have (via the axiom of choice (or perhaps Zorn's lemma)) 
 that there exists a maximal ideal $I \normal R$. 
 Now by part $(b)$ we have an induced isomorphism on the $R/I$ modules
 $(R/I)^n \cong (R/I)^m$. However, since $I$ is maximal, it follows
@@ -322,7 +323,66 @@ $R$-linear map $\psi: M \otimes_R N \to M' \otimes_R N$ given by $m
 
 \newpage
 
-%------------------------- Problem 4 -----------------------
+%------------------------- Problem 7 -----------------------
+
+\begin{problem}
+	\includegraphics[scale=0.8]{7.png}
+	\hfill
+\end{problem}
+
+\begin{solution}
+\item I claim that $1 \otimes e_1, 1 \otimes, e_2, \cdots, 1 \otimes
+e_n \in \C \otimes_\R V$ is a basis. First we show that these tensors
+span $\C \otimes_\R V$. First let $\alpha \otimes v \in \C \otimes_\R
+V$ be a pure tensor. Then, since $\{e_i\}$ is a basis for $V$ we have
+$v = \lambda_1 e_1 + \cdots \lambda_n e_n$ for $\lambda_i \in \R$.
+Now notice 
+\begin{align*}
+	\alpha\lambda_1(1 \otimes e_1) + \alpha\lambda_2(1 \otimes e_2)
+		+ \cdots + \alpha\lambda_n(1 \otimes e_n) 
+	&= \alpha 
+	\left[ 1 \otimes \lambda_1 e_1 + 1 \otimes \lambda_2 e_2 + \cdots 1 \otimes \lambda_n e_n \right] \\
+	&=  \alpha \otimes (\lambda_1 e_1 + \cdots + \lambda_n e_n) \\
+	&=  \alpha \otimes v.
+\end{align*}
+That is, every pure tensor in $\C \otimes_R V$ is a finite $\C$-linear
+combination of the $1 \otimes e_i$. It then follows that every element
+of $\C \otimes_\R V$, which is a finite $\C$-linear combination of
+pure tensors, is also a finite $\C$-linear combination of the $1
+\otimes e_i$. Thus, the $1 \otimes e_i$ span $\C \otimes_R V$ over
+$\C$. 
+
+I will show some approximation of the $1 \otimes e_i$ being
+$\C$-linearly independent. Suppose we have $a_1(1 \otimes e_1) +
+\cdots + a_n(1 \otimes e_n) = 0$ for some $a_i \in \R$. Then, we have
+\begin{align*}
+	0 &= a_1(1 \otimes e_1) + a_2(1 \otimes e_2) + \cdots + a_n(1 \otimes e_n) \\
+	&= 1 \otimes (a_1 e_1 + a_2 e_2 + \cdots + a_n e_n) = 0 \\
+	&\implies a_1 e_1 + a_2 e_2 + \cdots + a_n e_n = 0 \\
+	&\implies a_i = 0 \text{ for all $i$,}
+\end{align*}
+where the last line follows since the $e_i$ are an $\R$-linear basis
+for $V$, and so are $\R$-linearly independent. The second to last line
+follows since $1 \neq 0 \in \C$. 
+This shows that the elements $1 \otimes e_i$ are $\R$-linearly
+independent. This argument does not work for $a_i \in \C$, becuase we
+are unable to ``bring the coefficients into the second `coordinate'
+of the pure tensors.'' That is, we do not have a $\C$-vector space
+structure on $V$ exactly.
+
+
+
+\wg{Showing $\C$ linear independence is not so clear to me, but the
+question is only to write a plausible basis? I guess we do not know
+what it means to give $V$ a $\mathbb C$ structure}
+
+
+
+\end{solution}
+
+\newpage
+
+%------------------------- Problem 8 -----------------------
 
 \begin{problem}[4]
 	\hfill
@@ -332,6 +392,7 @@ $R$-linear map $\psi: M \otimes_R N \to M' \otimes_R N$ given by $m
 \end{solution}
 
 \newpage
+
 
 
 \end{document}
