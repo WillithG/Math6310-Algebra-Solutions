@@ -13,6 +13,8 @@
 \newcommand{\inv}{^{-1}}
 \newcommand{\normal}{\unlhd} %% one can also use \trianglelelefteq
 \newcommand{\anglee}[1]{\langle #1 \rangle}
+\newcommand{\Zfiveseven}{(\Z/5\Z) \otimes_\Z (\Z/7\Z)}
+\newcommand{\Zsixeight}{(\Z/6\Z) \otimes_\Z (\Z/8\Z)}
 \usepackage[shortlabels]{enumitem}
 
 % Numbering macros
@@ -376,6 +378,34 @@ isomorphism $M \otimes_R (N \oplus L) \to (M \otimes_R N) \oplus (M
 \end{problem}
 
 \begin{solution}
+\begin{enumerate}[(a)]
+\item 
+\item b
+
+\item We show that $\Zfiveseven \cong 0$. First notice that $gcd(5,7)
+= 1$ and so by Bezout's identity there exists integers $x, y$ such
+that $5x + 7y = 1$. 
+
+Moreover, every element of $\Zfiveseven$ can be written as a pure
+tensor since our factors are cyclic, and so, let $[p] \otimes [q] \in
+\Zfiveseven$. Recalling modular arithmetic rules and distributivity of the
+tensor product we have
+\begin{align*}
+	[p] \otimes [q] &= [1] \otimes [pq] \\
+	&= [5x + 7y] \otimes [pq] \\
+	&= ([5x] + [7y]) \otimes [pq] \\
+	&= [5x] \otimes[pq] + [7y] \otimes [pq] \\
+	&= [5x] \otimes [pq] + [y] \otimes [7pq] \\
+	&= 0 + 0 \\
+	&= 0.
+\end{align*}
+Thus, we have shown that every elements in $\Zfiveseven$ is actually
+the zero tensor. In other words $\Zfiveseven = 0$. 
+
+\item We show that $\Zsixeight \cong \Z/2\Z$. First we show that every
+element in 
+
+\end{enumerate}
 \end{solution}
 
 \newpage
