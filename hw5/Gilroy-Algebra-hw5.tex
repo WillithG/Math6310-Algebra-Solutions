@@ -1,0 +1,247 @@
+\documentclass[12pt,letterpaper,boxed]{hmcpset}
+\usepackage[margin=1in,headheight=14pt]{geometry}
+\usepackage{amsfonts, amsmath, amssymb, enumerate, fancyhdr, gensymb, lastpage, mathtools, parskip, graphicx}
+\usepackage{xcolor, tikz-cd}
+\newcommand{\wg}[1]{\textcolor{violet}{#1}}
+\newcommand{\OO}{\mathcal O}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathcal C}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\im}{\text{im }}
+\newcommand{\inv}{^{-1}}
+\newcommand{\normal}{\unlhd} %% one can also use \trianglelelefteq
+\newcommand{\anglee}[1]{\langle #1 \rangle}
+\usepackage[shortlabels]{enumitem}
+
+% Numbering macros
+\pagestyle{fancy}
+\lhead{Will Gilroy}
+\chead{Algs Homework \#}
+\rhead{03 November 2021}
+\lfoot{}
+\cfoot{}
+\rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+
+\linespread{1.5}
+
+\newcommand\blankpage{
+    \thispagestyle{empty}
+    \addtocounter{page}{-1}
+    \newpage}
+\renewcommand\footrulewidth{0.4pt}
+
+\begin{document}
+
+\problemlist{Algorithms HW } 
+
+%------------------------- Problem 1 -----------------------
+
+\begin{problem}[1]
+	\hfill
+\end{problem}
+
+\begin{solution}
+\end{solution}
+
+\newpage
+
+%------------------------- Problem 2 -----------------------
+
+\begin{problem}
+	\includegraphics[scale=1]{2.png}
+	\hfill
+\end{problem}
+
+\begin{solution}
+I will outline the general procedure for how we decompose $M$ a finitely
+generated module over a PID $R$ into it's direct sum of cyclic modules.
+
+Since $M$ is finitely generated, say by $n$ generators, then we have a
+surjection from the free module $R^n$ into $M$, $f: R^n \twoheadrightarrow M$. Moreover,
+$\ker(f)$ is also finitely generated as a submodule of a finitely
+generated module over a Noetherian ring (since $R$ is a PID). 
+Let $m := rank \ker(f)$ and then,
+by similar reasoning, we have another map given by the composition $g: R^m \twoheadrightarrow
+\ker f \hookrightarrow R^n$. Moreover, by the first isomorphism
+theorem of modules, we have that $M \cong R^n/\im(g) =
+\text{coker}(g)$. And so, if we determine the $\text{coker}(g)$ we
+have a representation of $M$.
+
+Since $g: R^m \to R^n$ we can represent it by a $m \times n$ matrix
+$A$.
+Then, if we put $A$ into Smith Normal Form (SNF) (which amounts to
+representing the same transformation under a change of basis of $R^m$
+and $R^n$) then we can write $M \cong \anglee{e_1, \cdots, e_n} /
+\anglee{d_1e_1, \cdots, d_k e_k}$ where $d_i$ are the Smith Normal
+Form entries, and where $k \leq n$. 
+
+With this procedure outlined, let me now actually answer the given
+questions lol.
+
+\begin{itemize}
+\item We have $M = \Z^2/\anglee{(18, 30)}$ and the surjection $f: \Z^2 
+\twoheadrightarrow M$ via the quotient map. Moreover, manifestly, we
+have $\ker(f) = \anglee{(18,30)}$ and so we have a map $g: \Z \to
+\Z^2$ via $g(a) = a\cdot (18,30)$. We can represent $g$ as the $2
+\times 1$ matrix $A = [18, 30]^T$. Let us now put $A$ into Smith
+Normal Form. The SNF of $A$ is of the form $[d_1, 0]^T$ and we have
+that generally the first Smith factor $d_1$ is the greatest common
+divisor of all the entires of $A$. That is $A \sim [gcd(18, 30), 0]^T
+= [6, 0]^T$. And now we can write our decomposition \[
+M \cong \frac{\anglee{e_1, e_2}}{\anglee{6e_1}} \cong \Z/6\Z \oplus
+\Z.
+\]
+
+\item Following in a similar fashion to part $(a)$, we have a
+surjective map $f: \Z[i]^3 \hookrightarrow M$ given by the quotient map.
+We have $\ker f \cong \anglee{(2 + 2i, 8 + 6i, 6), (1+i, 7+3i,
+3-3i)}$ and then the matrix representing $g: \Z[i]^2 \to \Z[i]^3$ is
+given by \[
+	A = \begin{bmatrix}
+		2 + 2i & 1 + i \\
+		8 + 6i & 7 + 3i \\
+		6 & 3 - 3i
+	\end{bmatrix}.
+\]
+Whose SNF will be of the form \[
+A \sim \begin{bmatrix}
+	d_1 & 0 \\
+	0 & d_2 \\
+	0 & 0 	
+\end{bmatrix}.
+\]
+
+Once, again we can compute $d_1 = gcd(1 + i, 2 + 2i, 8+6i, 7+3i, 6,
+3-3i)$. Notice that $1+i$ is a Gaussian Prime (it has norm $2$, and so
+it is straightforward to verify by enumeration of elements with smaller norm 
+that it has no divisors other than $1$ and itself). And so, if $1+i$ divides
+every element in $A$ then $d_1 = 1+i$ otherwise $d_1 = 1$.
+
+It turns out that $1+i$ divides every element in $A$. I will only
+outline how I attempted to divides one element by $1+i$, because I am
+curious if there's a better method. But I will not write out the
+details of every check. 
+Consider $7+3i$, we want to know if there's some Gaussian integer $a$
+such that $a (1+i) = 7+3i$. Notice that $\| 1+ i \| = 2$ and $\| 7 +
+3i \| = 58$. And so any such $a = x + yi$ must satisfy $\| a \| = 29$. 
+Enumerating all the squares up to $100$ gives us that we must have
+$\|x\| = 4$ and $\|y\| = 25$ or vice versa.
+Then, checking the four possibilities for $x,y$ gives $7 + 3i =
+(1+i)\cdot(5-2i)$. And so, $1+i$ is a divisor of $7+3i$. 
+Using a similar method gives that $1+i$ is a divisor of every element
+in $A$ and so $d_1 = 1+i$. 
+\wg{oh, shit, what if there's a greater common divisor. nooo, since
+$1+i$ is a Gaussian prime, the gcd of the whole list is already
+``bounded above'' by this number.}
+
+Now to compute $d_2$ we have that the $2$nd invariant factor of $A$,
+given by the gcd of all the $2\times 2$ minors of $A$, is equal to
+$d_1 d_2$. Computing all the $2 \times 2$ minors of $A$ gives 
+\[
+	d_2 = \text{gcd}(-24i, 6-6i, 6+6i).
+\]
+Given the computations I already did for $d_1$, it is easy to write
+down a unique (up to units) factorization of each of the elements
+\begin{align*}
+	6+6i &= 6(1+i) = 3 (1+i)^2 (1-i) \\
+	6-6i &= 6(1-i) = 3 (1-i)^2 (1+i) \\
+	-24i &= -12(1+i)^2,
+\end{align*}
+And then we can inspect that $d_2 = 1+i$. \wg{Quick question, 
+I noticed that we can also write $-24i = 12 (1-i)(-1+i)$, which would
+then imply that the gcd of these elements is $(1-i)$. Although, of
+course, $1+i = i(1 - i)$, and so is the gcd only unique up to units?
+(I suppose even in $\Z$ it is true that the gcd is unique only up to
+$\pm 1$.)}
+
+To summarize, the SNF of $A$ is given by \[
+A \sim \begin{bmatrix}
+	1 + i & 0 \\
+	0 & 1+i \\
+	0 & 0 .
+\end{bmatrix}
+\]
+And hence, our decomposition of $M$ is given by \[
+M \cong \frac{\anglee{e_1, e_2, e_3}}{ \anglee{(1+i)e_1, (1+i)e_2}} 
+\cong \Z[i] / (1+i) \oplus \Z[i] / (1 + i) \oplus \Z[i].
+\]
+\wg{Question for self, how can we tell that each of these factors is
+in fact cyclic? Is $\Z[i]/(1+i) \cong \Z$?}
+
+\wg{come back and do part $3$ later}
+
+
+\end{itemize}
+
+\end{solution}
+
+\newpage
+
+%------------------------- Problem 3 -----------------------
+
+\begin{problem}[3]
+	\hfill
+\end{problem}
+\begin{solution}
+\end{solution}
+
+\newpage
+
+%------------------------- Problem 4 -----------------------
+
+\begin{problem}[4]
+	\hfill
+\end{problem}
+
+\begin{solution}
+\end{solution}
+
+\newpage
+
+%------------------------- Problem 5 -----------------------
+
+\begin{problem}[4]
+	\hfill
+\end{problem}
+
+\begin{solution}
+\end{solution}
+
+\newpage
+
+%------------------------- Problem 6 -----------------------
+
+\begin{problem}[4]
+	\hfill
+\end{problem}
+
+\begin{solution}
+\end{solution}
+
+\newpage
+
+%------------------------- Problem 7 -----------------------
+
+\begin{problem}[4]
+	\hfill
+\end{problem}
+
+\begin{solution}
+\end{solution}
+
+\newpage
+
+%------------------------- Problem 8 -----------------------
+
+\begin{problem}[4]
+	\hfill
+\end{problem}
+
+\begin{solution}
+\end{solution}
+
+\newpage
+
+\end{document}
