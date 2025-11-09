@@ -383,8 +383,28 @@ restrict our choices to $a_0 \neq 0$ and $b_0 \neq 0$.
 This gives \wg{at most} $p(p-1)^2$ possible such rational canonical forms.
 \wg{we should double check how much degeneracy there is in these choices.}
 
+\textit{4:}
+Lastly, we consider a single invariant factor $f = x^4 + a_3x^3 +
+b_2x^2 + b_1x + b_0$ which has companion matrix \[
+	A = \begin{bmatrix}
+		0 & 0 & 0 & -a_0 \\
+		1 & 0 & 0 & -a_1 \\
+		0 & 1 & 0 & -a_2 \\
+		0 & 0 & 1 & -a_3
+	\end{bmatrix}.
+\]
+	This matrix has determinant $det(A) = a_0$. And so we should
+	restrict our choices to $a_0 \neq 0$. This leaves us with
+	$(p-1)p^3$ different such matrices $A$. Each one of these choices
+	manifestly gives different matrices, and so we get exactly
+	$(p-1)p^3$ different rational canonical matrices of this form.
 
-\textit{4.}
+Overall, counting up all the cases gives us \wg{less than or equal to} 
+\[
+	p-1 + (p-1)^2 + p(p-1) + p(p-1)^2 + (p-1)p^3
+\]
+distinct conjugacy classes in $GL_4(\F_p)$.
+
 \end{solution}
 
 \newpage
