@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1762719356 "/home/willithg/2025Autumn/Math6310-Algebra-Solutions/hw5/Gilroy-Algebra-hw5.tex" "Gilroy-Algebra-hw5.pdf" "Gilroy-Algebra-hw5" 1762719358 0
+["pdflatex"] 1762894988 "/home/willithg/2025Autumn/Math6310-Algebra-Solutions/hw5/Gilroy-Algebra-hw5.tex" "Gilroy-Algebra-hw5.pdf" "Gilroy-Algebra-hw5" 1762894989 0
   "/etc/texmf/web2c/texmf.cnf" 1714944770 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/willithg/2025Autumn/Math6310-Algebra-Solutions/hw5/Gilroy-Algebra-hw5.tex" 1762719356 14263 13c2abae3668e51490e48aed59963f8b ""
+  "/home/willithg/2025Autumn/Math6310-Algebra-Solutions/hw5/Gilroy-Algebra-hw5.tex" 1762894987 17642 023a4ff3194bd3cc4479538d11bfa160 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136768653 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -33,6 +33,8 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb" 1136849748 12410 7504dd653d0e7cf266cb973aeafd597c ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb" 1136849748 9356 a3851bc942e9b6995883193472ba1847 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb" 1136849748 15213 d999bbe8bd9c8f231f3f66a737c76478 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb" 1136849748 52406 dad2f72863a03727d5f536c64a69c452 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb" 1136849748 52665 661b1e6b26edb5f50dd491f8a701cb57 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb" 1136849748 50022 90249cba7e3e4e9845f80328d6f9bd13 ""
@@ -168,10 +170,12 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1726363669 4623455 fa0568a71dd9a288d6c226ee477506c6 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1737130128 7878947 d6ce6cd1bea6a8c50ac3a07237cc9779 ""
   "2.png" 1762562290 34878 90022d2fa3167e0942743baee775a801 ""
+  "3.png" 1762807205 16986 5e28551d04a1c04941c6b0d8db819616 ""
   "4.png" 1762704108 19489 13cfdcd1c47c08d4222aed7c549875c4 ""
+  "6.png" 1762807149 51290 818f922b138baf9d9596ec91ae198283 ""
   "7.png" 1762715428 13414 55d8932a85632016a2477c68de335de8 ""
-  "Gilroy-Algebra-hw5.aux" 1762719358 117 245a57663caafbc49f3b3659685fa924 "pdflatex"
-  "Gilroy-Algebra-hw5.tex" 1762719356 14263 13c2abae3668e51490e48aed59963f8b ""
+  "Gilroy-Algebra-hw5.aux" 1762894989 117 245a57663caafbc49f3b3659685fa924 "pdflatex"
+  "Gilroy-Algebra-hw5.tex" 1762894987 17642 023a4ff3194bd3cc4479538d11bfa160 ""
   "hmcpset.cls" 1762562103 4085 98027ce36439082fce2e02ac517d4e29 ""
   (generated)
   "Gilroy-Algebra-hw5.aux"
