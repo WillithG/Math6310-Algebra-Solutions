@@ -353,6 +353,75 @@ Recalling that the eigenvalues of a matrix $A$ are given by the roots
 of its characteristic polynomial, we manifestly have that if $f$ has
 roots $\{\alpha_i\}$ then $C_f$ has eigenvalues $\{ \alpha_i \}$.
 
+Now, we can determine the eigenvalues of $C_f^2$ from first
+principles. If an $n\times n$ matrix $A$ has $\lambda$ as an
+eigenvalue that means there's some $v \in R^n$ such that $Av = \lambda
+v$. It immediately follows that \[
+A^2 v = A(A v) = A (\lambda v) = \lambda(A v) = \lambda^2 v.
+\]
+That is, we have $v \in R^n$ such that $A^2 v = \lambda^2 v$ and so
+$\lambda^2$ is an eigenvalue of $A$. 
+In particular then, the eigenvalues of $C_f$ are $\{\alpha_i^2 \}$. 
+
+Using similar reasoning, since $\alpha_i$ is eigenvalue of $C_f$,
+there exists some $v_{\alpha_i} \in K^n$ such that $C_f v = \alpha_i v$. Now
+consider \[
+(C_f^3 + 2C_f + 3I_n)v_{\alpha_i} = (\alpha_i^3 + 2\alpha_i + 3)
+v_{\alpha_i}, 
+\]
+This holds for all $\alpha_i$ and so the eigenvalues of $C_f^3 + 2C_f
++ 3I_n$ are the values in $\{\alpha_i^3 + 2\alpha_i + 3\}$
+
+Let $g(x) = x^3 + 4x + 5 \in K[x]$. From the above, we have that $C_g$
+has eigenvalues the roots of $g$ and $C_g^2$ are eigenvalues the the
+squares of the roots of $g$. We have \[
+	C_g^2 = 
+	\begin{bmatrix}
+		0 & 0 & -5 \\
+		1 & 0 & -4 \\
+		0 & 1 & 0 
+	\end{bmatrix} \cdot 
+	\begin{bmatrix}
+		0 & 0 & -5 \\
+		1 & 0 & -4 \\
+		0 & 1 & 0 
+	\end{bmatrix} 
+	= 
+	\begin{bmatrix}
+		0 & -5 & 0 \\
+		0 & -4 & -5 \\
+		1 & 0 & -4 \\
+	\end{bmatrix}.
+\]
+Now if we can write $C_g^2$ in the usual companion matrix form, we
+could immediately read the desired monic polynomial from the entires.
+Recall that change of basis on the domain and codomain of a matrix
+does not change its characteristic polynomial, and so also preserves
+its eigenvalues. That is, we may conjugate $C_g^2$ by invertible
+matrices to change its form.
+Let us put $C_g^2$ into rational canonical form. We have the
+characteristic polynomial of $C_g^2$ is given by  \[
+\text{char}_{C_g^2}(\lambda) = \lambda^3 + 8\lambda^2 + 16\lambda - 25 
+= (\lambda-1)(\lambda^2 +9\lambda + 25).
+\]
+Recall also that the this characteristic polynomial is equal to the
+product of the invariant factors of $C_g^2$. By plugging $C_g^2$ into each of
+the factors, we find that the minimal polynomial is equal to the
+characteristic polynomial. Then we have a single invariant factor for
+$C_g^2$ given by the characteristic polynoimal above and then we can
+write $C_g^2$ in rational canonical form as \[
+	C_g^2 \sim \begin{bmatrix}
+		0 & 0 & 25 \\
+		1 & 0 & -16 \\
+		0 & 1 & -8
+	\end{bmatrix},
+\]
+	and so we can deduce that the following polynomial, which has
+	roots eigenvalues of $C_g^2$ which are the squares of the roots of
+	the original polynomial, is \[
+		\tilde g(x) = x^3 + 8x^2 + 16x - 25.	
+	\]
+
 \end{solution}
 
 \newpage
