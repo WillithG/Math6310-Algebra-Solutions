@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  11 NOV 2025 20:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  15 NOV 2025 10:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -601,12 +601,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 File: 3.png Graphic file (type png)
 <use 3.png>
 Package pdftex.def Info: 3.png  used on input line 186.
-(pdftex.def)             Requested size: 529.37846pt x 48.78229pt.
-
-Overfull \hbox (66.42343pt too wide) in paragraph at lines 186--188
-[][]
- []
-
+(pdftex.def)             Requested size: 463.20236pt x 42.68416pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 186--188
 
@@ -623,7 +618,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 <4.png, id=34, 520.19344pt x 72.27pt>
 File: 4.png Graphic file (type png)
 <use 4.png>
-Package pdftex.def Info: 4.png  used on input line 242.
+Package pdftex.def Info: 4.png  used on input line 238.
 (pdftex.def)             Requested size: 416.1553pt x 57.81606pt.
 
 
@@ -642,21 +637,18 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [7]
+<5.png, id=42, 724.95844pt x 145.29282pt>
+File: 5.png Graphic file (type png)
+<use 5.png>
+Package pdftex.def Info: 5.png  used on input line 301.
+(pdftex.def)             Requested size: 507.46745pt x 101.70427pt.
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+Overfull \hbox (44.51242pt too wide) in paragraph at lines 301--303
+[][]
+ []
 
-[8]
-<6.png, id=45, 661.72218pt x 161.10187pt>
-File: 6.png Graphic file (type png)
-<use 6.png>
-Package pdftex.def Info: 6.png  used on input line 316.
-(pdftex.def)             Requested size: 463.20236pt x 112.77052pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--318
+Underfull \hbox (badness 10000) in paragraph at lines 301--303
 
  []
 
@@ -667,7 +659,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[9 <./6.png (PNG copy)>]
+[8 <./5.png (PNG copy)>]
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -675,7 +667,25 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[10]
+[9]
+<6.png, id=49, 661.72218pt x 161.10187pt>
+File: 6.png Graphic file (type png)
+<use 6.png>
+Package pdftex.def Info: 6.png  used on input line 368.
+(pdftex.def)             Requested size: 463.20236pt x 112.77052pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--370
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[10 <./6.png (PNG copy)>]
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -684,10 +694,18 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [11]
-<7.png, id=56, 537.50812pt x 51.94406pt>
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[12]
+<7.png, id=60, 537.50812pt x 51.94406pt>
 File: 7.png Graphic file (type png)
 <use 7.png>
-Package pdftex.def Info: 7.png  used on input line 432.
+Package pdftex.def Info: 7.png  used on input line 484.
 (pdftex.def)             Requested size: 430.00708pt x 41.55528pt.
 
 
@@ -697,15 +715,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[12 <./7.png (PNG copy)>]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[13]
+[13 <./7.png (PNG copy)>]
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -721,22 +731,36 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[15] 
+[15]
+<8.png, id=71, 440.39531pt x 71.51718pt>
+File: 8.png Graphic file (type png)
+<use 8.png>
+Package pdftex.def Info: 8.png  used on input line 618.
+(pdftex.def)             Requested size: 396.35211pt x 64.36485pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[16 <./8.png (PNG copy)>] 
 AED: lastpage setting LastPage
 (./Gilroy-Algebra-hw5.aux) ) 
 Here is how much of TeX's memory you used:
- 17008 strings out of 476091
- 344887 string characters out of 5794081
+ 17022 strings out of 476091
+ 345019 string characters out of 5794081
  1864330 words of memory out of 5000000
- 37033 multiletter control sequences out of 15000+600000
+ 37045 multiletter control sequences out of 15000+600000
  530664 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,12n,94p,596b,412s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Gilroy-Algebra-hw5.pdf (15 pages, 285023 bytes).
+Output written on Gilroy-Algebra-hw5.pdf (16 pages, 327100 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
+ 127 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

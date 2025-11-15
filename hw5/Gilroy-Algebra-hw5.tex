@@ -183,7 +183,7 @@ in fact cyclic? Is $\Z[i]/(1+i) \cong \Z$?}
 %------------------------- Problem 3 -----------------------
 
 \begin{problem}
-	\includegraphics[scale=0.8]{3.png}
+	\includegraphics[scale=0.7]{3.png}
 	\hfill
 \end{problem}
 \begin{solution}
@@ -193,12 +193,6 @@ rings are again finitely generated. And so $M$ is finitely generated,
 with generators $x_1, x_2, \cdots, x_k$, say.
 Moreover $M$, as a finitely generated module over a PID can then be
 decomposed into a direct product of cyclic modules.
-\wg{why does it matter then if we can put $A$ into SNF?}
-\wg{If $M$ is a direct sum of cyclic submodules, does that mean it's
-already free? What if each of the factors has more than one generator?
-no, because they are cyclic. What if they are not isomorphic to R?
-Ah, in general, they will not be.
-}
 
 Since $M$ is finitley genrated, we have a surjective map $R$-linear
 map $R^k \twoheadrightarrow M$ via $e_i \mapsto x_i$. 
@@ -221,16 +215,18 @@ Normal Form \[
 		d_1 & & & & \\
 		& d_2 & & & \\
 		& & \cdots & & \\
-		& & & d_{\text{min}(k,n)} & 
+		& & & d_{\text{min}(k,n)} \\ 
+		& \cdots & & 
 	\end{bmatrix}
 \]
-
-
-\wg{wait, im confused, does this not just amount to the idea
-that we can decompose $M$ into direct sum of cyclic modules.
-perhaps a proposition for a basis is each of the generators of the
-cyclic factors? are these necessarily $R$-linearly independent? }
-
+Note, since $M \leq R^n$ we have that $n \geq k$. 
+But notice, when $A$ is in Smith normal form then we manifestly
+have that the columns of $A$ are linearly independent. That is,
+$A: R^m \to R^n$ is an injective transformation. 
+The only way for this to be true is if $\sigma: R^k \to M$ is also an
+injective transformation. But then $\sigma$ is a bijective $R$-linear
+transformation, and so we have shown that $M \cong R^k$. In other
+words, that $M$ is a free $R$-module.
 
 \end{solution}
 
@@ -301,11 +297,67 @@ to understand this one}
 
 %------------------------- Problem 5 -----------------------
 
-\begin{problem}[4]
+\begin{problem}
+	\includegraphics[scale=0.7]{5.png}
 	\hfill
 \end{problem}
 
 \begin{solution}
+Using the result of problem $4$, we can find the rational canonical
+form of this matrix by finding its characteristic and minimal
+polynomial. By inspecting the characteristic and minimal polynomials
+of a $3 \times 3$ matrix in rational canonical form, we will have that
+the characteristic polynomial $P_\alpha(\lambda) = f_1\cdots f_m$
+where $f_i$ are the invariant factors of $A$. Recall that these
+satisfy $f_1 \vert f_2 \vert \cdots \vert f_m$.
+Moreover, the minimal
+polynomial $m_\alpha(\lambda) = f_m$.
+Note, that alternatively, we can find the rational canonial form of
+$A$ by putting $A - xI$ into Smith Normal Form.
+
+We use $P_\alpha(\lambda) = det(A - \lambda I)$ to compute the
+characteristic polynomial. After using some row and column operations
+we find that \[
+	P_\alpha(\lambda) = (\lambda+1)(\lambda-2)^2.
+\]
+Recall that the minimal polynomial is the smallest degree polynomial
+$f$ such that $f(A) = 0$. By the Cayley-Hamilton theorem we have that
+$P_\alpha(A) = 0$ and so we can find $m_\alpha(A)$ by enumerating each
+of the polynomials which divide $P_\alpha$, by combining each of the
+factors that we have above. Notice that no degree $1$ divisor of
+$P_\alpha$ vanishes on $A$, and so $M_\alpha$ must be degree two or
+greater. Inspecting the possibilities, one will find that
+$(\lambda+1)(\lambda-2)$ vanishes on $\lambda= A$. And so \[
+	m_\alpha(\lambda) = (\lambda+1)(\lambda-2).	
+\]
+
+Then we have $f_m(x) = (x+1)(x-2)$. By enumerating the
+divisors of $f_m$ and by recalling that $P_\alpha(\lambda) = f_1
+\cdots f_m = (\lambda+1)(\lambda-2)^2$ we find that we must in fact
+have $m = 2$ and $f_1 = \lambda-2$. To summarize, our invariant
+factors are
+\[
+	f_1(x) = x -2 \qquad f_2(x) = (x+1)(x-2) = x^2 - x -2
+\]
+These factors have companion matrices \[
+	C_{f_1} = \begin{bmatrix}
+		2	
+	\end{bmatrix}
+	\qquad
+	C_{f_2} = \begin{bmatrix}
+		0 & 2 \\
+		1 & 1
+	\end{bmatrix}
+\]
+And overall the rational canonical form of $A$ is \[
+	A \sim \begin{bmatrix}
+		2 & & \\
+		  & 0 & 2 \\
+		  & 1 & 1
+	\end{bmatrix}. 
+\]
+
+
 \end{solution}
 
 \newpage
@@ -562,11 +614,22 @@ distinct conjugacy classes in $GL_4(\F_p)$.
 
 %------------------------- Problem 8 -----------------------
 
-\begin{problem}[4]
+\begin{problem}
+	\includegraphics[scale=0.9]{8.png}
 	\hfill
 \end{problem}
 
 \begin{solution}
+\wg{prove the first part}
+
+Recall that matrices which are similar have the same characteristic
+polynomials. That is, $A$ has the same characteristic polynomial to 
+the rational canonical form matrix of $A$, call it $B$. Recall that
+$B$ is block diagonal with its blocks being companion matrices of the
+invariant factors of $A$. Each of the blocks $C_{f_i}$ have characteristic
+polynomial $f_i$ and so we have recovered the fact $P_\alpha(\lambda)
+= f_1 \cdots f_m$. By the first part of the problem we then have
+
 \end{solution}
 
 \newpage
