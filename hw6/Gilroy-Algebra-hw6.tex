@@ -1,0 +1,176 @@
+\documentclass[12pt,letterpaper,boxed]{hmcpset}
+\usepackage[margin=1in,headheight=14pt]{geometry}
+\usepackage{amsfonts, amsmath, amssymb, enumerate, fancyhdr, gensymb, lastpage, mathtools, parskip, graphicx}
+\usepackage{xcolor, tikz-cd}
+\newcommand{\wg}[1]{\textcolor{violet}{#1}}
+\newcommand{\OO}{\mathcal O}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathcal C}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\im}{\text{im }}
+\newcommand{\inv}{^{-1}}
+\newcommand{\normal}{\unlhd} %% one can also use \trianglelelefteq
+\newcommand{\anglee}[1]{\langle #1 \rangle}
+\usepackage[shortlabels]{enumitem}
+
+% Numbering macros
+\pagestyle{fancy}
+\lhead{Will Gilroy}
+\chead{Algs Homework \#}
+\rhead{03 November 2021}
+\lfoot{}
+\cfoot{}
+\rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+
+\linespread{1.5}
+
+\newcommand\blankpage{
+    \thispagestyle{empty}
+    \addtocounter{page}{-1}
+    \newpage}
+\renewcommand\footrulewidth{0.4pt}
+
+\begin{document}
+
+\problemlist{Algorithms HW } 
+
+%------------------------- Problem 1 -----------------------
+
+\begin{problem}[1]
+	\hfill
+\end{problem}
+
+\begin{solution}
+\end{solution}
+
+\newpage
+
+%------------------------- Problem 2 -----------------------
+
+\begin{problem}
+	\includegraphics[scale=1]{2-1.png}
+	\includegraphics[scale=1]{2-2.png}
+	\hfill
+\end{problem}
+
+\begin{solution}
+Suppose we have $(w,x) \otimes (y,z) \in \R^2 \otimes_\R \R^2$.
+Following This element clockwise around the diagram we have that 
+$(h \circ g)((w,x) \otimes (y,z)) = h(wy + xz)$ and following this
+element counter-clockwise around the diagram we have 
+$(g \circ f \otimes f)((w,x) \otimes (y,z)) = g((w - x, w+x) \otimes
+(y - z, y + z)) = (w-x)(y-z) + (w+x)(y+z)$. 
+That is, any $\R$-linear map $h: \R \to \R$ must satisfy \[
+	h(wy + xz) = (w-x)(y-z) + (w+x)(y+z)
+\]
+for all $w,x,y,z \in \R$ \wg{is this last statement true, since our
+inputs are tensor products and so there's some relation between these
+symbols, right?}
+
+Since $h$ is an $\R$-linear map we have that \[
+	h(wy + xz) = h(1)(wy + xz).
+\]
+Moreover, since $\R$ is a rank $1$ free module over $\R$, we have
+	that any $\R$-linear map $\R \to \R$ is determined by where it
+	sends the basis $\{1\}$. 
+Given the expression above we have that any such map $h$ satisfies 
+\begin{align*}
+	h(1) &= \frac{(w-x)(y-z) + (w+x)(y+z)}{wy + xz} \\
+	&= \frac{wy -wz - xy + xz + wy + wz + xy + xz}{wy + xz} \\
+	&= \frac{2(wy + xz)}{wy + xz} \\
+	&= 2. 
+\end{align*}
+That is, there is a single map $h: \R \to \R$ which makes the above
+diagram commute --- namely the one which sends the basis $1 \mapsto
+2$, i.e $h(x) = 2x$. 
+
+\wg{I'm curious if there's any geometric significant to this thing that we've just shown}
+
+
+\end{solution}
+
+\newpage
+
+%------------------------- Problem 3 -----------------------
+
+\begin{problem}[3]
+	\hfill
+\end{problem}
+\begin{solution}
+\end{solution}
+
+\newpage
+
+%------------------------- Problem 4 -----------------------
+
+\begin{problem}[4]
+	\hfill
+\end{problem}
+
+\begin{solution}
+\end{solution}
+
+\newpage
+
+%------------------------- Problem 5 -----------------------
+
+\begin{problem}[4]
+	\hfill
+\end{problem}
+
+\begin{solution}
+\end{solution}
+
+\newpage
+
+%------------------------- Problem 6 -----------------------
+
+\begin{problem}[4]
+	\hfill
+\end{problem}
+
+\begin{solution}
+\end{solution}
+
+\newpage
+
+%------------------------- Problem 7 -----------------------
+
+\begin{problem}[4]
+	\hfill
+\end{problem}
+
+\begin{solution}
+\end{solution}
+
+\newpage
+
+
+%------------------------- Problem 8 -----------------------
+
+\begin{problem}[4]
+	\hfill
+\end{problem}
+
+\begin{solution}
+\end{solution}
+
+\newpage
+
+
+%------------------------- Problem 4 -----------------------
+
+\begin{problem}[4]
+	\hfill
+\end{problem}
+
+\begin{solution}
+\end{solution}
+
+\newpage
+
+
+
+\end{document}

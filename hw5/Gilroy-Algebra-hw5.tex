@@ -19,7 +19,7 @@
 % Numbering macros
 \pagestyle{fancy}
 \lhead{Will Gilroy}
-\chead{Algs Homework \#}
+\chead{Algebra Homework \#5}
 \rhead{03 November 2021}
 \lfoot{}
 \cfoot{}
@@ -35,11 +35,12 @@
 
 \begin{document}
 
-\problemlist{Algorithms HW } 
+\problemlist{Algebra Homework \#5} 
 
 %------------------------- Problem 1 -----------------------
 
-\begin{problem}[1]
+\begin{problem}
+	\includegraphics[scale=0.8]{1.png}
 	\hfill
 \end{problem}
 
@@ -133,9 +134,6 @@ Then, checking the four possibilities for $x,y$ gives $7 + 3i =
 (1+i)\cdot(5-2i)$. And so, $1+i$ is a divisor of $7+3i$. 
 Using a similar method gives that $1+i$ is a divisor of every element
 in $A$ and so $d_1 = 1+i$. 
-\wg{oh, shit, what if there's a greater common divisor. nooo, since
-$1+i$ is a Gaussian prime, the gcd of the whole list is already
-``bounded above'' by this number.}
 
 Now to compute $d_2$ we have that the $2$nd invariant factor of $A$,
 given by the gcd of all the $2\times 2$ minors of $A$, is equal to
@@ -240,6 +238,7 @@ words, that $M$ is a free $R$-module.
 \end{problem}
 
 \begin{solution}
+\wg{note, only partially completed}
 Suppose we have two matrices $A,B$ over a field (so that $k[x]$ is a
 PID) have the same characteristic and minimal polynomials.
 To show that $A \sim B$ we can show that they have the same rational
@@ -273,7 +272,7 @@ integral domain we then have $k(f_2f_3 - g_2g_3) = 0$, and since $k
 \neq 0$, $f_2f_3 = g_2g_3$.
 \wg{Now how, from here, do we show that $f_2 = g_2$ and $f_3 = g_3$?}
 \wg{probably also need to discuss the cases of the different degrees
-also}
+also. I think the lower degree cases are more straightforward}
 
 \wg{The following is the if direction.}
 On the other hand, suppose that $A \sim B$. Then $A = C B C\inv$ for
@@ -584,7 +583,7 @@ Then our rational canonical form in this case is given by
 this matrix has determinant $det(A) = (a_0)^2b_0$. And so, we need to
 restrict our choices to $a_0 \neq 0$ and $b_0 \neq 0$. 
 This gives \wg{at most} $p(p-1)^2$ possible such rational canonical forms.
-\wg{we should double check how much degeneracy there is in these choices.}
+\wg{(we should double check how much degeneracy there is in these choices.)}
 
 \textit{4:}
 Lastly, we consider a single invariant factor $f = x^4 + a_3x^3 +
@@ -628,8 +627,51 @@ the rational canonical form matrix of $A$, call it $B$. Recall that
 $B$ is block diagonal with its blocks being companion matrices of the
 invariant factors of $A$. Each of the blocks $C_{f_i}$ have characteristic
 polynomial $f_i$ and so we have recovered the fact $P_\alpha(\lambda)
-= f_1 \cdots f_m$. By the first part of the problem we then have
-
+= f_1 \cdots f_m$. Write \[
+	B = 
+	\begin{bmatrix}
+		C_{f_1} & & & \\
+		& C_{f_2} & & \\
+		& & \cdots & \\
+		& & & C_{f_m}
+	\end{bmatrix}. 
+\]
+Then, by the first part of the problem, we have \[
+	f_1(B) = 
+	\begin{bmatrix}
+		\mathbf{0} & & & \\
+		& C_{f_2} & & \\
+		& & \cdots & \\
+		& & & C_{f_m}
+	\end{bmatrix}
+	\qquad
+	f_2(B) =
+	\begin{bmatrix}
+		C_{f_1} & & & \\
+		& \mathbf 0 & & \\
+		& & \cdots & \\
+		& & & C_{f_m}
+	\end{bmatrix}
+	\quad
+	\cdots
+	\quad
+	f_m(B) = 
+	\begin{bmatrix}
+		C_{f_1} & & & \\
+		& C_{f_2} & & \\
+		& & \cdots & \\
+		& & & \mathbf 0
+	\end{bmatrix}.
+\]
+And then it follows that $p(B) = f_1(B)\cdots f_m(B) = 0$.
+	Now, since $A \sim B$ we have that $A = CBC\inv$ for some
+	invertible square matrix $C$. Then we have \[
+		p(A) = p(CBC\inv) = C p(B) C\inv = 0,
+	\]
+	and so, $A$ vanishes on its characteristic polynomial.
+	\wg{by inspecting a few cases, I'm pretty sure the second equality
+	is true, but we should probably prove it. I think it should be 
+	somewhat easy to do by writing $p = \sum a_i x^i$.}
 \end{solution}
 
 \newpage
