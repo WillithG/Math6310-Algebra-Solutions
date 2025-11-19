@@ -38,11 +38,29 @@
 
 %------------------------- Problem 1 -----------------------
 
-\begin{problem}[1]
+\begin{problem}
+	\includegraphics[scale=0.8]{1.png}
 	\hfill
 \end{problem}
 
 \begin{solution}
+To show that the given square commuts, we must show that $(gf)(x) = (kh)(x)$ for
+all $x \in \{1,2,3\}$.
+Consider the image of $1 \in \{1,2,3\}$:
+\begin{align*}
+	gf(1) = g(1) = 1 =  k(1) = kh(1).
+\end{align*}
+Now, consider the image of $2 \in \{1,2,3\}$:
+\begin{align*}
+	gf(2) = g(2) = 1 = k(1) = kh(2).
+\end{align*}
+Finally, here's the image of $3$:
+\begin{align*}
+	gf(3) = g(4) = 3 = k(2) = kh(3).
+\end{align*}
+Hence, the given square commutes by definition. 
+Note that we did not need to check whether $\im g = \im k$ (and in
+fact these images in $\{1,2,3\}$ are not equal.)
 \end{solution}
 
 \newpage
