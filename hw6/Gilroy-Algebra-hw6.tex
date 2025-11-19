@@ -88,7 +88,6 @@ diagram commute --- namely the one which sends the basis $1 \mapsto
 
 \wg{I'm curious if there's any geometric significant to this thing that we've just shown}
 
-
 \end{solution}
 
 \newpage
@@ -105,11 +104,49 @@ diagram commute --- namely the one which sends the basis $1 \mapsto
 
 %------------------------- Problem 4 -----------------------
 
-\begin{problem}[4]
+\begin{problem}
+	\includegraphics[scale=0.9]{4-1.png}
+	\includegraphics[scale=0.9]{4-2.png}
 	\hfill
 \end{problem}
 
 \begin{solution}
+For this question, recall that the universal properties of monic maps
+and of epic maps. Let $\C$ be a category and let $X,Y \in \C$, then a
+morphism $f: X \to Y$ is called monic if for all $Z \in \C$ and all
+$g,h: Z \to X$ we have $fg = fh$ implies $g = h$. 
+Likewise, $f: X \to Y$ is called epic if for all $Z \in \C$ and all
+$g,h: Y \to Z$ we have $gf = hf$ implies $g = h$. 
+\begin{itemize}
+\item Suppose $f,g$ are monic and now consider $gf$. Let $W \in \C$
+and suppose $h,k: W \to X$ such that $gfh = gfk$. Now, since $g$ is a
+monomorphism and since function composition in $\C$ is 
+associative, we have $g(fh) = gfh = gfk = g(fk)$ implies $fh = fk$.
+Now, since $f$ is a monomorphism we have $h = k$. 
+In other words, we have shown that $gfh = gfk$ implies $h = k$ for all
+morphisms $h,k: Z \to X$. That is, $g,f$ monic imply that $gf$ is
+monic.
+
+\item 
+Now suppose $f,g$ are epic and let $Z \in \C$ with $h,k: Z \to W$ such
+that $hgf = kgf$. Since $f$ is epic we have that $(hg)f = hgf = kgf =
+(kg)f$ implies $hg = kg$. Moreover, $g$ epic implies that $h = k$.
+That is, we have $hgf = kgf$ implies $h = k$ and so $gf$ is epic.
+
+\item 
+Suppose $gf: X \to Z$ is a monomorphism. Let $W \in \C$ and $h,k: W
+\to X$ such that $fh = fk$. We have that $\im(fh) = \im(fk) \in Y$ and
+so, since $g = g$ we have that $gfh = gfk$. Now, since $gf$ is monic
+we have that $h = k$. That is $fh = fk$ implies $h = k$, i.e. $f$ is
+monic by definition. It is not necessary that $g$ be monic.
+
+\item 
+Now suppose $gf$ is epic. Let $W \in \C$ with $h,k: Z \to W$ such that
+$hg = kg$. We have that $hgf = kgf$ as maps $X \to W$. But now, since
+$gf$ is epic, we have that $h = k$. Thus $g$ is epic by definition. It
+was not necessary that $f$ be epic.
+
+\end{itemize}
 \end{solution}
 
 \newpage
