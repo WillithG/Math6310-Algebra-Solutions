@@ -233,6 +233,58 @@ associative, since the $G$-equivariant functions from $X \to Y$ are a
 ``sub-class'' of the class of functions $X \to Y$. 
 
 Now we show that finite products exists in $\Set_G$. 
+We claim that binary products exist in $\Set_G$ (and so it will follow
+that finite products exist in $\Set_G$ by iterating the construction
+for binary products).
+Recall that the universal property for binary products is the pullback
+of the diagram $\cdot \leftarrow \cdot \rightarrow \cdot$. 
+I claim that, given $X, Y \in \Set_G$, the cartesian product $X \times
+Y$ with the usual projections $\pi_X, \pi_Y$ satisfy the universal property for $\Set_G$. To verify this
+claim we have two things to show: $(1)$: that the cartesian product
+has some $G$-action for which $\pi_X$ and $\pi_Y$ are $G$-equivariant
+(i.e. that $X \times Y$ is indeed an object in $\Set_G$ and
+$\pi_X: X \times Y \to X,\pi_Y: X \times Y \to Y$ are indeed morphisms
+in $\Set_G$). And $(2)$ that $(X \times Y, \pi_X, \pi_Y)$ satisfy the
+universal property of products
+
+\textit{(1):} We show that $X \times Y$ has a $G$-action which makes
+$\pi_X, \pi_Y$ into $G$-equivariant functions.
+Recall that given $X, Y \in \Set_G$ we can construct the set 
+$X \times Y := \{(x,y) : x \in X \qquad y \in Y\}$. Define a
+$G$-action on $X \times Y$ by $\sigma(x,y) = (\sigma x, \sigma y)$ for
+$\sigma \in G$ where $\sigma x, \sigma y$ are given by the $G$-action
+structure on $X, Y$. 
+We verify that this is indeed a $G$-action on $X \times Y$. 
+Note that if $1 \in G$ is the identity then we have $1(x,y) = (1x, 1y)
+= (x,y)$ for all $(x,y) \in X \times Y$. Moreover, if $\sigma, \delta
+\in G$ we have $\sigma(\delta (x,y)) = \sigma(\delta x, \delta y)
+= (\sigma\delta x, \sigma\delta y) = (\sigma\delta)(x,y)$. 
+That is, our proposed action is indeed a $G$-action on $X \times Y$
+and so the set $X \times Y$ is also an object in $\Set_G$. 
+
+Now we verify that the projections $\pi_X: X \times Y \to X$ and
+$\pi_Y: X \times Y \to Y$ are $G$-equivariant.
+Let $(x,y) \in X \times Y$ and $\sigma \in G$ and consider \[
+pi_X(\sigma(x,y)) = \pi_X((\sigma x, \sigma y)) = \sigma x = \sigma
+\pi_X(x,y). 
+\]
+That is, indeed, $\pi_X$ is $G$-equivariant. Extremely similar
+reasoning shows that $\pi_Y$ is $G$-equivariant. Hence $\pi_X, \pi_Y$
+are indeed morphisms in $\Set_G$.
+
+\text{$(2)$:} Finally, we need to show that $(X \times Y, \pi_X,
+\pi_Y)$ satisfy the universal property of binary products. 
+But recall that $(X \times Y, \pi_X, \pi_Y)$ satisfies the universal
+property of binary products in $\Set$. That is, for any set $Z$ with
+functions $f_X:Z\to X$ and $f_Y : Z \to Y$ we have a unique function
+$f: Z \to X \times Y$ such that the following diagram commutes \[
+\begin{tikzcd}
+  & Z \arrow[ld, "f_X"'] \arrow[rd, "f_Y"] \arrow[d, "f", dashed] &   \\
+X & X\times Y \arrow[l, "\pi_X"] \arrow[r, "\pi_Y"']              & Y
+\end{tikzcd}
+\]
+Moreover, we know that
+
 \end{solution}
 
 \newpage
