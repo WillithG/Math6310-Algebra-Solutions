@@ -277,13 +277,43 @@ are indeed morphisms in $\Set_G$.
 But recall that $(X \times Y, \pi_X, \pi_Y)$ satisfies the universal
 property of binary products in $\Set$. That is, for any set $Z$ with
 functions $f_X:Z\to X$ and $f_Y : Z \to Y$ we have a unique function
-$f: Z \to X \times Y$ such that the following diagram commutes \[
+$f: Z \to X \times Y$ such that the following diagram commutes 
+\[
 \begin{tikzcd}
   & Z \arrow[ld, "f_X"'] \arrow[rd, "f_Y"] \arrow[d, "f", dashed] &   \\
 X & X\times Y \arrow[l, "\pi_X"] \arrow[r, "\pi_Y"']              & Y
 \end{tikzcd}
 \]
-Moreover, we know that
+Moreover, we know that $f$ necessarily has the form $f(z) =
+(f_X(z),f_Y(z))$ for all $z \in Z$. 
+If we verify that $f$ is $G$-equivariant, i.e. that it's a valid
+morphism $Z \to X \times Y$ in $\Set_G$ then it will follow that $(X
+\times Y, \pi_X, \pi_Y)$ satisfies the universal property in $\Set_G$
+since it satisfies the universal property in $\Set$. 
+So, suppose now that $Z \in \Set_G$ is a set with a $G$ action, and
+that $f_X: Z \to X$ and $f_Y: Z \to Y$ are $G$-equivariant functions. 
+Indeed, let $\sigma \in G$, and consider \[
+	f(\sigma z) = (f_X(\sigma z), f_Y(\sigma z)) 
+	= (\sigma f_X(z), \sigma f_Y(z))
+	= \sigma (f_X(z), f_Y(z)) 
+	= \sigma f(z),
+\]
+by definition of $f$, by $G$-equivariance of $f_X, f_Y$, and by
+definition of the $G$-action on $X \times Y$. 
+That is, $f : Z \to X \times Y$ is a morphism in $\Set_G$ and it
+follows that its the unique morphism which makes the following diagram
+commute, now as a diagram in $\Set_G$
+\[
+\begin{tikzcd}
+  & Z \arrow[ld, "f_X"'] \arrow[rd, "f_Y"] \arrow[d, "f", dashed] &   \\
+X & X\times Y \arrow[l, "\pi_X"] \arrow[r, "\pi_Y"']              & Y
+\end{tikzcd}
+\]
+Hence, $(X \times Y, \pi_X, \pi_Y)$ satisfies the universal property
+of binary product in $\Set_G$. It follows then that finite products
+exist in $\Set_G$.
+
+\wg{Do empty products count as a finite product?}
 
 \end{solution}
 
