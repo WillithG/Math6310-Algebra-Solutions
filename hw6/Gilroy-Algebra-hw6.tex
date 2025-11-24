@@ -11,6 +11,7 @@
 \newcommand{\abs}[1]{\left|#1\right|}
 \newcommand{\im}{\text{im }}
 \newcommand{\inv}{^{-1}}
+\newcommand{\Set}{\mathbf{Set}}
 \newcommand{\normal}{\unlhd} %% one can also use \trianglelelefteq
 \newcommand{\anglee}[1]{\langle #1 \rangle}
 \usepackage[shortlabels]{enumitem}
@@ -104,7 +105,7 @@ That is, there is a single map $h: \R \to \R$ which makes the above
 diagram commute --- namely the one which sends the basis $1 \mapsto
 2$, i.e $h(x) = 2x$. 
 
-\wg{I'm curious if there's any geometric significant to this thing that we've just shown}
+\wg{I'm curious if there's any geometric significance to this thing that we've just shown}
 
 \end{solution}
 
@@ -112,10 +113,23 @@ diagram commute --- namely the one which sends the basis $1 \mapsto
 
 %------------------------- Problem 3 -----------------------
 
-\begin{problem}[3]
+\begin{problem}
+	\includegraphics[scale=0.8]{3.png}
 	\hfill
 \end{problem}
 \begin{solution}
+We need to show that $h''gf = g'f'h$. Suppose $x \in X$ \wg{If $\C$
+is not ``sets with extra structure'' can we still reason about
+functions by considering their actions on elements in their domain?
+}
+
+Consider the right-handed commuting square. Let $f(x) \in Y$. Since
+this second square commutes, we have $h''gf = g'h'f$. Moreover, since
+the left-handed square commutes, we have $h'f = f'h$. Substituting
+this relation into our first equation gives us \[
+	h''gf = g'h'f = g'f'h,
+\]
+as desired.
 \end{solution}
 
 \newpage
@@ -171,11 +185,54 @@ was not necessary that $f$ be epic.
 
 %------------------------- Problem 5 -----------------------
 
-\begin{problem}[4]
+\begin{problem}
+	\includegraphics[scale=0.8]{5.png}
 	\hfill
 \end{problem}
 
 \begin{solution}
+Recall the axioms of a category. Given the objects and morphisms of
+$\Set_G$ we need to verify $(1):$ that we have a well-defined
+composition rule, i.e., that the given composition gives us a $\Set_G$
+morphism, $(2)$ given our composition rule, that the given identity
+morphism satisfies $g 1_X = 1_X g = g$ for all $g \in
+Hom_{\Set_G}(X,X)$ for all $X \in \Set_G$, and $(3)$ that the given
+composition rule is associative.
+
+Firstly, the by theory of group actions, sets with group actions and
+$G$-equivariant functions are a well defined collection of objects and
+morphisms between those objects.
+
+\textit{$(1)$ Composition:} Let $X,Y,Z \in \Set_G$ and let $f \in
+Hom(X,Y)$ and $g \in Hom(Y,Z)$. Note that we have a well defined
+function composition $gf$ from the category $\Set$. Now we must verify
+that $gf$ is also $G$-equivariant. Since $f,g$ are $G$-equivariant we
+have, for $\sigma \in G$ and $x \in X$, \[
+	gf(\sigma x) = g(\sigma f(x)) = \sigma gf(x).
+\]
+And so, $gf \in Hom_\Set(X,Z)$ is $G$-equivariant by definition and
+$gf$ is indeed a morphism in $Hom_{\Set_G}(X, Z)$. 
+
+\textit{(2) Identity:} Let $X \in \Set_G$ and let $1_X: X \to X$ be the
+identity function on $X$ as a set. Since $1_X$ is the identity
+function for $X$ as a set we already have $g 1_X = 1_X g = g$ for all
+functions
+$g \in Hom_\Set(X,X)$. And so $1_X$, if it is $G$-equivariant, already
+satisfies $g 1_X = 1_X g = g$ for all $g \in Hom_{\Set_G}(X,X)$. 
+Let $\sigma \in G$ and consider \[
+	1_X(\sigma x) = \sigma x = \sigma f(x),
+\]
+by definition of the action of $1_X$ as a function. And so, indeed,
+$1_X$ is $G$-equivariant and so is a morphism in $Hom_{\Set_X}(X,X)$,
+thus every $X \in \Set_X$ has an identity morphism.
+
+\textit{(3) Associativity of function composition:} Note that
+composition of functions is associative since $\Set$ is a category. It
+follows immediately that $G$-equivariant function composition is
+associative, since the $G$-equivariant functions from $X \to Y$ are a
+``sub-class'' of the class of functions $X \to Y$. 
+
+Now we show that finite products exists in $\Set_G$. 
 \end{solution}
 
 \newpage
