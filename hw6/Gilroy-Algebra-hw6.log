@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  24 NOV 2025 11:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  26 NOV 2025 15:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -688,6 +688,21 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [9]
+<6.png, id=50, 594.72188pt x 263.48438pt>
+File: 6.png Graphic file (type png)
+<use 6.png>
+Package pdftex.def Info: 6.png  used on input line 326.
+(pdftex.def)             Requested size: 475.77815pt x 210.78777pt.
+
+Overfull \hbox (12.82312pt too wide) in paragraph at lines 326--328
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 326--328
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -695,7 +710,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[10]
+[10 <./6.png (PNG copy)>]
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -719,22 +734,38 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[13] 
+[13]
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[14]
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[15] 
 AED: lastpage setting LastPage
 (./Gilroy-Algebra-hw6.aux) ) 
 Here is how much of TeX's memory you used:
- 17191 strings out of 476091
- 349139 string characters out of 5794081
- 1868330 words of memory out of 5000000
- 37213 multiletter control sequences out of 15000+600000
- 532292 words of font info for 88 fonts, out of 8000000 for 9000
+ 17202 strings out of 476091
+ 349242 string characters out of 5794081
+ 1869330 words of memory out of 5000000
+ 37221 multiletter control sequences out of 15000+600000
+ 533550 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,15n,94p,596b,1044s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Gilroy-Algebra-hw6.pdf (13 pages, 345297 bytes).
+Output written on Gilroy-Algebra-hw6.pdf (15 pages, 412333 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 110 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

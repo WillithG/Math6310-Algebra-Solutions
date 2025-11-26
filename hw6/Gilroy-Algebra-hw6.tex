@@ -193,8 +193,7 @@ was not necessary that $f$ be epic.
 \begin{solution}
 Recall the axioms of a category. Given the objects and morphisms of
 $\Set_G$ we need to verify $(1):$ that we have a well-defined
-composition rule, i.e., that the given composition gives us a $\Set_G$
-morphism, $(2)$ given our composition rule, that the given identity
+composition rule, i.e., that the given composition gives us a $\Set_G$-morphism, $(2)$ given our composition rule, that the given identity
 morphism satisfies $g 1_X = 1_X g = g$ for all $g \in
 Hom_{\Set_G}(X,X)$ for all $X \in \Set_G$, and $(3)$ that the given
 composition rule is associative.
@@ -204,7 +203,7 @@ $G$-equivariant functions are a well defined collection of objects and
 morphisms between those objects.
 
 \textit{$(1)$ Composition:} Let $X,Y,Z \in \Set_G$ and let $f \in
-Hom(X,Y)$ and $g \in Hom(Y,Z)$. Note that we have a well defined
+Hom_{\Set_G}(X,Y)$ and $g \in Hom_{\Set_G}(Y,Z)$. Note that we have a well defined
 function composition $gf$ from the category $\Set$. Now we must verify
 that $gf$ is also $G$-equivariant. Since $f,g$ are $G$-equivariant we
 have, for $\sigma \in G$ and $x \in X$, \[
@@ -215,10 +214,10 @@ $gf$ is indeed a morphism in $Hom_{\Set_G}(X, Z)$.
 
 \textit{(2) Identity:} Let $X \in \Set_G$ and let $1_X: X \to X$ be the
 identity function on $X$ as a set. Since $1_X$ is the identity
-function for $X$ as a set we already have $g 1_X = 1_X g = g$ for all
+function for $X$ we already have $g 1_X = 1_X g = g$ for all
 functions
-$g \in Hom_\Set(X,X)$. And so $1_X$, if it is $G$-equivariant, already
-satisfies $g 1_X = 1_X g = g$ for all $g \in Hom_{\Set_G}(X,X)$. 
+$g \in Hom_\Set(X,X)$. And so $1_X$, if it is $G$-equivariant,
+satisfies the axiom for identity $G$-Set morphism. 
 Let $\sigma \in G$ and consider \[
 	1_X(\sigma x) = \sigma x = \sigma f(x),
 \]
@@ -240,22 +239,22 @@ Recall that the universal property for binary products is the pullback
 of the diagram $\cdot \leftarrow \cdot \rightarrow \cdot$. 
 I claim that, given $X, Y \in \Set_G$, the cartesian product $X \times
 Y$ with the usual projections $\pi_X, \pi_Y$ satisfy the universal property for $\Set_G$. To verify this
-claim we have two things to show: $(1)$: that the cartesian product
+claim we have two things to show: $(1)$ that the cartesian product
 has some $G$-action for which $\pi_X$ and $\pi_Y$ are $G$-equivariant
 (i.e. that $X \times Y$ is indeed an object in $\Set_G$ and
 $\pi_X: X \times Y \to X,\pi_Y: X \times Y \to Y$ are indeed morphisms
-in $\Set_G$). And $(2)$ that $(X \times Y, \pi_X, \pi_Y)$ satisfy the
+in $\Set_G$). And $(2)$, that $(X \times Y, \pi_X, \pi_Y)$ satisfy the
 universal property of products
 
 \textit{(1):} We show that $X \times Y$ has a $G$-action which makes
 $\pi_X, \pi_Y$ into $G$-equivariant functions.
 Recall that given $X, Y \in \Set_G$ we can construct the set 
-$X \times Y := \{(x,y) : x \in X \qquad y \in Y\}$. Define a
+$X \times Y := \{(x,y) : x \in X \quad y \in Y\}$. Define a
 $G$-action on $X \times Y$ by $\sigma(x,y) = (\sigma x, \sigma y)$ for
-$\sigma \in G$ where $\sigma x, \sigma y$ are given by the $G$-action
+$\sigma \in G$ and where $\sigma x, \sigma y$ are given by the $G$-action
 structure on $X, Y$. 
 We verify that this is indeed a $G$-action on $X \times Y$. 
-Note that if $1 \in G$ is the identity then we have $1(x,y) = (1x, 1y)
+Note that if $1 \in G$ is the identity element of $G$ then we have $1(x,y) = (1x, 1y)
 = (x,y)$ for all $(x,y) \in X \times Y$. Moreover, if $\sigma, \delta
 \in G$ we have $\sigma(\delta (x,y)) = \sigma(\delta x, \delta y)
 = (\sigma\delta x, \sigma\delta y) = (\sigma\delta)(x,y)$. 
@@ -265,7 +264,7 @@ and so the set $X \times Y$ is also an object in $\Set_G$.
 Now we verify that the projections $\pi_X: X \times Y \to X$ and
 $\pi_Y: X \times Y \to Y$ are $G$-equivariant.
 Let $(x,y) \in X \times Y$ and $\sigma \in G$ and consider \[
-pi_X(\sigma(x,y)) = \pi_X((\sigma x, \sigma y)) = \sigma x = \sigma
+	\pi_X(\sigma(x,y)) = \pi_X((\sigma x, \sigma y)) = \sigma x = \sigma
 \pi_X(x,y). 
 \]
 That is, indeed, $\pi_X$ is $G$-equivariant. Extremely similar
@@ -274,7 +273,7 @@ are indeed morphisms in $\Set_G$.
 
 \text{$(2)$:} Finally, we need to show that $(X \times Y, \pi_X,
 \pi_Y)$ satisfy the universal property of binary products. 
-But recall that $(X \times Y, \pi_X, \pi_Y)$ satisfies the universal
+Recall that $(X \times Y, \pi_X, \pi_Y)$ satisfies the universal
 property of binary products in $\Set$. That is, for any set $Z$ with
 functions $f_X:Z\to X$ and $f_Y : Z \to Y$ we have a unique function
 $f: Z \to X \times Y$ such that the following diagram commutes 
@@ -287,9 +286,8 @@ X & X\times Y \arrow[l, "\pi_X"] \arrow[r, "\pi_Y"']              & Y
 Moreover, we know that $f$ necessarily has the form $f(z) =
 (f_X(z),f_Y(z))$ for all $z \in Z$. 
 If we verify that $f$ is $G$-equivariant, i.e. that it's a valid
-morphism $Z \to X \times Y$ in $\Set_G$ then it will follow that $(X
+morphism $Z \to X \times Y$ in $\Set_G$, then it will follow that $(X
 \times Y, \pi_X, \pi_Y)$ satisfies the universal property in $\Set_G$
-since it satisfies the universal property in $\Set$. 
 So, suppose now that $Z \in \Set_G$ is a set with a $G$ action, and
 that $f_X: Z \to X$ and $f_Y: Z \to Y$ are $G$-equivariant functions. 
 Indeed, let $\sigma \in G$, and consider \[
@@ -300,8 +298,8 @@ Indeed, let $\sigma \in G$, and consider \[
 \]
 by definition of $f$, by $G$-equivariance of $f_X, f_Y$, and by
 definition of the $G$-action on $X \times Y$. 
-That is, $f : Z \to X \times Y$ is a morphism in $\Set_G$ and it
-follows that its the unique morphism which makes the following diagram
+That is, $f : Z \to X \times Y$ is a valid morphism in $\Set_G$ and it
+follows that $f$ is the unique morphism which makes the following diagram
 commute, now as a diagram in $\Set_G$
 \[
 \begin{tikzcd}
@@ -313,7 +311,10 @@ Hence, $(X \times Y, \pi_X, \pi_Y)$ satisfies the universal property
 of binary product in $\Set_G$. It follows then that finite products
 exist in $\Set_G$.
 
-\wg{Do empty products count as a finite product?}
+\wg{Do empty products count as a finite product? I think very 
+similar reasoning with products over a set would do the trick. Or,
+if we really want, we can show that $\Set_G$ has an initial object,
+and we know that we have unary products. }
 
 \end{solution}
 
@@ -321,11 +322,125 @@ exist in $\Set_G$.
 
 %------------------------- Problem 6 -----------------------
 
-\begin{problem}[4]
+\begin{problem}
+	\includegraphics[scale=0.8]{6.png}
 	\hfill
 \end{problem}
 
 \begin{solution}
+\wg{still need to proofread this one}
+
+We note for reference the definition of a functor here. A functor
+$\mathcal F$ from
+categories $C \to D$ is an association of objects from $C$ to objects
+in $D$ such that $Hom_C(X,Y)$ has a corresponding association
+$Hom_D(\mathcal F X, \mathcal F Y)$ for all $X, Y \in C$. 
+Furthermore, this association of morphisms map identity morphisms to
+identity morphisms, $\mathcal F 1_X = 1_{\mathcal F X}$ for all $X \in
+C$, and should respect composition, $\mathcal F(g \circ f) = \mathcal
+F g \circ \mathcal F f$ for all $f,g \in Hom_C(X,Y)$ for all $X,Y \in
+C$. 
+
+\begin{itemize}
+\item 
+We are given an association of $\textbf{Ring} \to \textbf{Set}$ by
+associating a ring to its underlying set. We specify that $F$ acts on
+morphisms by taking a ring homomorphism $R \to S$ to its underlying
+function on the sets $R \to S$. 
+
+Note that the identity morphism on a given ring then is associated to
+the identity function on the underlying set, and so $F$ takes identity
+morphisms to identity morphism. Moreover, recall that composition of
+ring homomorphisms was defined as the composition of the underlying
+functions (and then we verified that this was still a ring
+homomorphism), but then it follows by definition that $F(g\circ f) \in
+Hom_{Set}(FR,FT)$ is mapped to $Fg \circ Ff$, for all $F,T \in
+\textbf{Ring}$. 
+
+\item 
+We are $G$ which takes a ring $R$ to its set of units $R^\times$, with a group
+structure given by $R$-multiplication. Note that this is a
+well-defined functor, since if $g \in R^\times$ then it has a
+two-sided inverse by definition, and so $R^\times$ is closed under
+inverses. Moreover, $R$ must contain a multiplicative identity $1$
+which is also in $R^\times$ (it is its own two-sided inverse).
+The given group operation is associative since ring multiplication is
+associative.
+
+If $f: R \to S$ is a ring homomorphism we associate $Gf: GR \to GS$ to
+be the restriction to $R^\times$. We verify that this gives a well
+defined group homomorphism $GR \to GS$.
+First note that if $g \in R^\times$ with two-sided inverse $h \in
+R^\times$ then we have $1 = f(1) = f(gh) = f(g)f(h) = f(h)f(g)$. That
+is the image $f(g)$ has two-sided inverse $f(h)$ and so $f(R^\times)
+\subseteq S^\times$. 
+Moreover, informally, $f$ respects the group operation on $GR$ because $f$, by definition,
+respects the ring multiplication on $R$. 
+And so the association $(f:R \to S) \mapsto (Gf: GR \to GS)$ is a
+valid association of morphisms in $\textbf{Ring}$ to morphisms in
+$\textbf{Gp}$. 
+
+Now we verify that that $G$ sends identity morphisms to identity
+morphisms and that it respects composition. 
+If $1_R$ is the identity morphism on a ring $R$, then $G 1_R$ is the
+identity morphism on $GR$ since it is just the restriction onto a
+subset of $R$. 
+Moreover, if $g \circ f: R \to T$ is a composition then the
+association  $G(g\circ f)$ is the restriction of $g \circ f$ to
+$R^\times$. Moreover, unpacking the definitions as functions on sets
+will show that 
+$(g \circ f)\vert_{R^\times} = g\vert_{R^\times} \circ
+f\vert_{R^\times}$. And so $G$ respects composition of morphisms.
+Thus, $G$ is a functor. 
+
+
+\item 
+We have a functor from $\mathbf{Ring} \to \mathbf{Ring}$ by mapping $R
+\to R^2$. We propose the following association of ring homomorphisms.
+If we have a ring homomorphism $f: R \to S$ then associate 
+$H f: R^2 \to S^2$ by $Hf(r_1, r_2) := (fr_1, f_2)$.
+This definition is certainly a well defined map from $R^2$ to $S^2$.
+
+Now, we verify that such an association satisfies the axioms of
+functor. Suppose we have the identity morphism on a ring $1_R$ and
+consider, for $r_1, r_2 \in R$, \[
+	H1_R(r_1, r_2) = (1_R r_1, 1_R r_2) = (r_1, r_2).
+\]
+And so indeed, $H1_R$ is the identity morphism on $R^2$.
+Now suppose we have a composition $g \circ f: R \to T$. Consider the
+following \[
+	H(g \circ f)(r_1, r_2) = ((g \circ f)r_1, (g \circ f)r_2)
+		= Hg(fr_1, fr_2) 
+		= (Hg)(Hf)(r_1, r_2). 
+\]
+That is, $H$ also respects ring homomorphism composition. Thus, the
+given $H$ is indeed a functor. 
+
+\item 
+We are given a functor $\mathbf{Ring} \to \mathbf{Set}$. We propose
+the following association of ring morphisms to set functions.
+
+Suppose $f: R \to S$ is a ring homomorphism and then notice, if $x, y
+\in R$ satisfy $y^2 = x^3 - x$ then we have \[
+	f(y)^2 - f(x)^3 - f(x) = f(y^2 - x^3 - x) = f(0) = 0,
+\]
+That is $u := f(x), v:= f(y) \in S$ then satisfy $v^2 = u^3 - u$. 
+This discussion then shows that the association 
+$Kf: KR \to KS$ defined by $Kf(x,y) = (fx, fy)$ is a well defined set
+function $KR \to KS$. 
+
+We verify that this definition satisifies the axioms of functor.
+Essentially the same discussion showing that $F,H$ are functors
+applies to show that $K$ sends identity ring morphisms to the
+identity function $KR \to KR$. Moreover, informally, the same computation showing
+that $H$ respects composition also shows that $K$ respects
+composition. 
+And so $K$ is indeed a functor from $\textbf{Ring} \to \textbf{Set}$. 
+
+\end{itemize}
+
+
+
 \end{solution}
 
 \newpage
