@@ -447,11 +447,76 @@ And so $K$ is indeed a functor from $\textbf{Ring} \to \textbf{Set}$.
 
 %------------------------- Problem 7 -----------------------
 
-\begin{problem}[4]
+\begin{problem}
+	\includegraphics[scale=0.7]{7.png}
 	\hfill
 \end{problem}
 
 \begin{solution}
+For reference, a functor $K: \mathcal C \to \Set$ is
+\textit{representable} if there exists an object $M \in \mathcal
+C$ such  
+that the functor $Hom_{\mathcal C}(M, -)$ is naturally isomorphic to
+$K$. 
+
+\begin{itemize}
+\item 
+We show that $Hom_{\textbf{Ring}}(\Z[x], -)$ is naturally isomorphic
+to $F$.
+First we note that maps $f: \Z[x] \to R$ are determined exactly by the
+image of $x$ (since $1 \in \Z[x]$ must map to $1 \in R$ and the rest
+of the images are given by using the ring homomorphism properties of
+$f$).
+
+Next we construct a natural transformation $Hom(\Z[x], -) \to F$.
+The data of a natural transformation between these two functors is,
+an association from each $R \in \textbf{Ring}$ to a morphism in $\Set$
+$f_R: Hom(\Z[x], R) \to FR$. 
+The above discussion gives an ``obvious'' function $Hom(\Z[x], R)
+\xrightarrow \sim R$ in $\Set$, namely evaluating the map at $x$, $f
+\mapsto f(x)$. 
+Moreover, this function is in fact a bijection because
+it has inverse 
+\[
+r \mapsto f(\ell)
+:= \begin{cases}
+	1 & \ell = 1 \\
+	r & \ell = x \\
+	\text{``extend using homomorphism property''} & \text{otherwise}
+\end{cases}
+\]
+
+Let $g \in Hom_{\textbf{Ring}}(R, S)$. 
+We are left to show that the above association $R \mapsto
+f_R$ makes the following diagram commute in $\Set$
+\[
+\begin{tikzcd}
+{Hom(\Z[x], R)} \arrow[r, "f_R"] \arrow[d, "g'"'] & R \arrow[d, "g"] \\
+{Hom(\Z[x], S)} \arrow[r, "f_S"]                  & S               
+\end{tikzcd}
+\]
+where $g'$ is given by the action of the functor $Hom(\Z[x], -)$ on $g:
+R \to S$. 
+Recalling that $f \in Hom(\Z[x], R)$ outputs to elements in $R$ we can
+see that $g'(f) = g \circ f$ is a map $\Z[x] \to S$. 
+
+We verify that this diagram commutes.
+Let $f \in Hom(\Z[x], R)$. Following the top route gives the element \[
+	f \mapsto f(x) \mapsto g(f(x)) = (g \circ f)(x). 	
+\]
+On the other hand, following the bottom route gives \[
+	f \mapsto g \circ f \mapsto (g \circ f)(x).
+\]
+And so this diagram commutes.
+
+Thus we have found a natural transformation $Hom(\Z[x], -) \to F$ with
+each morphism $f_R$ a bijection. Thus we in fact have $F$ 
+is naturally isomorphic to $\Hom(\Z[x], -)$ and so $F$ is a
+representable functor, represented by $\Z[x]$.
+
+\end{itemize}
+
+
 \end{solution}
 
 \newpage
