@@ -12,6 +12,7 @@
 \newcommand{\im}{\text{im }}
 \newcommand{\inv}{^{-1}}
 \newcommand{\Set}{\mathbf{Set}}
+\newcommand{\Ring}{\textbf{Ring}}
 \newcommand{\normal}{\unlhd} %% one can also use \trianglelelefteq
 \newcommand{\anglee}[1]{\langle #1 \rangle}
 \usepackage[shortlabels]{enumitem}
@@ -453,6 +454,7 @@ And so $K$ is indeed a functor from $\textbf{Ring} \to \textbf{Set}$.
 \end{problem}
 
 \begin{solution}
+	\wg{this is to be read.}
 For reference, a functor $K: \mathcal C \to \Set$ is
 \textit{representable} if there exists an object $M \in \mathcal
 C$ such  
@@ -513,6 +515,54 @@ Thus we have found a natural transformation $Hom(\Z[x], -) \to F$ with
 each morphism $f_R$ a bijection. Thus we in fact have $F$ 
 is naturally isomorphic to $Hom(\Z[x], -)$ and so $F$ is a
 representable functor, represented by $\Z[x]$.
+
+\item 
+I will go a bit faster through this argument since many of the details
+follow similar logic to the above part.
+
+I claim that $G: \textbf{Ring} \to \Set$ is representable functor,
+represented by the ring $\Z[x, x\inv]$. 
+We must show that there exists a natural isomorphism $Hom_\Ring(\Z[x,
+x\inv], -) \to G$. 
+First note that the maps $f \in Hom_\Ring(\Z[x, x\inv])$ are still
+determined by their action on $x \in \Z[x, x\inv]$.
+But now, since $1 = f(1) = f(x x\inv) = f(x)f(x\inv)$ any ring
+homomorphism $\Z[x, x\inv] \to R$ must send $x$ to a unit in $R$. 
+That is, the maps $f \in Hom_\Ring(\Z[x,x\inv], R)$ are exactly
+determined by the image on $x$, with the restriction that the image of
+$x$ must be a unit in $R$. 
+
+Now we construct a natural transformation $Hom_\Ring(\Z[x,x\inv], -)
+\to G$. Given $R \in \Ring$ we assign the function $f_R :
+Hom(\Z[x,x\inv], R) \to R^\times$ given by evaluating the input map at
+$x$, $f_R(f) := f(x)$. 
+We note that under this definition $f_R$ is a well defined map into
+$R^\times$ becuase, as we noted above, the image of $x$ under a ring
+homomorphism $\Z[x, x\inv]$ must be a unit. 
+Next, notice that each $f_R$ is actually a bijection since it has
+inverse $r \in R^\times$ maps to the homomorphism where $f(x) = r$,
+using similar reasoning to the discussion for $F$ above. 
+
+Lastly, we need to show that with these definitions, and given a ring
+morphism $g: R \to S$, the following
+diagram commutes \[
+\begin{tikzcd}
+{Hom(\Z[x,x\inv], R)} \arrow[r, "f_R"] \arrow[d, "g'"'] & R \arrow[d, "g"] \\
+{Hom(\Z[x,x\inv], S)} \arrow[r, "f_S"]                  & S               
+\end{tikzcd}
+\]
+Following the top side we have \[
+	f \mapsto f(x) \mapsto (g \circ f)(x),
+\]
+meanwhile following the bottom side gives \[
+	f \mapsto g \circ f \mapsto (g \circ f)(x).
+\]
+And so this diagram commutes for any ring homomorphism.
+We have found a natural isomorphism from $Hom_\Ring(\Z[x,x\inv], -)
+\to G$ and so $G$ is a representable functor, represented by the ring
+$\Z[x,x\inv]$. 
+
+
 
 \end{itemize}
 
