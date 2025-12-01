@@ -562,9 +562,56 @@ We have found a natural isomorphism from $Hom_\Ring(\Z[x,x\inv], -)
 \to G$ and so $G$ is a representable functor, represented by the ring
 $\Z[x,x\inv]$. 
 
+\item 
+We claim that $H$ can be represented by the ring $\Z[x,y]$. 
+\wg{Notes to self: maps out of this ring are determined exactly by
+the images of $x,y$. similar reasoning to showing $\Z[x]$ represented
+$F$ then ensues}.
 
+\item
+We claim that $K$ is can be represented by the ring $\tilde Z = \Z[x,y]/((y^2 -
+x^3 - x^2))$. 
+To prove this claim we need to find a natural bijection of sets 
+$Hom(\tilde Z, R) \xrightarrow{\sim} K(R)$ for each $R \in \Ring$.
 
+\wg{we definitely want to read over this paragraph again.}
+Let us first describe the maps for some fixed ring
+$R$. 
+Given two elements $r_1, r_2 \in R$ there is a unique ring
+homomorphism $f: \Z[x,y] \to R$ with $f(x) = r_1$ and $f(y) = r_2$.
+If $f$ further satisfies $f(I) = 0$ then, by the universal property of
+quotients, there exist a unique ring morphism $\bar f: \tilde Z \to R$ 
+making the following diagram commute
+\[
+\begin{tikzcd}
+{Z[x,y]} \arrow[r, "f"] \arrow[d, "\pi"'] & R \\
+{Z[x,y]/I} \arrow[ru, "\bar f"']          &  
+\end{tikzcd}
+\]
+That is, $\bar f: \tilde Z \to R$ satisfying $\bar f(\bar x) = r_1$
+and $\bar f(\bar y) = r_2$.
+Conversely, a map in $\tilde f \in \Z$ is determined exactly by 
+homomorphisms $f: \Z[x,y] \to R$ satisfying $f(I) = 0$. 
+Moreover, these homomorphisms are determined by the images 
+$f(x), f(y)$.
+\wg{So, what we're really saying is that
+$Hom_\Ring(\Z[x,y]/I, R) \xrightarrow{\sim}
+\{f \in Hom_\Ring(\Z[x,y], R): f(I) = 0\}$?}
 
+Now, still with a fixed ring $R$,
+consider the function $Hom_\Ring(\tilde Z, R) \to K(R)$ defined by 
+$f \mapsto (f(x), f(y))$.
+We verify that this is a well-defined function to $K(R)$. 
+Since, $f$ is a ring homomorphism, 
+we have\[
+	f(y)^3 - f(x)^3 - f(x)^2 
+		= f(y^3 - x^3 - x^2)
+		= 0
+\]
+By definition of $f$. Hence, this proposed function is well-defined.
+\wg{What next?}
+\wg{check that the function is an isomorphism.
+check naturality. clean up the logic of the above statements.}
 
 \end{itemize}
 
