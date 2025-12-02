@@ -575,8 +575,8 @@ To prove this claim we need to find a natural bijection of sets
 $Hom(\tilde Z, R) \xrightarrow{\sim} K(R)$ for each $R \in \Ring$.
 
 \wg{we definitely want to read over this paragraph again.}
-Let us first describe the maps for some fixed ring
-$R$. 
+Let us first describe the maps $\Z[x,y] / I \to R$ 
+for some fixed ring $R$. 
 Given two elements $r_1, r_2 \in R$ there is a unique ring
 homomorphism $f: \Z[x,y] \to R$ with $f(x) = r_1$ and $f(y) = r_2$.
 If $f$ further satisfies $f(I) = 0$ then, by the universal property of
@@ -590,13 +590,16 @@ making the following diagram commute
 \]
 That is, $\bar f: \tilde Z \to R$ satisfying $\bar f(\bar x) = r_1$
 and $\bar f(\bar y) = r_2$.
-Conversely, a map in $\tilde f \in \Z$ is determined exactly by 
+Conversely, a map in $\tilde f \in \Z[x,y]/I$ is determined exactly by 
 homomorphisms $f: \Z[x,y] \to R$ satisfying $f(I) = 0$. 
-Moreover, these homomorphisms are determined by the images 
-$f(x), f(y)$.
-\wg{So, what we're really saying is that
+Suppose we have a ring morphism $\tilde g: \Z[x,y]/I \to R$ then
+we have a ring homomorphism $(\pi \circ g): \Z[x,y] \to R$ satisfying
+$(\pi \circ g)(I) = 0$. The universal property of quotients then
+recovering the map $g$.
 $Hom_\Ring(\Z[x,y]/I, R) \xrightarrow{\sim}
-\{f \in Hom_\Ring(\Z[x,y], R): f(I) = 0\}$?}
+\{f \in Hom_\Ring(\Z[x,y], R): f(I) = 0\}$
+And so a homomorphism $\Z[x.y]/I \to R$ is determined by the images 
+of $x,y$.
 
 Now, still with a fixed ring $R$,
 consider the function $Hom_\Ring(\tilde Z, R) \to K(R)$ defined by 
@@ -608,10 +611,49 @@ we have\[
 		= f(y^3 - x^3 - x^2)
 		= 0
 \]
-By definition of $f$. Hence, this proposed function is well-defined.
-\wg{What next?}
-\wg{check that the function is an isomorphism.
-check naturality. clean up the logic of the above statements.}
+By definition of $f$. And so indee the pair $(f(x), f(y))$ is an
+element in $K(R)$. 
+Moreover, this function is in fact a bijection. Given $r_1, r_2 \in
+K(R)$ we have a unique function $f: \Z[x,y] \to R$ determined by 
+$f(x) = r_1$ and $f(y) = r_2$. Furthermore, by definition of $r_1,
+r_2$ we further have \[
+	f(y^2 - x^3 + x) = r_2^2 - r_1^3 + r_1 = 0.
+\]
+That is, $f(I) = 0$ and so $f$ has a unique extension to the quotient
+$\Z[x,y]/I \to R$. 
+That is, the components $\alpha_R$ are isomorphisms for all $R \in
+\Ring$.
+
+Lastly, given a ring homomorphism $f: R \to S$,
+we need to verify that our definition for the components 
+$\alpha_R$ makes the following diagram commute \[
+\begin{tikzcd}
+{Hom_\Ring(\Z[x,y]/I, R)} \arrow[r, "\alpha_R"] \arrow[d] & K(R) \arrow[d] \\
+{Hom_\Ring(\Z[x,y]/I, S)} \arrow[r, "\alpha_S"]           & K(S)          
+\end{tikzcd}
+\]
+Before, we can check commutivity of this diagram, we should be clear
+about the vertical maps.
+Given $h: \Z[x,y]/I \to R$ the image of $f$ under the functor $Hom_\Ring(\Z[x,y]/I, -)$ sends
+$h$ to $f \circ h$. Moreover, given $(r_1, r_2) \in KR$, the image of
+$f$ under the functor $K$ sends $(r_1, r_2)$ to $(f(r_1), f(r_2))$.
+See the solution to the previous question to see that this is the
+correct image under $K$.
+
+Now, for some fixed $R,S \in \Ring$ and $f: R\to S$, given $h \in
+Hom(\Z[x,y]/I, R)$ following the top path gives \[
+	h \mapsto (h(x),h(y)) \to ((f \circ h)(x), (f \circ h)(y)),
+\]
+whereas, following the bottom path gives \[
+	h \mapsto f \circ h \mapsto ((f \circ h)(x), (f \circ h)(y)).
+\]
+And so we have found a natural bijection $Hom_\Ring(\Z[x,y]/I, R)
+\xrightarrow{\sim} K(R)$ for each $R \in \Ring$. Hence the functor $K$
+is represented by the ring $\Z[x,y]/(y^2 - x^3 + x)$. 
+
+
+
+
 
 \end{itemize}
 

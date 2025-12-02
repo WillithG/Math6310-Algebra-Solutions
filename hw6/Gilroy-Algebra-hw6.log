@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  1 DEC 2025 15:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.17)  2 DEC 2025 17:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -766,6 +766,10 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [15]
+Overfull \hbox (38.79071pt too wide) in paragraph at lines 634--642
+\OT1/ppl/m/n/12 ti-cal maps. Given $\OML/zplm/m/it/12 h \OT1/zplm/m/n/12 : \U/fplmbb/m/n/12 Z\OT1/zplm/m/n/12 [\OML/zplm/m/it/12 x\OT1/ppl/m/n/12 , \OML/zplm/m/it/12 y\OT1/zplm/m/n/12 ]/\OML/zplm/m/it/12 I \OMS/zplm/m/n/12 ! \OML/zplm/m/it/12 R$ \OT1/ppl/m/n/12 the im-age of $\OML/zplm/m/it/12 f$ \OT1/ppl/m/n/12 un-der the func-tor $\OML/zplm/m/it/12 Hom[]\OT1/zplm/m/n/12 (\U/fplmbb/m/n/12 Z\OT1/zplm/m/n/12 [\OML/zplm/m/it/12 x\OT1/ppl/m/n/12 , \OML/zplm/m/it/12 y\OT1/zplm/m/n/12 ]/\OML/zplm/m/it/12 I\OT1/ppl/m/n/12 , \OMS/zplm/m/n/12 ^^@\OT1/zplm/m/n/12 )$
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -789,22 +793,30 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[18] 
+[18]
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[19] 
 AED: lastpage setting LastPage
 (./Gilroy-Algebra-hw6.aux) ) 
 Here is how much of TeX's memory you used:
- 17335 strings out of 476091
- 352277 string characters out of 5794081
+ 17377 strings out of 476091
+ 353313 string characters out of 5794081
  1869330 words of memory out of 5000000
- 37348 multiletter control sequences out of 15000+600000
+ 37390 multiletter control sequences out of 15000+600000
  534763 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,15n,94p,596b,1145s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,17n,94p,596b,1145s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Gilroy-Algebra-hw6.pdf (18 pages, 488916 bytes).
+Output written on Gilroy-Algebra-hw6.pdf (19 pages, 492608 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 134 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
